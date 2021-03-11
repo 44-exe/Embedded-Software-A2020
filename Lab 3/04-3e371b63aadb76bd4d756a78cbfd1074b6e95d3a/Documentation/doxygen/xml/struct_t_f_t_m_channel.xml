@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="struct_t_f_t_m_channel" kind="struct" language="C++" prot="public">
+    <compoundname>TFTMChannel</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_t_f_t_m_channel_1aa2404895d5318fcd6aecab3147c14826" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t TFTMChannel::channelNb</definition>
+        <argsstring></argsstring>
+        <name>channelNb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" line="46" column="11" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_f_t_m_channel_1ad251edc565485ed51d1046a747d6fa32" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t TFTMChannel::delayNanoseconds</definition>
+        <argsstring></argsstring>
+        <name>delayNanoseconds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" line="47" column="12" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_f_t_m_channel_1aa5f3d62a353d779117ced0877fa47734" prot="public" static="no" mutable="no">
+        <type>TTimerFunction</type>
+        <definition>TTimerFunction TFTMChannel::timerFunction</definition>
+        <argsstring></argsstring>
+        <name>timerFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" line="48" column="18" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_f_t_m_channel_1ace675e50da5484889a79a34754ab9ff2" prot="public" static="no" mutable="no">
+        <type>TTimerOutputAction</type>
+        <definition>TTimerOutputAction TFTMChannel::outputAction</definition>
+        <argsstring></argsstring>
+        <name>outputAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" line="51" column="24" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_f_t_m_channel_1a2dfe9a7595629343ee930e9e80f1f707" prot="public" static="no" mutable="no">
+        <type>TTimerInputDetection</type>
+        <definition>TTimerInputDetection TFTMChannel::inputDetection</definition>
+        <argsstring></argsstring>
+        <name>inputDetection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" line="52" column="26" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_f_t_m_channel_1a04c455f24d08a9dea61b52a4f591a9f1" prot="public" static="no" mutable="no">
+        <type>union TFTMChannel::@4</type>
+        <definition>union TFTMChannel::@4  TFTMChannel::ioType</definition>
+        <argsstring></argsstring>
+        <name>ioType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" line="53" column="10"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_f_t_m_channel_1ae5302126a57eeea3599d8f8a938df62a" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* TFTMChannel::callbackFunction) (void *)</definition>
+        <argsstring>)(void *)</argsstring>
+        <name>callbackFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" line="54" column="3" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_f_t_m_channel_1a7e7f174946d78878912016858ea5105d" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* TFTMChannel::callbackArguments</definition>
+        <argsstring></argsstring>
+        <name>callbackArguments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" line="55" column="8" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" line="45" column="1" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" bodystart="44" bodyend="56"/>
+    <listofallmembers>
+      <member refid="struct_t_f_t_m_channel_1a7e7f174946d78878912016858ea5105d" prot="public" virt="non-virtual"><scope>TFTMChannel</scope><name>callbackArguments</name></member>
+      <member refid="struct_t_f_t_m_channel_1ae5302126a57eeea3599d8f8a938df62a" prot="public" virt="non-virtual"><scope>TFTMChannel</scope><name>callbackFunction</name></member>
+      <member refid="struct_t_f_t_m_channel_1aa2404895d5318fcd6aecab3147c14826" prot="public" virt="non-virtual"><scope>TFTMChannel</scope><name>channelNb</name></member>
+      <member refid="struct_t_f_t_m_channel_1ad251edc565485ed51d1046a747d6fa32" prot="public" virt="non-virtual"><scope>TFTMChannel</scope><name>delayNanoseconds</name></member>
+      <member refid="struct_t_f_t_m_channel_1a2dfe9a7595629343ee930e9e80f1f707" prot="public" virt="non-virtual"><scope>TFTMChannel</scope><name>inputDetection</name></member>
+      <member refid="struct_t_f_t_m_channel_1a04c455f24d08a9dea61b52a4f591a9f1" prot="public" virt="non-virtual"><scope>TFTMChannel</scope><name>ioType</name></member>
+      <member refid="struct_t_f_t_m_channel_1ace675e50da5484889a79a34754ab9ff2" prot="public" virt="non-virtual"><scope>TFTMChannel</scope><name>outputAction</name></member>
+      <member refid="struct_t_f_t_m_channel_1aa5f3d62a353d779117ced0877fa47734" prot="public" virt="non-virtual"><scope>TFTMChannel</scope><name>timerFunction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

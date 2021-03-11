@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.16">
+  <compound refid="struct_f_c_c_o_b__t" kind="struct"><name>FCCOB_t</name>
+    <member refid="struct_f_c_c_o_b__t_1a48eb384404041ea7eaab7eaf76ba05ad" kind="variable"><name>Flash_Command</name></member>
+    <member refid="struct_f_c_c_o_b__t_1abe90467223189c9d9209b9bd2493c44a" kind="variable"><name>Flash_AllAddress</name></member>
+    <member refid="struct_f_c_c_o_b__t_1a667c9d637e45735e93e8a41792532c83" kind="variable"><name>Flash_Address</name></member>
+    <member refid="struct_f_c_c_o_b__t_1a2dc188e3eeabc697e42726e5abc8359f" kind="variable"><name>s</name></member>
+    <member refid="struct_f_c_c_o_b__t_1a80cd620f2d55a25035e48ef4c8c3cf19" kind="variable"><name>Address</name></member>
+    <member refid="struct_f_c_c_o_b__t_1ab5abcf4124626b1bdb1975de68bb1d6a" kind="variable"><name>Flash_AllByte</name></member>
+    <member refid="struct_f_c_c_o_b__t_1ac1881a8bc94a32be0a86fffd215cf45e" kind="variable"><name>Flash_DataByte</name></member>
+    <member refid="struct_f_c_c_o_b__t_1a1af73534087f139c7be0ef9863ed27d3" kind="variable"><name>s</name></member>
+    <member refid="struct_f_c_c_o_b__t_1a4f3116ed42b01cb9b1c43036519078f8" kind="variable"><name>Data</name></member>
+  </compound>
+  <compound refid="unionint16union__t" kind="union"><name>int16union_t</name>
+    <member refid="unionint16union__t_1ad8a9524a204892ae3d42a2d251ea0643" kind="variable"><name>l</name></member>
+    <member refid="unionint16union__t_1a90626557ee63dcc8d3704100754b2cdf" kind="variable"><name>Lo</name></member>
+    <member refid="unionint16union__t_1aebf3b897adab5ed0a5bfc64159bd58aa" kind="variable"><name>Hi</name></member>
+    <member refid="unionint16union__t_1a7a0c79a8873c4b3eca57b95574f23b5c" kind="variable"><name>s</name></member>
+  </compound>
+  <compound refid="struct_t_f_i_f_o" kind="struct"><name>TFIFO</name>
+    <member refid="struct_t_f_i_f_o_1a092a7559431a12616672354641908167" kind="variable"><name>Start</name></member>
+    <member refid="struct_t_f_i_f_o_1a5063b875898a6f23a97aa3ca17f0544b" kind="variable"><name>End</name></member>
+    <member refid="struct_t_f_i_f_o_1ace00017651a266a66a93aa5220967611" kind="variable"><name>NbBytes</name></member>
+    <member refid="struct_t_f_i_f_o_1a5a9d712880dc4f1d5571b96452cd85f8" kind="variable"><name>Buffer</name></member>
+  </compound>
+  <compound refid="union_t_float" kind="union"><name>TFloat</name>
+    <member refid="union_t_float_1ac64a1b1a3fa390b17e94fa6063eeadea" kind="variable"><name>f</name></member>
+    <member refid="union_t_float_1a15ad14e02e03e6e121aa19049b368374" kind="variable"><name>fLo</name></member>
+    <member refid="union_t_float_1a5e7444c31f026b85ef979cabf70300f4" kind="variable"><name>fHi</name></member>
+    <member refid="union_t_float_1a74ac55e0807cfdec5672a551663a727d" kind="variable"><name>fParts</name></member>
+  </compound>
+  <compound refid="union_t_packet" kind="union"><name>TPacket</name>
+    <member refid="union_t_packet_1a27c34aeafd4c778f8e489e4c38436ddf" kind="variable"><name>bytes</name></member>
+    <member refid="union_t_packet_1a5cec09aa383544e7b1413e08205d09ea" kind="variable"><name>command</name></member>
+    <member refid="union_t_packet_1a9092cb6480edf4918477b59d9c67938e" kind="variable"><name>parameter1</name></member>
+    <member refid="union_t_packet_1a0a5a82f359bb43dc5b9f412d5f1de33c" kind="variable"><name>parameter2</name></member>
+    <member refid="union_t_packet_1ab3ac2f9a6cfe5b6a7ae0987d21de472b" kind="variable"><name>parameter3</name></member>
+    <member refid="union_t_packet_1a6bb2e2761e096bc64969fbcf16ab001d" kind="variable"><name>separate</name></member>
+    <member refid="union_t_packet_1a84940acc736f6d6379c6ebd65dfd05eb" kind="variable"><name>parameter12</name></member>
+    <member refid="union_t_packet_1afaaf1c440740f0529a9d212b844c2b04" kind="variable"><name>combined12</name></member>
+    <member refid="union_t_packet_1ae1b9edd3b3b5ea13cc2987a6009b44b6" kind="variable"><name>paramater1</name></member>
+    <member refid="union_t_packet_1a92905f7e01f01bd1439dc4668b6808c1" kind="variable"><name>parameter23</name></member>
+    <member refid="union_t_packet_1ae90bdd13e77b83a174a17c612980732e" kind="variable"><name>combined23</name></member>
+    <member refid="union_t_packet_1af672963f8c16d79d291ec03c0d2488bc" kind="variable"><name>parameters</name></member>
+    <member refid="union_t_packet_1a230f311ae7e4939ad02be24c48c6d15e" kind="variable"><name>checksum</name></member>
+    <member refid="union_t_packet_1ad272d8f2ef86444cce2103758dfff80a" kind="variable"><name>packetStruct</name></member>
+  </compound>
+  <compound refid="unionuint16union__t" kind="union"><name>uint16union_t</name>
+    <member refid="unionuint16union__t_1a99ee3a3f73300849c180c387230c7caa" kind="variable"><name>l</name></member>
+    <member refid="unionuint16union__t_1af5b7d69d852813bff582896be6e51563" kind="variable"><name>Lo</name></member>
+    <member refid="unionuint16union__t_1a47b7d1483d919914e5f81097ef569ca0" kind="variable"><name>Hi</name></member>
+    <member refid="unionuint16union__t_1a4280c7c32b6e600f92da3083d3e8dfd1" kind="variable"><name>s</name></member>
+  </compound>
+  <compound refid="unionuint32union__t" kind="union"><name>uint32union_t</name>
+    <member refid="unionuint32union__t_1a02b7aaa4708411c52446dc5528f66c25" kind="variable"><name>l</name></member>
+    <member refid="unionuint32union__t_1af2e434db784d503f1adf796fe2a5ebdd" kind="variable"><name>Lo</name></member>
+    <member refid="unionuint32union__t_1a94656d765a83aeacf2f5a878d2e724d5" kind="variable"><name>Hi</name></member>
+    <member refid="unionuint32union__t_1a9d84b7d49ddab6b7cdf238460a750319" kind="variable"><name>s</name></member>
+  </compound>
+  <compound refid="unionuint64union__t" kind="union"><name>uint64union_t</name>
+    <member refid="unionuint64union__t_1a2d5e8db071e91dd1ed90c03584facdfd" kind="variable"><name>l</name></member>
+    <member refid="unionuint64union__t_1af537ea004c114ec6aad9c6600557771b" kind="variable"><name>Lo</name></member>
+    <member refid="unionuint64union__t_1a2b321a0469729950eb502fe210a6bc8f" kind="variable"><name>Hi</name></member>
+    <member refid="unionuint64union__t_1a682cfaf6010ab870c9f16c103e83640c" kind="variable"><name>s</name></member>
+  </compound>
+  <compound refid="_f_i_f_o_8c" kind="file"><name>FIFO.c</name>
+    <member refid="group___f_i_f_o__module_1ga78695bd259760403dac1e36bf8ccb234" kind="function"><name>FIFO_Init</name></member>
+    <member refid="group___f_i_f_o__module_1gace64ba4e6bd943f990a294693156cc3b" kind="function"><name>FIFO_Put</name></member>
+    <member refid="group___f_i_f_o__module_1ga6407e3daf24a826a7f17d3e48865e89a" kind="function"><name>FIFO_Get</name></member>
+  </compound>
+  <compound refid="_f_i_f_o_8h" kind="file"><name>FIFO.h</name>
+    <member refid="group___f_i_f_o__module_1ga6092455278a1ac67204e0dbe08f9d13f" kind="define"><name>FIFO_SIZE</name></member>
+    <member refid="group___f_i_f_o__module_1ga78695bd259760403dac1e36bf8ccb234" kind="function"><name>FIFO_Init</name></member>
+    <member refid="group___f_i_f_o__module_1gace64ba4e6bd943f990a294693156cc3b" kind="function"><name>FIFO_Put</name></member>
+    <member refid="group___f_i_f_o__module_1ga6407e3daf24a826a7f17d3e48865e89a" kind="function"><name>FIFO_Get</name></member>
+  </compound>
+  <compound refid="_flash_8c" kind="file"><name>Flash.c</name>
+    <member refid="group___flash__module_1gac0181349b31f7dbeef69e296c7a97a2b" kind="variable"><name>FLASH_ERASE_SECTOR</name></member>
+    <member refid="group___flash__module_1ga5ab5f1fd69f920ee5bf0b56493046332" kind="variable"><name>FLASH_WRITE_PHRASE</name></member>
+    <member refid="group___flash__module_1ga24ca5c7e2928095bf07ab6f6a98679c6" kind="variable"><name>ByteFlash</name></member>
+    <member refid="group___flash__module_1ga5f0979e9c65831382ec3a18d971ac8eb" kind="variable"><name>AddressFlash</name></member>
+    <member refid="group___flash__module_1gaa5782279b5e558cafc2f135c0a1177d3" kind="function"><name>Flash_Init</name></member>
+    <member refid="group___flash__module_1ga50871aff0f5af1e092aea3ed2545cf72" kind="function"><name>Flash_AllocateVar</name></member>
+    <member refid="group___flash__module_1ga82437eff368716c682ca7a082bba1357" kind="function"><name>LaunchCommand</name></member>
+    <member refid="group___flash__module_1ga0fc992308ad53593bdc6f6e015c2924c" kind="function"><name>WritePhrase</name></member>
+    <member refid="group___flash__module_1gac37c5dc906e2c2635d9d8ccda0e4af8d" kind="function"><name>ModifyPhrase</name></member>
+    <member refid="group___flash__module_1ga5da7dcc0c6ef765546c79bbe25b48479" kind="function"><name>Flash_Write32</name></member>
+    <member refid="group___flash__module_1ga1458f5e4ac15e1848ae0bde32fe5b5f3" kind="function"><name>Flash_Write16</name></member>
+    <member refid="group___flash__module_1ga1e6f34b272d8ed7b0f897b43e65f2cc0" kind="function"><name>Flash_Write8</name></member>
+    <member refid="group___flash__module_1ga04fd4b98ef4ea1b033801d9c0d574849" kind="function"><name>EraseSector</name></member>
+    <member refid="group___flash__module_1ga06868787ccef73e69bd236d3b93b68f3" kind="function"><name>Flash_Erase</name></member>
+  </compound>
+  <compound refid="_flash_8h" kind="file"><name>Flash.h</name>
+    <member refid="group___flash__module_1gac450fb89f016956f685a1e541644b2a8" kind="define"><name>_FB</name></member>
+    <member refid="group___flash__module_1ga28550847e9609b9b396a4230f36884e9" kind="define"><name>_FH</name></member>
+    <member refid="group___flash__module_1gad4fb772b3db9c8eecdbf9df472351a28" kind="define"><name>_FW</name></member>
+    <member refid="group___flash__module_1ga4c1198da68f5da4f6ffd5abc1d1c052a" kind="define"><name>_FP</name></member>
+    <member refid="group___flash__module_1ga5c70db9dac9dbc146f98a1e27c731dec" kind="define"><name>FLASH_DATA_START</name></member>
+    <member refid="group___flash__module_1ga4d7e8c8d5e35c4743dbdcbe09e9d0797" kind="define"><name>FLASH_DATA_END</name></member>
+    <member refid="group___flash__module_1gaa5782279b5e558cafc2f135c0a1177d3" kind="function"><name>Flash_Init</name></member>
+    <member refid="group___flash__module_1ga50871aff0f5af1e092aea3ed2545cf72" kind="function"><name>Flash_AllocateVar</name></member>
+    <member refid="group___flash__module_1ga5da7dcc0c6ef765546c79bbe25b48479" kind="function"><name>Flash_Write32</name></member>
+    <member refid="group___flash__module_1ga1458f5e4ac15e1848ae0bde32fe5b5f3" kind="function"><name>Flash_Write16</name></member>
+    <member refid="group___flash__module_1ga1e6f34b272d8ed7b0f897b43e65f2cc0" kind="function"><name>Flash_Write8</name></member>
+    <member refid="group___flash__module_1ga06868787ccef73e69bd236d3b93b68f3" kind="function"><name>Flash_Erase</name></member>
+  </compound>
+  <compound refid="_l_e_ds_8c" kind="file"><name>LEDs.c</name>
+    <member refid="group___l_e_ds__module_1ga8c562295defbb7c742a43e2c186391e1" kind="variable"><name>PORTOUT</name></member>
+    <member refid="group___l_e_ds__module_1ga971ce808151ce8c8efbeab5fd3217060" kind="variable"><name>SETPORT</name></member>
+    <member refid="group___l_e_ds__module_1gaea5d2a9d1aacacc05e4d772a555b2d9d" kind="function"><name>LEDs_Init</name></member>
+    <member refid="group___l_e_ds__module_1gab83ce0564d78725d23783caa491a293a" kind="function"><name>LEDs_On</name></member>
+    <member refid="group___l_e_ds__module_1gab96427411f19150a344e5f238bfa15b9" kind="function"><name>LEDs_Off</name></member>
+    <member refid="group___l_e_ds__module_1ga73f961351cfc02fcf8306b14e16d4429" kind="function"><name>LEDs_Toggle</name></member>
+  </compound>
+  <compound refid="_l_e_ds_8h" kind="file"><name>LEDs.h</name>
+    <member refid="group___l_e_ds__module_1gadd06cf8aa4e6538b7411fe9976dbf4d5" kind="enum"><name>LED_t</name></member>
+    <member refid="group___l_e_ds__module_1ggadd06cf8aa4e6538b7411fe9976dbf4d5ad80f13022b6d309268fadc7b1da89cb9" kind="enumvalue"><name>LED_RED</name></member>
+    <member refid="group___l_e_ds__module_1ggadd06cf8aa4e6538b7411fe9976dbf4d5a0ad916c7f80666dc88f6b5b22a72e742" kind="enumvalue"><name>LED_GREEN</name></member>
+    <member refid="group___l_e_ds__module_1ggadd06cf8aa4e6538b7411fe9976dbf4d5aa67c57c0ff22a2772cb6a5751a3327bf" kind="enumvalue"><name>LED_BLUE</name></member>
+    <member refid="group___l_e_ds__module_1gaea5d2a9d1aacacc05e4d772a555b2d9d" kind="function"><name>LEDs_Init</name></member>
+    <member refid="group___l_e_ds__module_1gab83ce0564d78725d23783caa491a293a" kind="function"><name>LEDs_On</name></member>
+    <member refid="group___l_e_ds__module_1gab96427411f19150a344e5f238bfa15b9" kind="function"><name>LEDs_Off</name></member>
+    <member refid="group___l_e_ds__module_1ga73f961351cfc02fcf8306b14e16d4429" kind="function"><name>LEDs_Toggle</name></member>
+  </compound>
+  <compound refid="_packet_8c" kind="file"><name>Packet.c</name>
+    <member refid="group___packet__module_1ga5916165249c1d4739d21a001d5a4775d" kind="define"><name>PACKET_NB_BYTES</name></member>
+    <member refid="group___packet__module_1gac74c1cf77ae5807a61baefd6df20201e" kind="variable"><name>Packet</name></member>
+    <member refid="group___packet__module_1ga5faca24c448374dc4656ebc31afcae0b" kind="variable"><name>PACKET_ACK_MASK</name></member>
+    <member refid="group___packet__module_1gadfd22f81a651814e66ce22aaa55ef17c" kind="function"><name>Packet_Init</name></member>
+    <member refid="group___packet__module_1gac58a17928cd5e556e1567b2fde9f88f0" kind="function"><name>Packet_Get</name></member>
+    <member refid="group___packet__module_1ga431a1e1da25a8214a502ec81f88fc3f1" kind="function"><name>Packet_Put</name></member>
+  </compound>
+  <compound refid="packet_8h" kind="file"><name>packet.h</name>
+    <member refid="group___packet__module_1ga5916165249c1d4739d21a001d5a4775d" kind="define"><name>PACKET_NB_BYTES</name></member>
+    <member refid="group___packet__module_1ga0a6b54bd6327268c60b131046279dc73" kind="define"><name>Packet_Command</name></member>
+    <member refid="group___packet__module_1gac57a9c4b28d49a596ca5fa943e40b9af" kind="define"><name>Packet_Parameter1</name></member>
+    <member refid="group___packet__module_1ga45a05df635f3e5b1395d008f1901a4d1" kind="define"><name>Packet_Parameter2</name></member>
+    <member refid="group___packet__module_1ga625e727e1e36680f574a360bc3747695" kind="define"><name>Packet_Parameter3</name></member>
+    <member refid="group___packet__module_1ga263d9441afcb8d453f9d25e637d34907" kind="define"><name>Packet_Parameter12</name></member>
+    <member refid="group___packet__module_1ga59d544f3e4a53730d58061ec7203f7ed" kind="define"><name>Packet_Parameter23</name></member>
+    <member refid="group___packet__module_1gade7afcb767f4375a5728e1804376bd1b" kind="define"><name>Packet_Checksum</name></member>
+    <member refid="group___packet__module_1gac74c1cf77ae5807a61baefd6df20201e" kind="variable"><name>Packet</name></member>
+    <member refid="group___packet__module_1ga5faca24c448374dc4656ebc31afcae0b" kind="variable"><name>PACKET_ACK_MASK</name></member>
+    <member refid="group___packet__module_1gadfd22f81a651814e66ce22aaa55ef17c" kind="function"><name>Packet_Init</name></member>
+    <member refid="group___packet__module_1gac58a17928cd5e556e1567b2fde9f88f0" kind="function"><name>Packet_Get</name></member>
+    <member refid="group___packet__module_1ga431a1e1da25a8214a502ec81f88fc3f1" kind="function"><name>Packet_Put</name></member>
+  </compound>
+  <compound refid="types_8h" kind="file"><name>types.h</name>
+    <member refid="types_8h_1a26cd1b41ab1c8f261271f67271ddc33e" kind="define"><name>DEBUG_HALT</name></member>
+  </compound>
+  <compound refid="_u_a_r_t_8c" kind="file"><name>UART.c</name>
+    <member refid="group___u_a_r_t__module_1ga57a6bee2e32f83a4a1b52c99299794b8" kind="variable"><name>RxFIFO</name></member>
+    <member refid="group___u_a_r_t__module_1gabfc40789d380623f1ba598e006927b5e" kind="variable"><name>TxFIFO</name></member>
+    <member refid="group___u_a_r_t__module_1gac8834e6b9381788dfdcb9d4e23da2059" kind="variable"><name>UART0_CONFIG</name></member>
+    <member refid="group___u_a_r_t__module_1gac43bbaf247d278867fde8cd412a4f1c3" kind="function"><name>UART_Init</name></member>
+    <member refid="group___u_a_r_t__module_1ga03049bcc3bf9af2a75ee77016d3b0d60" kind="function"><name>UART_InChar</name></member>
+    <member refid="group___u_a_r_t__module_1gab20ebaeefd1f29d31e098ade31189dda" kind="function"><name>UART_OutChar</name></member>
+    <member refid="group___u_a_r_t__module_1ga799b375101827a18f652a3f28ecefcd0" kind="function"><name>UART_Poll</name></member>
+  </compound>
+  <compound refid="_u_a_r_t_8h" kind="file"><name>UART.h</name>
+    <member refid="group___u_a_r_t__module_1gac43bbaf247d278867fde8cd412a4f1c3" kind="function"><name>UART_Init</name></member>
+    <member refid="group___u_a_r_t__module_1ga03049bcc3bf9af2a75ee77016d3b0d60" kind="function"><name>UART_InChar</name></member>
+    <member refid="group___u_a_r_t__module_1gab20ebaeefd1f29d31e098ade31189dda" kind="function"><name>UART_OutChar</name></member>
+    <member refid="group___u_a_r_t__module_1ga799b375101827a18f652a3f28ecefcd0" kind="function"><name>UART_Poll</name></member>
+  </compound>
+  <compound refid="main_8c" kind="file"><name>main.c</name>
+    <member refid="group__main__module_1ga2afce0a47a93eee73a314d53e4890153" kind="enum"><name>Command</name></member>
+    <member refid="group__main__module_1gga2afce0a47a93eee73a314d53e4890153a702303e5a73fa27b2169bf076dbacc01" kind="enumvalue"><name>MCU_STARTUP</name></member>
+    <member refid="group__main__module_1gga2afce0a47a93eee73a314d53e4890153a3fe3c7f760499af331f615375fec91e2" kind="enumvalue"><name>MCU_FLASH_PROGRAM</name></member>
+    <member refid="group__main__module_1gga2afce0a47a93eee73a314d53e4890153aa9c122b9c625056eb1642f67988fd3e6" kind="enumvalue"><name>MCU_FLASH_READ</name></member>
+    <member refid="group__main__module_1gga2afce0a47a93eee73a314d53e4890153a8c5f7c4d1adb07fb8bae756433b09acc" kind="enumvalue"><name>MCU_VERSION</name></member>
+    <member refid="group__main__module_1gga2afce0a47a93eee73a314d53e4890153ac749637bf30798dc5bb165d6525774bc" kind="enumvalue"><name>MCU_NUMBER</name></member>
+    <member refid="group__main__module_1gga2afce0a47a93eee73a314d53e4890153a7bc6a2351bbeaeab85ab8ce957f83d09" kind="enumvalue"><name>MCU_MODE</name></member>
+    <member refid="group__main__module_1ga4f6628df3189e988b65658a725188fd4" kind="variable"><name>MAJOR</name></member>
+    <member refid="group__main__module_1ga25fcd7302027275a87f9461635744e0e" kind="variable"><name>MINOR</name></member>
+    <member refid="group__main__module_1gab4e7c863c9b1387f029360b3bc965194" kind="variable"><name>STU_NUM</name></member>
+    <member refid="group__main__module_1gaad3c46d89d0030281432298983b6c29b" kind="variable"><name>MODE_NUM</name></member>
+    <member refid="group__main__module_1ga3948594ac93f0c5008fee3efcb07de77" kind="variable"><name>BAUDRATE</name></member>
+    <member refid="group__main__module_1ga7ce0dded27916b9e803c5066b904a796" kind="variable"><name>NvMcuNb</name></member>
+    <member refid="group__main__module_1gadbc23f21b44496bd040ead8ec1524d30" kind="variable"><name>NvMcuMd</name></member>
+    <member refid="group__main__module_1gaa5092307bb5f36161fd4239f21ae8eed" kind="function"><name>SendStartupPackets</name></member>
+    <member refid="group__main__module_1ga05d6cff2c4cf03e26c5c05f4038f9dca" kind="function"><name>MCUInit</name></member>
+    <member refid="group__main__module_1ga955bec09a746ef3069f87646261721c6" kind="function"><name>HandleStartupPacket</name></member>
+    <member refid="group__main__module_1gafac380800173ae24316efc2a1b60c4cb" kind="function"><name>HandleFlashProgram</name></member>
+    <member refid="group__main__module_1gac3114d818fed650ed82ded231333d1e5" kind="function"><name>HandleFlashRead</name></member>
+    <member refid="group__main__module_1ga57cecf001ee7a59329d9ddb803961fe3" kind="function"><name>HandleGetVersion</name></member>
+    <member refid="group__main__module_1gacdeac81ad327da00a61070a8868e7d3b" kind="function"><name>HandleMCUNumber</name></member>
+    <member refid="group__main__module_1gadf223f06f4ccbee3310e252971fcb0fe" kind="function"><name>HandleMCUMode</name></member>
+    <member refid="group__main__module_1ga0fdafa1dbb51cd815f0f99df7d1c2582" kind="function"><name>HandlePackets</name></member>
+    <member refid="group__main__module_1ga840291bc02cba5474a4cb46a9b9566fe" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="group__main__module" kind="group"><name>main_module</name>
+    <member refid="group__main__module_1ga2afce0a47a93eee73a314d53e4890153" kind="enum"><name>Command</name></member>
+    <member refid="group__main__module_1gga2afce0a47a93eee73a314d53e4890153a702303e5a73fa27b2169bf076dbacc01" kind="enumvalue"><name>MCU_STARTUP</name></member>
+    <member refid="group__main__module_1gga2afce0a47a93eee73a314d53e4890153a3fe3c7f760499af331f615375fec91e2" kind="enumvalue"><name>MCU_FLASH_PROGRAM</name></member>
+    <member refid="group__main__module_1gga2afce0a47a93eee73a314d53e4890153aa9c122b9c625056eb1642f67988fd3e6" kind="enumvalue"><name>MCU_FLASH_READ</name></member>
+    <member refid="group__main__module_1gga2afce0a47a93eee73a314d53e4890153a8c5f7c4d1adb07fb8bae756433b09acc" kind="enumvalue"><name>MCU_VERSION</name></member>
+    <member refid="group__main__module_1gga2afce0a47a93eee73a314d53e4890153ac749637bf30798dc5bb165d6525774bc" kind="enumvalue"><name>MCU_NUMBER</name></member>
+    <member refid="group__main__module_1gga2afce0a47a93eee73a314d53e4890153a7bc6a2351bbeaeab85ab8ce957f83d09" kind="enumvalue"><name>MCU_MODE</name></member>
+    <member refid="group__main__module_1ga4f6628df3189e988b65658a725188fd4" kind="variable"><name>MAJOR</name></member>
+    <member refid="group__main__module_1ga25fcd7302027275a87f9461635744e0e" kind="variable"><name>MINOR</name></member>
+    <member refid="group__main__module_1gab4e7c863c9b1387f029360b3bc965194" kind="variable"><name>STU_NUM</name></member>
+    <member refid="group__main__module_1gaad3c46d89d0030281432298983b6c29b" kind="variable"><name>MODE_NUM</name></member>
+    <member refid="group__main__module_1ga3948594ac93f0c5008fee3efcb07de77" kind="variable"><name>BAUDRATE</name></member>
+    <member refid="group__main__module_1ga7ce0dded27916b9e803c5066b904a796" kind="variable"><name>NvMcuNb</name></member>
+    <member refid="group__main__module_1gadbc23f21b44496bd040ead8ec1524d30" kind="variable"><name>NvMcuMd</name></member>
+    <member refid="group__main__module_1gaa5092307bb5f36161fd4239f21ae8eed" kind="function"><name>SendStartupPackets</name></member>
+    <member refid="group__main__module_1ga05d6cff2c4cf03e26c5c05f4038f9dca" kind="function"><name>MCUInit</name></member>
+    <member refid="group__main__module_1ga955bec09a746ef3069f87646261721c6" kind="function"><name>HandleStartupPacket</name></member>
+    <member refid="group__main__module_1gafac380800173ae24316efc2a1b60c4cb" kind="function"><name>HandleFlashProgram</name></member>
+    <member refid="group__main__module_1gac3114d818fed650ed82ded231333d1e5" kind="function"><name>HandleFlashRead</name></member>
+    <member refid="group__main__module_1ga57cecf001ee7a59329d9ddb803961fe3" kind="function"><name>HandleGetVersion</name></member>
+    <member refid="group__main__module_1gacdeac81ad327da00a61070a8868e7d3b" kind="function"><name>HandleMCUNumber</name></member>
+    <member refid="group__main__module_1gadf223f06f4ccbee3310e252971fcb0fe" kind="function"><name>HandleMCUMode</name></member>
+    <member refid="group__main__module_1ga0fdafa1dbb51cd815f0f99df7d1c2582" kind="function"><name>HandlePackets</name></member>
+    <member refid="group__main__module_1ga840291bc02cba5474a4cb46a9b9566fe" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="group___f_i_f_o__module" kind="group"><name>FIFO_module</name>
+    <member refid="group___f_i_f_o__module_1ga78695bd259760403dac1e36bf8ccb234" kind="function"><name>FIFO_Init</name></member>
+    <member refid="group___f_i_f_o__module_1gace64ba4e6bd943f990a294693156cc3b" kind="function"><name>FIFO_Put</name></member>
+    <member refid="group___f_i_f_o__module_1ga6407e3daf24a826a7f17d3e48865e89a" kind="function"><name>FIFO_Get</name></member>
+    <member refid="group___f_i_f_o__module_1ga6092455278a1ac67204e0dbe08f9d13f" kind="define"><name>FIFO_SIZE</name></member>
+  </compound>
+  <compound refid="group___flash__module" kind="group"><name>Flash_module</name>
+    <member refid="group___flash__module_1gac0181349b31f7dbeef69e296c7a97a2b" kind="variable"><name>FLASH_ERASE_SECTOR</name></member>
+    <member refid="group___flash__module_1ga5ab5f1fd69f920ee5bf0b56493046332" kind="variable"><name>FLASH_WRITE_PHRASE</name></member>
+    <member refid="group___flash__module_1ga24ca5c7e2928095bf07ab6f6a98679c6" kind="variable"><name>ByteFlash</name></member>
+    <member refid="group___flash__module_1ga5f0979e9c65831382ec3a18d971ac8eb" kind="variable"><name>AddressFlash</name></member>
+    <member refid="group___flash__module_1gaa5782279b5e558cafc2f135c0a1177d3" kind="function"><name>Flash_Init</name></member>
+    <member refid="group___flash__module_1ga50871aff0f5af1e092aea3ed2545cf72" kind="function"><name>Flash_AllocateVar</name></member>
+    <member refid="group___flash__module_1ga82437eff368716c682ca7a082bba1357" kind="function"><name>LaunchCommand</name></member>
+    <member refid="group___flash__module_1ga0fc992308ad53593bdc6f6e015c2924c" kind="function"><name>WritePhrase</name></member>
+    <member refid="group___flash__module_1gac37c5dc906e2c2635d9d8ccda0e4af8d" kind="function"><name>ModifyPhrase</name></member>
+    <member refid="group___flash__module_1ga5da7dcc0c6ef765546c79bbe25b48479" kind="function"><name>Flash_Write32</name></member>
+    <member refid="group___flash__module_1ga1458f5e4ac15e1848ae0bde32fe5b5f3" kind="function"><name>Flash_Write16</name></member>
+    <member refid="group___flash__module_1ga1e6f34b272d8ed7b0f897b43e65f2cc0" kind="function"><name>Flash_Write8</name></member>
+    <member refid="group___flash__module_1ga04fd4b98ef4ea1b033801d9c0d574849" kind="function"><name>EraseSector</name></member>
+    <member refid="group___flash__module_1ga06868787ccef73e69bd236d3b93b68f3" kind="function"><name>Flash_Erase</name></member>
+    <member refid="group___flash__module_1gac450fb89f016956f685a1e541644b2a8" kind="define"><name>_FB</name></member>
+    <member refid="group___flash__module_1ga28550847e9609b9b396a4230f36884e9" kind="define"><name>_FH</name></member>
+    <member refid="group___flash__module_1gad4fb772b3db9c8eecdbf9df472351a28" kind="define"><name>_FW</name></member>
+    <member refid="group___flash__module_1ga4c1198da68f5da4f6ffd5abc1d1c052a" kind="define"><name>_FP</name></member>
+    <member refid="group___flash__module_1ga5c70db9dac9dbc146f98a1e27c731dec" kind="define"><name>FLASH_DATA_START</name></member>
+    <member refid="group___flash__module_1ga4d7e8c8d5e35c4743dbdcbe09e9d0797" kind="define"><name>FLASH_DATA_END</name></member>
+  </compound>
+  <compound refid="group___l_e_ds__module" kind="group"><name>LEDs_module</name>
+    <member refid="group___l_e_ds__module_1gadd06cf8aa4e6538b7411fe9976dbf4d5" kind="enum"><name>LED_t</name></member>
+    <member refid="group___l_e_ds__module_1ggadd06cf8aa4e6538b7411fe9976dbf4d5ad80f13022b6d309268fadc7b1da89cb9" kind="enumvalue"><name>LED_RED</name></member>
+    <member refid="group___l_e_ds__module_1ggadd06cf8aa4e6538b7411fe9976dbf4d5a0ad916c7f80666dc88f6b5b22a72e742" kind="enumvalue"><name>LED_GREEN</name></member>
+    <member refid="group___l_e_ds__module_1ggadd06cf8aa4e6538b7411fe9976dbf4d5aa67c57c0ff22a2772cb6a5751a3327bf" kind="enumvalue"><name>LED_BLUE</name></member>
+    <member refid="group___l_e_ds__module_1ga8c562295defbb7c742a43e2c186391e1" kind="variable"><name>PORTOUT</name></member>
+    <member refid="group___l_e_ds__module_1ga971ce808151ce8c8efbeab5fd3217060" kind="variable"><name>SETPORT</name></member>
+    <member refid="group___l_e_ds__module_1gaea5d2a9d1aacacc05e4d772a555b2d9d" kind="function"><name>LEDs_Init</name></member>
+    <member refid="group___l_e_ds__module_1gab83ce0564d78725d23783caa491a293a" kind="function"><name>LEDs_On</name></member>
+    <member refid="group___l_e_ds__module_1gab96427411f19150a344e5f238bfa15b9" kind="function"><name>LEDs_Off</name></member>
+    <member refid="group___l_e_ds__module_1ga73f961351cfc02fcf8306b14e16d4429" kind="function"><name>LEDs_Toggle</name></member>
+  </compound>
+  <compound refid="group___packet__module" kind="group"><name>Packet_module</name>
+    <member refid="group___packet__module_1gac74c1cf77ae5807a61baefd6df20201e" kind="variable"><name>Packet</name></member>
+    <member refid="group___packet__module_1ga5faca24c448374dc4656ebc31afcae0b" kind="variable"><name>PACKET_ACK_MASK</name></member>
+    <member refid="group___packet__module_1gac74c1cf77ae5807a61baefd6df20201e" kind="variable"><name>Packet</name></member>
+    <member refid="group___packet__module_1ga5faca24c448374dc4656ebc31afcae0b" kind="variable"><name>PACKET_ACK_MASK</name></member>
+    <member refid="group___packet__module_1gadfd22f81a651814e66ce22aaa55ef17c" kind="function"><name>Packet_Init</name></member>
+    <member refid="group___packet__module_1gac58a17928cd5e556e1567b2fde9f88f0" kind="function"><name>Packet_Get</name></member>
+    <member refid="group___packet__module_1ga431a1e1da25a8214a502ec81f88fc3f1" kind="function"><name>Packet_Put</name></member>
+    <member refid="group___packet__module_1ga5916165249c1d4739d21a001d5a4775d" kind="define"><name>PACKET_NB_BYTES</name></member>
+    <member refid="group___packet__module_1ga5916165249c1d4739d21a001d5a4775d" kind="define"><name>PACKET_NB_BYTES</name></member>
+    <member refid="group___packet__module_1ga0a6b54bd6327268c60b131046279dc73" kind="define"><name>Packet_Command</name></member>
+    <member refid="group___packet__module_1gac57a9c4b28d49a596ca5fa943e40b9af" kind="define"><name>Packet_Parameter1</name></member>
+    <member refid="group___packet__module_1ga45a05df635f3e5b1395d008f1901a4d1" kind="define"><name>Packet_Parameter2</name></member>
+    <member refid="group___packet__module_1ga625e727e1e36680f574a360bc3747695" kind="define"><name>Packet_Parameter3</name></member>
+    <member refid="group___packet__module_1ga263d9441afcb8d453f9d25e637d34907" kind="define"><name>Packet_Parameter12</name></member>
+    <member refid="group___packet__module_1ga59d544f3e4a53730d58061ec7203f7ed" kind="define"><name>Packet_Parameter23</name></member>
+    <member refid="group___packet__module_1gade7afcb767f4375a5728e1804376bd1b" kind="define"><name>Packet_Checksum</name></member>
+  </compound>
+  <compound refid="group___u_a_r_t__module" kind="group"><name>UART_module</name>
+    <member refid="group___u_a_r_t__module_1ga57a6bee2e32f83a4a1b52c99299794b8" kind="variable"><name>RxFIFO</name></member>
+    <member refid="group___u_a_r_t__module_1gabfc40789d380623f1ba598e006927b5e" kind="variable"><name>TxFIFO</name></member>
+    <member refid="group___u_a_r_t__module_1gac8834e6b9381788dfdcb9d4e23da2059" kind="variable"><name>UART0_CONFIG</name></member>
+    <member refid="group___u_a_r_t__module_1gac43bbaf247d278867fde8cd412a4f1c3" kind="function"><name>UART_Init</name></member>
+    <member refid="group___u_a_r_t__module_1ga03049bcc3bf9af2a75ee77016d3b0d60" kind="function"><name>UART_InChar</name></member>
+    <member refid="group___u_a_r_t__module_1gab20ebaeefd1f29d31e098ade31189dda" kind="function"><name>UART_OutChar</name></member>
+    <member refid="group___u_a_r_t__module_1ga799b375101827a18f652a3f28ecefcd0" kind="function"><name>UART_Poll</name></member>
+  </compound>
+  <compound refid="dir_2ea38adeda1e8b8c205e4ec2e2e05276" kind="dir"><name>C:/Users/Jeong/git/04/Modules/FIFO</name>
+  </compound>
+  <compound refid="dir_f67725f2cf32af87e85d269abe0cb567" kind="dir"><name>C:/Users/Jeong/git/04/Modules/Flash</name>
+  </compound>
+  <compound refid="dir_100515bb7fd2c5ded6e56437a4b3cb5e" kind="dir"><name>C:/Users/Jeong/git/04/Modules/LEDs</name>
+  </compound>
+  <compound refid="dir_f2541a3b18981391fa76fac5599e978a" kind="dir"><name>C:/Users/Jeong/git/04/Modules</name>
+  </compound>
+  <compound refid="dir_acc654a6d8fe9a08ed7a4b260e8d7ea1" kind="dir"><name>C:/Users/Jeong/git/04/Modules/Packet</name>
+  </compound>
+  <compound refid="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b" kind="dir"><name>C:/Users/Jeong/git/04/source</name>
+  </compound>
+  <compound refid="dir_e29be3af4eb5ece41c8f86fac7939156" kind="dir"><name>C:/Users/Jeong/git/04/Modules/types</name>
+  </compound>
+  <compound refid="dir_f1f05c0192753dad78d76a6c6e8b104c" kind="dir"><name>C:/Users/Jeong/git/04/Modules/UART</name>
+  </compound>
+</doxygenindex>

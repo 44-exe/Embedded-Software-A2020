@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="unionuint32union__t" kind="union" language="C++" prot="public">
+    <compoundname>uint32union_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionuint32union__t_1a02b7aaa4708411c52446dc5528f66c25" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t uint32union_t::l</definition>
+        <argsstring></argsstring>
+        <name>l</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/types/types.h" line="41" column="12" bodyfile="C:/Users/Jeong/git/04/Modules/types/types.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionuint32union__t_1af2e434db784d503f1adf796fe2a5ebdd" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t uint32union_t::Lo</definition>
+        <argsstring></argsstring>
+        <name>Lo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/types/types.h" line="44" column="14" bodyfile="C:/Users/Jeong/git/04/Modules/types/types.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionuint32union__t_1a94656d765a83aeacf2f5a878d2e724d5" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t uint32union_t::Hi</definition>
+        <argsstring></argsstring>
+        <name>Hi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/types/types.h" line="45" column="14" bodyfile="C:/Users/Jeong/git/04/Modules/types/types.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionuint32union__t_1a770385db320f60c0a0eb90559ff619b4" prot="public" static="no" mutable="no">
+        <type>struct uint32union_t::@12</type>
+        <definition>struct uint32union_t::@12  uint32union_t::s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/types/types.h" line="46" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Jeong/git/04/Modules/types/types.h" line="40" column="1" bodyfile="C:/Users/Jeong/git/04/Modules/types/types.h" bodystart="39" bodyend="47"/>
+    <listofallmembers>
+      <member refid="unionuint32union__t_1a94656d765a83aeacf2f5a878d2e724d5" prot="public" virt="non-virtual"><scope>uint32union_t</scope><name>Hi</name></member>
+      <member refid="unionuint32union__t_1a02b7aaa4708411c52446dc5528f66c25" prot="public" virt="non-virtual"><scope>uint32union_t</scope><name>l</name></member>
+      <member refid="unionuint32union__t_1af2e434db784d503f1adf796fe2a5ebdd" prot="public" virt="non-virtual"><scope>uint32union_t</scope><name>Lo</name></member>
+      <member refid="unionuint32union__t_1a770385db320f60c0a0eb90559ff619b4" prot="public" virt="non-virtual"><scope>uint32union_t</scope><name>s</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="group___p_i_t__module" kind="group">
+    <compoundname>PIT_module</compoundname>
+    <title>PIT module documentation</title>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___p_i_t__module_1gacbdd421f2f26b966620a99fcbdd7683a" prot="public" static="yes" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t PITClock</definition>
+        <argsstring></argsstring>
+        <name>PITClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>moduleClk from main </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" line="22" column="17" bodyfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___p_i_t__module_1gafd63fe7865342da1c27094aadf6d9da1" prot="public" static="yes" mutable="no">
+        <type>void(*</type>
+        <definition>void(* UserFunction) (void *)</definition>
+        <argsstring>)(void *)</argsstring>
+        <name>UserFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>user callback function from main </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" line="23" column="8" bodyfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___p_i_t__module_1gab6f06365f378a3ca11134fda825fdc12" prot="public" static="yes" mutable="no">
+        <type>void *</type>
+        <definition>void* UserArguments</definition>
+        <argsstring></argsstring>
+        <name>UserArguments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>user call back argument </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" line="24" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___p_i_t__module_1gae69097a83912a25b357df1046aea9b52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PIT_Init</definition>
+        <argsstring>(const uint32_t moduleClk, void(*userFunction)(void *), void *userArguments)</argsstring>
+        <name>PIT_Init</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>moduleClk</declname>
+        </param>
+        <param>
+          <type>void(*)(void *)</type>
+          <declname>userFunction</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>userArguments</declname>
+        </param>
+        <briefdescription>
+<para>Sets up the PIT before first use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Enables the PIT and freezes the timer when debugging. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>moduleClk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The module clock rate in Hz. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userFunction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a pointer to a user callback function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userArguments</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a pointer to the user arguments to use with the user callback function. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if the PIT was successfully initialized. </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes that moduleClk has a period which can be expressed as an integral number of nanoseconds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" line="27" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" bodystart="27" bodyend="59" declfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.h" declline="30" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_i_t__module_1gae012c6f6b7396828c558c92ad0a27ed5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PIT_Set</definition>
+        <argsstring>(const uint32_t period, const bool restart)</argsstring>
+        <name>PIT_Set</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>period</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>restart</declname>
+        </param>
+        <briefdescription>
+<para>Sets the value of the desired period of the PIT. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>period</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired value of the timer period in nanoseconds. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>restart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TRUE if the PIT is disabled, a new value set, and then enabled. FALSE if the PIT will use the new value after a trigger event. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The function will enable the timer and interrupts for the PIT. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" line="62" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" bodystart="62" bodyend="75" declfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.h" declline="39" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_i_t__module_1gaed902f6158d6681e4b05d078575e4b09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PIT_Enable</definition>
+        <argsstring>(const bool enable)</argsstring>
+        <name>PIT_Enable</name>
+        <param>
+          <type>const bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the PIT. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- TRUE if the PIT is to be enabled, FALSE if the PIT is to be disabled. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" line="78" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" bodystart="78" bodyend="84" declfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.h" declline="45" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_i_t__module_1ga5dfd4bc4a7e7b9e424b84ee0f5a3cd8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PIT0_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>PIT0_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>PIT interrupt request handler clears interrupt and calls user function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" line="90" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" bodystart="90" bodyend="97"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

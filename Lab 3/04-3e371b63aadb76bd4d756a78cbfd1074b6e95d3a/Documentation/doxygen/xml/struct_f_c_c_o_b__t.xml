@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="struct_f_c_c_o_b__t" kind="struct" language="C++" prot="public">
+    <compoundname>FCCOB_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_f_c_c_o_b__t_1a48eb384404041ea7eaab7eaf76ba05ad" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t FCCOB_t::Flash_Command</definition>
+        <argsstring></argsstring>
+        <name>Flash_Command</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" line="38" column="11" bodyfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_c_c_o_b__t_1abe90467223189c9d9209b9bd2493c44a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t FCCOB_t::Flash_AllAddress</definition>
+        <argsstring></argsstring>
+        <name>Flash_AllAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" line="41" column="14" bodyfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_c_c_o_b__t_1a667c9d637e45735e93e8a41792532c83" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t FCCOB_t::Flash_Address[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>Flash_Address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" line="44" column="15" bodyfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_c_c_o_b__t_1a2dc188e3eeabc697e42726e5abc8359f" prot="public" static="no" mutable="no">
+        <type>struct FCCOB_t::@0::@2</type>
+        <definition>struct FCCOB_t::@0::@2 FCCOB_t::s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" line="45" column="6"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_c_c_o_b__t_1a80cd620f2d55a25035e48ef4c8c3cf19" prot="public" static="no" mutable="no">
+        <type>union FCCOB_t::@0</type>
+        <definition>union FCCOB_t::@0 FCCOB_t::Address</definition>
+        <argsstring></argsstring>
+        <name>Address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" line="46" column="10"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_c_c_o_b__t_1ab5abcf4124626b1bdb1975de68bb1d6a" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t FCCOB_t::Flash_AllByte</definition>
+        <argsstring></argsstring>
+        <name>Flash_AllByte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" line="50" column="14" bodyfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_c_c_o_b__t_1ac1881a8bc94a32be0a86fffd215cf45e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t FCCOB_t::Flash_DataByte[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>Flash_DataByte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" line="53" column="15" bodyfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_c_c_o_b__t_1a1af73534087f139c7be0ef9863ed27d3" prot="public" static="no" mutable="no">
+        <type>struct FCCOB_t::@1::@3</type>
+        <definition>struct FCCOB_t::@1::@3 FCCOB_t::s</definition>
+        <argsstring></argsstring>
+        <name>s</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" line="54" column="6"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_c_c_o_b__t_1a4f3116ed42b01cb9b1c43036519078f8" prot="public" static="no" mutable="no">
+        <type>union FCCOB_t::@1</type>
+        <definition>union FCCOB_t::@1 FCCOB_t::Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" line="55" column="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" line="37" column="1" bodyfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" bodystart="36" bodyend="57"/>
+    <listofallmembers>
+      <member refid="struct_f_c_c_o_b__t_1a80cd620f2d55a25035e48ef4c8c3cf19" prot="public" virt="non-virtual"><scope>FCCOB_t</scope><name>Address</name></member>
+      <member refid="struct_f_c_c_o_b__t_1a4f3116ed42b01cb9b1c43036519078f8" prot="public" virt="non-virtual"><scope>FCCOB_t</scope><name>Data</name></member>
+      <member refid="struct_f_c_c_o_b__t_1a667c9d637e45735e93e8a41792532c83" prot="public" virt="non-virtual"><scope>FCCOB_t</scope><name>Flash_Address</name></member>
+      <member refid="struct_f_c_c_o_b__t_1abe90467223189c9d9209b9bd2493c44a" prot="public" virt="non-virtual"><scope>FCCOB_t</scope><name>Flash_AllAddress</name></member>
+      <member refid="struct_f_c_c_o_b__t_1ab5abcf4124626b1bdb1975de68bb1d6a" prot="public" virt="non-virtual"><scope>FCCOB_t</scope><name>Flash_AllByte</name></member>
+      <member refid="struct_f_c_c_o_b__t_1a48eb384404041ea7eaab7eaf76ba05ad" prot="public" virt="non-virtual"><scope>FCCOB_t</scope><name>Flash_Command</name></member>
+      <member refid="struct_f_c_c_o_b__t_1ac1881a8bc94a32be0a86fffd215cf45e" prot="public" virt="non-virtual"><scope>FCCOB_t</scope><name>Flash_DataByte</name></member>
+      <member refid="struct_f_c_c_o_b__t_1a2dc188e3eeabc697e42726e5abc8359f" prot="public" virt="non-virtual"><scope>FCCOB_t</scope><name>s</name></member>
+      <member refid="struct_f_c_c_o_b__t_1a1af73534087f139c7be0ef9863ed27d3" prot="public" virt="non-virtual"><scope>FCCOB_t</scope><name>s</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

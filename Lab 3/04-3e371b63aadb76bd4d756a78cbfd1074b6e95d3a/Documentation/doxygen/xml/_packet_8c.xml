@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_packet_8c" kind="file" language="C++">
+    <compoundname>Packet.c</compoundname>
+    <includes refid="types_8h" local="yes">Types\types.h</includes>
+    <includes refid="packet_8h" local="yes">packet.h</includes>
+    <includes refid="_u_a_r_t_8h" local="yes">UART\UART.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="6">
+        <label>UART\UART.h</label>
+        <link refid="_u_a_r_t_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>packet.h</label>
+        <link refid="packet_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/Packet/Packet.c</label>
+        <link refid="_packet_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Types\types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___packet__module_1ga5916165249c1d4739d21a001d5a4775d" prot="public" static="no">
+        <name>PACKET_NB_BYTES</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" line="23" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___packet__module_1gac74c1cf77ae5807a61baefd6df20201e" prot="public" static="no" mutable="no">
+        <type><ref refid="union_t_packet" kindref="compound">TPacket</ref></type>
+        <definition>TPacket Packet</definition>
+        <argsstring></argsstring>
+        <name>Packet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Packet structure variable </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" line="25" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___packet__module_1ga5faca24c448374dc4656ebc31afcae0b" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t PACKET_ACK_MASK</definition>
+        <argsstring></argsstring>
+        <name>PACKET_ACK_MASK</name>
+        <initializer>= 0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" line="34" column="15" bodyfile="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___packet__module_1gadfd22f81a651814e66ce22aaa55ef17c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Packet_Init</definition>
+        <argsstring>(const uint32_t moduleClk, const uint32_t baudRate)</argsstring>
+        <name>Packet_Init</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>moduleClk</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>baudRate</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the packets by calling the initialization routines of the supporting software modules. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>moduleClk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The module clock rate in Hz. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>baudRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired baud rate in bits/sec. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if the packet module was successfully initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" line="36" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" bodystart="36" bodyend="39" declfile="C:/Users/Jeong/git/04/Modules/Packet/packet.h" declline="78" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___packet__module_1gac58a17928cd5e556e1567b2fde9f88f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Packet_Get</definition>
+        <argsstring>(void)</argsstring>
+        <name>Packet_Get</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Attempts to get a packet from the received data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool - TRUE if a valid packet was received. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" line="41" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" bodystart="41" bodyend="91" declfile="C:/Users/Jeong/git/04/Modules/Packet/packet.h" declline="84" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___packet__module_1ga431a1e1da25a8214a502ec81f88fc3f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Packet_Put</definition>
+        <argsstring>(const uint8_t command, const uint8_t parameter1, const uint8_t parameter2, const uint8_t parameter3)</argsstring>
+        <name>Packet_Put</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>parameter1</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>parameter2</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>parameter3</declname>
+        </param>
+        <briefdescription>
+<para>Builds a packet and places it in the transmit FIFO buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool - TRUE if a valid packet was sent. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" line="94" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" bodystart="94" bodyend="131" declfile="C:/Users/Jeong/git/04/Modules/Packet/packet.h" declline="90" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Routines to implement packet encoding and decoding for the serial port. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This contains the functions for implementing the Simple Serial Communication Protocol.</para>
+<para><simplesect kind="author"><para>Jeong Bin Lee </para>
+</simplesect>
+<simplesect kind="date"><para>2020-04-15 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="17"><highlight class="comment">//<sp/>New<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="types_8h" kindref="compound">Types\types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="packet_8h" kindref="compound">packet.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_u_a_r_t_8h" kindref="compound">UART\UART.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Packet<sp/>structure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACKET_NB_BYTES<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><ref refid="union_t_packet" kindref="compound">TPacket</ref><sp/><ref refid="group___packet__module_1gac74c1cf77ae5807a61baefd6df20201e" kindref="member">Packet</ref>;<sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="comment">//uint8_t<sp/><sp/>Packet_Command,<sp/><sp/><sp/><sp/>/*!&lt;<sp/>The<sp/>packet&apos;s<sp/>command<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>Packet_Parameter1,<sp/>/*!&lt;<sp/>The<sp/>packet&apos;s<sp/>1st<sp/>parameter<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>Packet_Parameter2,<sp/>/*!&lt;<sp/>The<sp/>packet&apos;s<sp/>2nd<sp/>parameter<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>Packet_Parameter3,<sp/>/*!&lt;<sp/>The<sp/>packet&apos;s<sp/>3rd<sp/>parameter<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>Packet_Checksum;<sp/><sp/><sp/>/*!&lt;<sp/>The<sp/>packet&apos;s<sp/>checksum<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Acknowledgement<sp/>bit<sp/>mask</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>PACKET_ACK_MASK<sp/>=<sp/>0x80;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___packet__module_1gadfd22f81a651814e66ce22aaa55ef17c" kindref="member">Packet_Init</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>moduleClk,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>baudRate)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group___u_a_r_t__module_1gac43bbaf247d278867fde8cd412a4f1c3" kindref="member">UART_Init</ref>(moduleClk,<sp/>baudRate);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___packet__module_1gac58a17928cd5e556e1567b2fde9f88f0" kindref="member">Packet_Get</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>uint8_t<sp/>data;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//private<sp/>global<sp/>variable<sp/>to<sp/>keep<sp/>count<sp/>of<sp/>packets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>packetCount<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="group___u_a_r_t__module_1ga03049bcc3bf9af2a75ee77016d3b0d60" kindref="member">UART_InChar</ref>(&amp;data))<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//check<sp/>if<sp/>next<sp/>byte<sp/>is<sp/>available</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(packetCount)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//go<sp/>through<sp/>each<sp/>case<sp/>of<sp/>packets<sp/>based<sp/>on<sp/>number<sp/>of<sp/>existing<sp/>bytes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0:</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Packet_Command<sp/>=<sp/>data;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//store<sp/>the<sp/>first<sp/>byte<sp/>into<sp/>command</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packetCount++;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Packet_Parameter1<sp/>=<sp/>data;<sp/><sp/><sp/></highlight><highlight class="comment">//store<sp/>the<sp/>second<sp/>byte<sp/>into<sp/>Packet1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packetCount++;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Packet_Parameter2<sp/>=<sp/>data;<sp/><sp/><sp/></highlight><highlight class="comment">//store<sp/>the<sp/>third<sp/>byte<sp/>into<sp/>Packet2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packetCount++;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Packet_Parameter3<sp/>=<sp/>data;<sp/><sp/><sp/></highlight><highlight class="comment">//store<sp/>the<sp/>fourth<sp/>byte<sp/>into<sp/>Packet3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packetCount++;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>4:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Packet_Checksum<sp/>=<sp/>data;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//store<sp/>the<sp/>last<sp/>byte<sp/>into<sp/>Checksum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packetCount++;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>5:</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//test<sp/>to<sp/>see<sp/>if<sp/>Checksum<sp/>is<sp/>correct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Packet_Checksum<sp/>==<sp/>(Packet_Command<sp/>^<sp/>Packet_Parameter1<sp/>^<sp/>Packet_Parameter2<sp/>^<sp/>Packet_Parameter3))</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//reset<sp/>packetCount</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packetCount<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//shift<sp/>the<sp/>data<sp/>and<sp/>get<sp/>another<sp/>byte<sp/>into<sp/>Checksum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packetCount<sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Packet_Command<sp/>=<sp/>Packet_Parameter1;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Packet_Parameter1<sp/>=<sp/>Packet_Parameter2;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Packet_Parameter2<sp/>=<sp/>Packet_Parameter3;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Packet_Parameter3<sp/>=<sp/>Packet_Checksum;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___packet__module_1ga431a1e1da25a8214a502ec81f88fc3f1" kindref="member">Packet_Put</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>command,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>parameter1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>parameter2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>parameter3)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>success;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>uint8_t<sp/>checksum;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//EnterCritical();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//transmit<sp/>command</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>success<sp/>=<sp/><ref refid="group___u_a_r_t__module_1gab20ebaeefd1f29d31e098ade31189dda" kindref="member">UART_OutChar</ref>(command);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>ExitCritical();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//EnterCritical();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//transmit<sp/>parameter1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(success)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>success<sp/>&amp;=<sp/><ref refid="group___u_a_r_t__module_1gab20ebaeefd1f29d31e098ade31189dda" kindref="member">UART_OutChar</ref>(parameter1);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//ExitCritical();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//EnterCritical();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//transmit<sp/>parameter2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(success)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>success<sp/>&amp;=<sp/><ref refid="group___u_a_r_t__module_1gab20ebaeefd1f29d31e098ade31189dda" kindref="member">UART_OutChar</ref>(parameter2);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//ExitCritical();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//EnterCritical();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//transmit<sp/>parameter3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(success)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>success<sp/>&amp;=<sp/><ref refid="group___u_a_r_t__module_1gab20ebaeefd1f29d31e098ade31189dda" kindref="member">UART_OutChar</ref>(parameter3);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//ExitCritical();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//EnterCritical();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//build<sp/>and<sp/>transmit<sp/>checksum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(success)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>checksum<sp/>=<sp/>command<sp/>^<sp/>parameter1<sp/>^<sp/>parameter2<sp/>^<sp/>parameter3;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>success<sp/>&amp;=<sp/><ref refid="group___u_a_r_t__module_1gab20ebaeefd1f29d31e098ade31189dda" kindref="member">UART_OutChar</ref>(checksum);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//ExitCritical();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>success;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jeong/git/04/Modules/Packet/Packet.c"/>
+  </compounddef>
+</doxygen>

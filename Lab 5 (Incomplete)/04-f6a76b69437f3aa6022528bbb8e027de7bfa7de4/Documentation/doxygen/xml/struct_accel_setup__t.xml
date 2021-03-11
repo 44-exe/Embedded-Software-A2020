@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="struct_accel_setup__t" kind="struct" language="C++" prot="public">
+    <compoundname>AccelSetup_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_accel_setup__t_1a32de9ceba4dc8a0c785f25797b7dbd46" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* AccelSetup_t::dataReadyCallbackFunction) (void *)</definition>
+        <argsstring>)(void *)</argsstring>
+        <name>dataReadyCallbackFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The user&apos;s data ready callback function. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.h" line="28" column="3" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_accel_setup__t_1aa3890a82b78961d08e1d299ec40cd580" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* AccelSetup_t::dataReadyCallbackArguments</definition>
+        <argsstring></argsstring>
+        <name>dataReadyCallbackArguments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The user&apos;s data ready callback function arguments. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.h" line="29" column="8" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_accel_setup__t_1a4413fafc42cfb2c64c8bd23684ebcf80" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* AccelSetup_t::readCompleteCallbackFunction) (void *)</definition>
+        <argsstring>)(void *)</argsstring>
+        <name>readCompleteCallbackFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The user&apos;s read complete callback function. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.h" line="30" column="3" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_accel_setup__t_1ab92d1dfa467b00fa4d6f782d4a7e755e" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* AccelSetup_t::readCompleteCallbackArguments</definition>
+        <argsstring></argsstring>
+        <name>readCompleteCallbackArguments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The user&apos;s read complete callback function arguments. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.h" line="31" column="8" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.h" line="27" column="1" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.h" bodystart="26" bodyend="32"/>
+    <listofallmembers>
+      <member refid="struct_accel_setup__t_1aa3890a82b78961d08e1d299ec40cd580" prot="public" virt="non-virtual"><scope>AccelSetup_t</scope><name>dataReadyCallbackArguments</name></member>
+      <member refid="struct_accel_setup__t_1a32de9ceba4dc8a0c785f25797b7dbd46" prot="public" virt="non-virtual"><scope>AccelSetup_t</scope><name>dataReadyCallbackFunction</name></member>
+      <member refid="struct_accel_setup__t_1ab92d1dfa467b00fa4d6f782d4a7e755e" prot="public" virt="non-virtual"><scope>AccelSetup_t</scope><name>readCompleteCallbackArguments</name></member>
+      <member refid="struct_accel_setup__t_1a4413fafc42cfb2c64c8bd23684ebcf80" prot="public" virt="non-virtual"><scope>AccelSetup_t</scope><name>readCompleteCallbackFunction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

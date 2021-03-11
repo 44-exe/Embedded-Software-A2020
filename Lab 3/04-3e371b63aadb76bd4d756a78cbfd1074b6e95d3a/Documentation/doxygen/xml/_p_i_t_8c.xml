@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_p_i_t_8c" kind="file" language="C++">
+    <compoundname>PIT.c</compoundname>
+    <includes refid="types_8h" local="yes">Types\types.h</includes>
+    <includes local="yes">device\MK64F12.h</includes>
+    <includes refid="_p_i_t_8h" local="yes">PIT.h</includes>
+    <includes local="yes">drivers\fsl_clock.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/PIT/PIT.c</label>
+        <link refid="_p_i_t_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>PIT.h</label>
+        <link refid="_p_i_t_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Types\types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>drivers\fsl_clock.h</label>
+      </node>
+      <node id="5">
+        <label>device\MK64F12.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___p_i_t__module_1gacbdd421f2f26b966620a99fcbdd7683a" prot="public" static="yes" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t PITClock</definition>
+        <argsstring></argsstring>
+        <name>PITClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>moduleClk from main </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" line="22" column="17" bodyfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___p_i_t__module_1gafd63fe7865342da1c27094aadf6d9da1" prot="public" static="yes" mutable="no">
+        <type>void(*</type>
+        <definition>void(* UserFunction) (void *)</definition>
+        <argsstring>)(void *)</argsstring>
+        <name>UserFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>user callback function from main </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" line="23" column="8" bodyfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___p_i_t__module_1gab6f06365f378a3ca11134fda825fdc12" prot="public" static="yes" mutable="no">
+        <type>void *</type>
+        <definition>void* UserArguments</definition>
+        <argsstring></argsstring>
+        <name>UserArguments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>user call back argument </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" line="24" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___p_i_t__module_1gae69097a83912a25b357df1046aea9b52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PIT_Init</definition>
+        <argsstring>(const uint32_t moduleClk, void(*userFunction)(void *), void *userArguments)</argsstring>
+        <name>PIT_Init</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>moduleClk</declname>
+        </param>
+        <param>
+          <type>void(*)(void *)</type>
+          <declname>userFunction</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>userArguments</declname>
+        </param>
+        <briefdescription>
+<para>Sets up the PIT before first use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Enables the PIT and freezes the timer when debugging. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>moduleClk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The module clock rate in Hz. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userFunction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a pointer to a user callback function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userArguments</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a pointer to the user arguments to use with the user callback function. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if the PIT was successfully initialized. </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes that moduleClk has a period which can be expressed as an integral number of nanoseconds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" line="27" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" bodystart="27" bodyend="59" declfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.h" declline="30" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_i_t__module_1gae012c6f6b7396828c558c92ad0a27ed5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PIT_Set</definition>
+        <argsstring>(const uint32_t period, const bool restart)</argsstring>
+        <name>PIT_Set</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>period</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>restart</declname>
+        </param>
+        <briefdescription>
+<para>Sets the value of the desired period of the PIT. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>period</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired value of the timer period in nanoseconds. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>restart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TRUE if the PIT is disabled, a new value set, and then enabled. FALSE if the PIT will use the new value after a trigger event. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The function will enable the timer and interrupts for the PIT. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" line="62" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" bodystart="62" bodyend="75" declfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.h" declline="39" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_i_t__module_1gaed902f6158d6681e4b05d078575e4b09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PIT_Enable</definition>
+        <argsstring>(const bool enable)</argsstring>
+        <name>PIT_Enable</name>
+        <param>
+          <type>const bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the PIT. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- TRUE if the PIT is to be enabled, FALSE if the PIT is to be disabled. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" line="78" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" bodystart="78" bodyend="84" declfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.h" declline="45" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_i_t__module_1ga5dfd4bc4a7e7b9e424b84ee0f5a3cd8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PIT0_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>PIT0_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>PIT interrupt request handler clears interrupt and calls user function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" line="90" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" bodystart="90" bodyend="97"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Routines for controlling Periodic Interrupt Timer (PIT). </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This contains the functions for operating the periodic interrupt timer (PIT).</para>
+<para><simplesect kind="author"><para>Jeong Bin Lee </para>
+</simplesect>
+<simplesect kind="date"><para>2020-05-04 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="16"><highlight class="comment">//<sp/>new<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="types_8h" kindref="compound">Types\types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;device\MK64F12.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_p_i_t_8h" kindref="compound">PIT.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;drivers\fsl_clock.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/>PITClock;<sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="keyword">static</highlight><highlight class="normal"><sp/>void<sp/>(*UserFunction)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*);<sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*UserArguments;<sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___p_i_t__module_1gae69097a83912a25b357df1046aea9b52" kindref="member">PIT_Init</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>moduleClk,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*userFunction)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*),<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>userArguments)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(moduleClk<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//enable<sp/>PIT<sp/>clock</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>CLOCK_EnableClock(kCLOCK_Pit0);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//SIM-&gt;SCGC6<sp/>|=<sp/>SIM_SCGC6_PIT_MASK;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//declare<sp/>as<sp/>global<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>PITClock<sp/>=<sp/>moduleClk;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>UserFunction<sp/>=<sp/>userFunction;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>UserArguments<sp/>=<sp/>userArguments;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//PIT<sp/>module<sp/>is<sp/>activated<sp/>by<sp/>writing<sp/>0<sp/>to<sp/>MDIS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>PIT-&gt;MCR<sp/>&amp;=<sp/>~PIT_MCR_MDIS_MASK;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//FRZ<sp/>stops<sp/>PIT<sp/>when<sp/>debugging</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>PIT-&gt;MCR<sp/>|=<sp/>PIT_MCR_FRZ_MASK;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//restart<sp/>PIT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><ref refid="group___p_i_t__module_1gae012c6f6b7396828c558c92ad0a27ed5" kindref="member">PIT_Set</ref>(500000000,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//set<sp/>nested<sp/>vectored<sp/>interrupt<sp/>controllers<sp/>for<sp/>PIT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//see<sp/>p.75<sp/>in<sp/>K64<sp/>manual</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//PIT<sp/>channel<sp/>0,<sp/>Vector<sp/>=<sp/>64,<sp/>IRQ<sp/>=<sp/>48,<sp/>non-IPR<sp/>=<sp/>1,<sp/>IPR<sp/>=<sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>__NVIC_ClearPendingIRQ(PIT0_IRQn);<sp/></highlight><highlight class="comment">//first<sp/>clear<sp/>any<sp/>interrupts<sp/>for<sp/>PIT<sp/>channel<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>__NVIC_EnableIRQ(PIT0_IRQn);<sp/></highlight><highlight class="comment">//then<sp/>enable<sp/>nested<sp/>vectored<sp/>interrupt<sp/>control<sp/>for<sp/>PIT<sp/>channel<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___p_i_t__module_1gae012c6f6b7396828c558c92ad0a27ed5" kindref="member">PIT_Set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>period,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>restart)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//LDVAL<sp/>trigger<sp/>=<sp/>(period<sp/>/<sp/>clock<sp/>period)<sp/>-<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//LDVAL<sp/>trigger<sp/>=<sp/>(period<sp/>*<sp/>clock<sp/>frequency)<sp/>-<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>uint32_t<sp/>timer<sp/>=<sp/>((period/1e9)<sp/>*<sp/>PITClock)<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(restart)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___p_i_t__module_1gaed902f6158d6681e4b05d078575e4b09" kindref="member">PIT_Enable</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//set<sp/>timer<sp/>value<sp/>to<sp/>0x1C9C37F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>PIT-&gt;CHANNEL[0].LDVAL<sp/>=<sp/>timer;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><ref refid="group___p_i_t__module_1gaed902f6158d6681e4b05d078575e4b09" kindref="member">PIT_Enable</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___p_i_t__module_1gaed902f6158d6681e4b05d078575e4b09" kindref="member">PIT_Enable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(enable)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>PIT-&gt;CHANNEL[0].TCTRL<sp/>|=<sp/>(PIT_TCTRL_TIE_MASK<sp/>|<sp/>PIT_TCTRL_TEN_MASK);<sp/></highlight><highlight class="comment">//enable<sp/>timer<sp/>and<sp/>timer<sp/>interrupt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>PIT-&gt;CHANNEL[0].TCTRL<sp/>&amp;=<sp/>~(PIT_TCTRL_TIE_MASK<sp/>|<sp/>PIT_TCTRL_TEN_MASK);<sp/></highlight><highlight class="comment">//disable<sp/>timer<sp/>and<sp/>timer<sp/>interrupt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___p_i_t__module_1ga5dfd4bc4a7e7b9e424b84ee0f5a3cd8a" kindref="member">PIT0_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//write<sp/>1<sp/>to<sp/>clear<sp/>interrupt<sp/>trigger</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>PIT-&gt;CHANNEL[0].TFLG<sp/>|=<sp/>PIT_TFLG_TIF_MASK;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(UserFunction)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>(*UserFunction)(UserArguments);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jeong/git/04/Modules/PIT/PIT.c"/>
+  </compounddef>
+</doxygen>

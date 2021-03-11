@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="accel_8h" kind="file" language="C++">
+    <compoundname>accel.h</compoundname>
+    <includes refid="types_8h" local="yes">Types\types.h</includes>
+    <includes refid="accel___f_x_o_8h" local="yes">Accel\accel_FXO.h</includes>
+    <includedby refid="main_8c" local="yes">C:/Users/Jeong/git/04/source/main.c</includedby>
+    <includedby refid="accel_8c" local="yes">C:/Users/Jeong/git/04/Modules/Accel/accel.c</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>Accel\accel_FXO.h</label>
+        <link refid="accel___f_x_o_8h"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/Accel/accel.h</label>
+        <link refid="accel_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Types\types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>C:/Users/Jeong/git/04/Modules/Accel/accel.c</label>
+        <link refid="accel_8c"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/Accel/accel.h</label>
+        <link refid="accel_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/Jeong/git/04/source/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_accel_setup__t" prot="public">AccelSetup_t</innerclass>
+    <innerclass refid="union_accel_data__t" prot="public">AccelData_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="accel_8h_1a4be63d858a7e8f311d454cdb2bec5dfe" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AccelMode_t</name>
+        <enumvalue id="accel_8h_1a4be63d858a7e8f311d454cdb2bec5dfeacae6c04c95dd0f572b0dcddc32c4fe56" prot="public">
+          <name>ACCEL_MODE_POLL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="accel_8h_1a4be63d858a7e8f311d454cdb2bec5dfea727061e3008cb0ad53b4fb6c8b7771a7" prot="public">
+          <name>ACCEL_MODE_INT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.h" line="21" column="1" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.h" bodystart="20" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__accel__module_1ga66554c667936238ffe45c91e60545998" prot="public" static="no" mutable="no">
+        <type>AccelMode_t</type>
+        <definition>AccelMode_t AccelMode</definition>
+        <argsstring></argsstring>
+        <name>AccelMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mode for the accelerometer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.h" line="48" column="20" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="28" bodyend="-1" declfile="C:/Users/Jeong/git/04/Modules/Accel/accel.h" declline="48" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__accel__module_1gad741befccec501382f5226a3146861e2" prot="public" static="no" mutable="no">
+        <type><ref refid="union_accel_data__t" kindref="compound">AccelData_t</ref></type>
+        <definition>AccelData_t AccelData</definition>
+        <argsstring></argsstring>
+        <name>AccelData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data for accelerometer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.h" line="50" column="20" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="30" bodyend="-1" declfile="C:/Users/Jeong/git/04/Modules/Accel/accel.h" declline="50" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__accel__module_1gaa920b152f9edd5264c246995c007bc3f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_accel_setup__t" kindref="compound">AccelSetup_t</ref></type>
+        <definition>AccelSetup_t Accel_Setup</definition>
+        <argsstring></argsstring>
+        <name>Accel_Setup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>stores Accel structure data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.h" line="52" column="21" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="32" bodyend="-1" declfile="C:/Users/Jeong/git/04/Modules/Accel/accel.h" declline="52" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel_8h_1ac7a20ad02c540037946b7a8e6619154a" prot="public" static="no" mutable="no">
+        <type><ref refid="union_accel_data__t" kindref="compound">AccelData_t</ref></type>
+        <definition>AccelData_t AccelIntData</definition>
+        <argsstring></argsstring>
+        <name>AccelIntData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.h" line="54" column="20" declfile="C:/Users/Jeong/git/04/Modules/Accel/accel.h" declline="54" declcolumn="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__accel__module_1ga23d298c5c59e0867f73a0560fe28bb16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Accel_Init</definition>
+        <argsstring>(const uint32_t moduleClk, const AccelSetup_t *const accelSetup)</argsstring>
+        <name>Accel_Init</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>moduleClk</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_accel_setup__t" kindref="compound">AccelSetup_t</ref> *const</type>
+          <declname>accelSetup</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the accelerometer by calling the initialization routines of the supporting software modules. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>moduleClk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the module clock rate in Hz. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>accelSetup</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a pointer to an accelerometer setup structure. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - true if the accelerometer module was successfully initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.h" line="62" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="71" bodyend="136" declfile="C:/Users/Jeong/git/04/Modules/Accel/accel.h" declline="62" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__accel__module_1ga8cc8e053f2474e24cb761f1de0f769d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Accel_ReadXYZ</definition>
+        <argsstring>(uint8_t data[3])</argsstring>
+        <name>Accel_ReadXYZ</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+          <array>[3]</array>
+        </param>
+        <briefdescription>
+<para>Reads X, Y and Z accelerations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is an array of 3 bytes where the X, Y and Z data are stored. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.h" line="68" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="139" bodyend="146" declfile="C:/Users/Jeong/git/04/Modules/Accel/accel.h" declline="68" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__accel__module_1gabdb9bb9ab0f994735b1f6adcd12a39a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Accel_SetMode</definition>
+        <argsstring>(const AccelMode_t mode)</argsstring>
+        <name>Accel_SetMode</name>
+        <param>
+          <type>const AccelMode_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Set the mode of the accelerometer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies either polled or interrupt driven operation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.h" line="73" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="149" bodyend="176" declfile="C:/Users/Jeong/git/04/Modules/Accel/accel.h" declline="73" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>HAL for the accelerometer. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This contains the functions for interfacing to the FXOS8700CQ accelerometer.</para>
+<para><simplesect kind="author"><para>PMcL </para>
+</simplesect>
+<simplesect kind="date"><para>2020-03-04 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>ACCEL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACCEL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>New<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="types_8h" kindref="compound">Types\types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Accelerometer<sp/>registers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="accel___f_x_o_8h" kindref="compound">Accel\accel_FXO.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>ACCEL_MODE_POLL,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>ACCEL_MODE_INT</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}<sp/>AccelMode_t;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="struct_accel_setup__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28" refid="struct_accel_setup__t_1a32de9ceba4dc8a0c785f25797b7dbd46" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/>(*dataReadyCallbackFunction)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*);<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29" refid="struct_accel_setup__t_1aa3890a82b78961d08e1d299ec40cd580" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="struct_accel_setup__t_1aa3890a82b78961d08e1d299ec40cd580" kindref="member">dataReadyCallbackArguments</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30" refid="struct_accel_setup__t_1a4413fafc42cfb2c64c8bd23684ebcf80" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/>(*readCompleteCallbackFunction)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*);<sp/></highlight></codeline>
+<codeline lineno="31" refid="struct_accel_setup__t_1ab92d1dfa467b00fa4d6f782d4a7e755e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="struct_accel_setup__t_1ab92d1dfa467b00fa4d6f782d4a7e755e" kindref="member">readCompleteCallbackArguments</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}<sp/><ref refid="struct_accel_setup__t" kindref="compound">AccelSetup_t</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(push)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="union_accel_data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39" refid="union_accel_data__t_1a95f21c2d654a80ac47ff56059e77b356" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/>bytes[3];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42" refid="union_accel_data__t_1ac22aeaad3c2e3f2b46cbe525b0074a12" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>x,<sp/>y,<sp/><ref refid="union_accel_data__t_1ac22aeaad3c2e3f2b46cbe525b0074a12" kindref="member">z</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>}<sp/>axes;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}<sp/><ref refid="union_accel_data__t" kindref="compound">AccelData_t</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>pack(pop)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>AccelMode_t<sp/><ref refid="group__accel__module_1ga66554c667936238ffe45c91e60545998" kindref="member">AccelMode</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="union_accel_data__t" kindref="compound">AccelData_t</ref><sp/><ref refid="group__accel__module_1gad741befccec501382f5226a3146861e2" kindref="member">AccelData</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct_accel_setup__t" kindref="compound">AccelSetup_t</ref><sp/><ref refid="group__accel__module_1gaa920b152f9edd5264c246995c007bc3f" kindref="member">Accel_Setup</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="union_accel_data__t" kindref="compound">AccelData_t</ref><sp/>AccelIntData;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__accel__module_1ga23d298c5c59e0867f73a0560fe28bb16" kindref="member">Accel_Init</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>moduleClk,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_accel_setup__t" kindref="compound">AccelSetup_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>accelSetup);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__accel__module_1ga8cc8e053f2474e24cb761f1de0f769d8" kindref="member">Accel_ReadXYZ</ref>(uint8_t<sp/>data[3]);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__accel__module_1gabdb9bb9ab0f994735b1f6adcd12a39a3" kindref="member">Accel_SetMode</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>AccelMode_t<sp/>mode);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.h"/>
+  </compounddef>
+</doxygen>

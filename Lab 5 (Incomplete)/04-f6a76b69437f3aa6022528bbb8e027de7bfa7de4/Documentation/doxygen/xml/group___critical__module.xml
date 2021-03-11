@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="group___critical__module" kind="group">
+    <compoundname>Critical_module</compoundname>
+    <title>Critical module documentation</title>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___critical__module_1ga326c16dd0db38f80ec48c7727d764481" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>volatile uint8_t SR_reg</definition>
+        <argsstring></argsstring>
+        <name>SR_reg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Critical/critical.c" line="21" column="18" bodyfile="C:/Users/Jeong/git/04/Modules/Critical/critical.c" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___critical__module_1ga08ee8b0f642aeef5bbbce3bb4ec1bb28" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>volatile uint8_t SR_lock</definition>
+        <argsstring></argsstring>
+        <name>SR_lock</name>
+        <initializer>= 0x00U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Critical/critical.c" line="22" column="18" bodyfile="C:/Users/Jeong/git/04/Modules/Critical/critical.c" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___critical__module_1ga326c16dd0db38f80ec48c7727d764481" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>volatile uint8_t SR_reg</definition>
+        <argsstring></argsstring>
+        <name>SR_reg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Critical/critical.h" line="21" column="25" bodyfile="C:/Users/Jeong/git/04/Modules/Critical/critical.c" bodystart="21" bodyend="-1" declfile="C:/Users/Jeong/git/04/Modules/Critical/critical.h" declline="21" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___critical__module_1ga08ee8b0f642aeef5bbbce3bb4ec1bb28" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>volatile uint8_t SR_lock</definition>
+        <argsstring></argsstring>
+        <name>SR_lock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Critical/critical.h" line="22" column="25" bodyfile="C:/Users/Jeong/git/04/Modules/Critical/critical.c" bodystart="22" bodyend="-1" declfile="C:/Users/Jeong/git/04/Modules/Critical/critical.h" declline="22" declcolumn="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___critical__module_1gaa9e431dfeb614cd9ed02873ae7ab3811" prot="public" static="no">
+        <name>EnterCritical</name>
+        <param></param>
+        <initializer>do {\
+  uint8_t SR_reg_local;\
+   __asm ( \
+     &quot;MRS R0, FAULTMASK\n\t&quot; \
+     &quot;CPSID f\n\t&quot;            \
+     &quot;STRB R0, %[output]&quot;  \
+     : [output] &quot;=m&quot; (SR_reg_local)\
+     :: &quot;r0&quot;);\
+   if (++SR_lock == 1u) {\
+     SR_reg = SR_reg_local;\
+   }\
+ } while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Critical/critical.h" line="25" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Critical/critical.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___critical__module_1gae8fae71710d5ae72f8839a947cb1f468" prot="public" static="no">
+        <name>ExitCritical</name>
+        <param></param>
+        <initializer>do {\
+   if (--SR_lock == 0u) { \
+     __asm (                 \
+       &quot;LDRB R0, %[input]\n\t&quot;\
+       &quot;MSR FAULTMASK, R0;\n\t&quot; \
+       ::[input] &quot;m&quot; (SR_reg)  \
+       : &quot;r0&quot;);                \
+   }\
+ } while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Critical/critical.h" line="41" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Critical/critical.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

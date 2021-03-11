@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="group___packet__module" kind="group">
+    <compoundname>Packet_module</compoundname>
+    <title>Packet module documentation</title>
+    <innerclass refid="union_t_packet" prot="public">TPacket</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___packet__module_1gac74c1cf77ae5807a61baefd6df20201e" prot="public" static="no" mutable="no">
+        <type><ref refid="union_t_packet" kindref="compound">TPacket</ref></type>
+        <definition>TPacket Packet</definition>
+        <argsstring></argsstring>
+        <name>Packet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Packet structure variable </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" line="26" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___packet__module_1ga5faca24c448374dc4656ebc31afcae0b" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t PACKET_ACK_MASK</definition>
+        <argsstring></argsstring>
+        <name>PACKET_ACK_MASK</name>
+        <initializer>= 0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" line="35" column="15" bodyfile="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___packet__module_1gac74c1cf77ae5807a61baefd6df20201e" prot="public" static="no" mutable="no">
+        <type><ref refid="union_t_packet" kindref="compound">TPacket</ref></type>
+        <definition>TPacket Packet</definition>
+        <argsstring></argsstring>
+        <name>Packet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Packet structure variable </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Packet/packet.h" line="67" column="16" bodyfile="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" bodystart="26" bodyend="-1" declfile="C:/Users/Jeong/git/04/Modules/Packet/packet.h" declline="67" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___packet__module_1ga5faca24c448374dc4656ebc31afcae0b" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t PACKET_ACK_MASK</definition>
+        <argsstring></argsstring>
+        <name>PACKET_ACK_MASK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Packet/packet.h" line="70" column="22" bodyfile="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" bodystart="35" bodyend="-1" declfile="C:/Users/Jeong/git/04/Modules/Packet/packet.h" declline="70" declcolumn="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___packet__module_1gadfd22f81a651814e66ce22aaa55ef17c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Packet_Init</definition>
+        <argsstring>(const uint32_t moduleClk, const uint32_t baudRate)</argsstring>
+        <name>Packet_Init</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>moduleClk</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>baudRate</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the packets by calling the initialization routines of the supporting software modules. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>moduleClk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The module clock rate in Hz. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>baudRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired baud rate in bits/sec. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if the packet module was successfully initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" line="37" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" bodystart="37" bodyend="40" declfile="C:/Users/Jeong/git/04/Modules/Packet/packet.h" declline="78" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___packet__module_1gac58a17928cd5e556e1567b2fde9f88f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Packet_Get</definition>
+        <argsstring>(void)</argsstring>
+        <name>Packet_Get</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Attempts to get a packet from the received data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool - TRUE if a valid packet was received. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" line="42" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" bodystart="42" bodyend="92" declfile="C:/Users/Jeong/git/04/Modules/Packet/packet.h" declline="84" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___packet__module_1ga431a1e1da25a8214a502ec81f88fc3f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Packet_Put</definition>
+        <argsstring>(const uint8_t command, const uint8_t parameter1, const uint8_t parameter2, const uint8_t parameter3)</argsstring>
+        <name>Packet_Put</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>parameter1</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>parameter2</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>parameter3</declname>
+        </param>
+        <briefdescription>
+<para>Builds a packet and places it in the transmit FIFO buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool - TRUE if a valid packet was sent. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" line="95" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" bodystart="95" bodyend="125" declfile="C:/Users/Jeong/git/04/Modules/Packet/packet.h" declline="90" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___packet__module_1ga5916165249c1d4739d21a001d5a4775d" prot="public" static="no">
+        <name>PACKET_NB_BYTES</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" line="24" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Packet/Packet.c" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___packet__module_1ga5916165249c1d4739d21a001d5a4775d" prot="public" static="no">
+        <name>PACKET_NB_BYTES</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Packet/packet.h" line="23" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Packet/packet.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___packet__module_1ga0a6b54bd6327268c60b131046279dc73" prot="public" static="no">
+        <name>Packet_Command</name>
+        <initializer>Packet.packetStruct.command</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Packet/packet.h" line="59" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Packet/packet.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___packet__module_1gac57a9c4b28d49a596ca5fa943e40b9af" prot="public" static="no">
+        <name>Packet_Parameter1</name>
+        <initializer>Packet.packetStruct.parameters.separate.parameter1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Packet/packet.h" line="60" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Packet/packet.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___packet__module_1ga45a05df635f3e5b1395d008f1901a4d1" prot="public" static="no">
+        <name>Packet_Parameter2</name>
+        <initializer>Packet.packetStruct.parameters.separate.parameter2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Packet/packet.h" line="61" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Packet/packet.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___packet__module_1ga625e727e1e36680f574a360bc3747695" prot="public" static="no">
+        <name>Packet_Parameter3</name>
+        <initializer>Packet.packetStruct.parameters.separate.parameter3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Packet/packet.h" line="62" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Packet/packet.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___packet__module_1ga263d9441afcb8d453f9d25e637d34907" prot="public" static="no">
+        <name>Packet_Parameter12</name>
+        <initializer>Packet.packetStruct.parameters.combined12.parameter12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Packet/packet.h" line="63" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Packet/packet.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___packet__module_1ga59d544f3e4a53730d58061ec7203f7ed" prot="public" static="no">
+        <name>Packet_Parameter23</name>
+        <initializer>Packet.packetStruct.parameters.combined23.parameter23</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Packet/packet.h" line="64" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Packet/packet.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___packet__module_1gade7afcb767f4375a5728e1804376bd1b" prot="public" static="no">
+        <name>Packet_Checksum</name>
+        <initializer>Packet.packetStruct.checksum</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Packet/packet.h" line="65" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Packet/packet.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

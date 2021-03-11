@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_r_t_c_8h" kind="file" language="C++">
+    <compoundname>RTC.h</compoundname>
+    <includes refid="types_8h" local="yes">Types\types.h</includes>
+    <includedby refid="main_8c" local="yes">C:/Users/Jeong/git/04/source/main.c</includedby>
+    <includedby refid="_r_t_c_8c" local="yes">C:/Users/Jeong/git/04/Modules/RTC/RTC.c</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/RTC/RTC.h</label>
+        <link refid="_r_t_c_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Types\types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>C:/Users/Jeong/git/04/Modules/RTC/RTC.c</label>
+        <link refid="_r_t_c_8c"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/RTC/RTC.h</label>
+        <link refid="_r_t_c_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/Jeong/git/04/source/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___r_t_c__module_1ga1eff20f412d72f94182b7fca0b3b0925" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RTC_Init</definition>
+        <argsstring>(void(*userFunction)(void *), void *userArguments)</argsstring>
+        <name>RTC_Init</name>
+        <param>
+          <type>void(*)(void *)</type>
+          <declname>userFunction</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>userArguments</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the RTC before first use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets up the control register for the RTC and locks it. Enables the RTC and sets an interrupt every second. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>userFunction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a pointer to a user callback function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userArguments</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a pointer to the user arguments to use with the user callback function. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if the RTC was successfully initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/RTC/RTC.c" line="27" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/RTC/RTC.c" bodystart="27" bodyend="66" declfile="C:/Users/Jeong/git/04/Modules/RTC/RTC.h" declline="30" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_t_c__module_1gacbe916e4fad6bfc2ffcde604fa6afb52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_Set</definition>
+        <argsstring>(const uint8_t hours, const uint8_t minutes, const uint8_t seconds)</argsstring>
+        <name>RTC_Set</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>hours</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>minutes</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>seconds</declname>
+        </param>
+        <briefdescription>
+<para>Sets the value of the real time clock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hours</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired value of the real time clock hours (0-23). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minutes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired value of the real time clock minutes (0-59). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired value of the real time clock seconds (0-59). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Assumes that the RTC module has been initialized and all input parameters are in range. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/RTC/RTC.c" line="69" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/RTC/RTC.c" bodystart="69" bodyend="74" declfile="C:/Users/Jeong/git/04/Modules/RTC/RTC.h" declline="39" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_t_c__module_1ga46e1f15e3b27e2de58d7f213a3bc865d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_Get</definition>
+        <argsstring>(uint8_t *const hours, uint8_t *const minutes, uint8_t *const seconds)</argsstring>
+        <name>RTC_Get</name>
+        <param>
+          <type>uint8_t *const</type>
+          <declname>hours</declname>
+        </param>
+        <param>
+          <type>uint8_t *const</type>
+          <declname>minutes</declname>
+        </param>
+        <param>
+          <type>uint8_t *const</type>
+          <declname>seconds</declname>
+        </param>
+        <briefdescription>
+<para>Gets the value of the real time clock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hours</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address of a variable to store the real time clock hours. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minutes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address of a variable to store the real time clock minutes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address of a variable to store the real time clock seconds. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Assumes that the RTC module has been initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/RTC/RTC.c" line="77" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/RTC/RTC.c" bodystart="77" bodyend="97" declfile="C:/Users/Jeong/git/04/Modules/RTC/RTC.h" declline="48" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Routines for controlling the Real Time Clock (RTC). </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This contains the functions for operating the real time clock (RTC).</para>
+<para><simplesect kind="author"><para>PMcL </para>
+</simplesect>
+<simplesect kind="date"><para>2015-08-24 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="16"><highlight class="preprocessor">#ifndef<sp/>RTC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RTC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>new<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="types_8h" kindref="compound">Types\types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___r_t_c__module_1ga1eff20f412d72f94182b7fca0b3b0925" kindref="member">RTC_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*userFunction)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*),<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>userArguments);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___r_t_c__module_1gacbe916e4fad6bfc2ffcde604fa6afb52" kindref="member">RTC_Set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>hours,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>minutes,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>seconds);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___r_t_c__module_1ga46e1f15e3b27e2de58d7f213a3bc865d" kindref="member">RTC_Get</ref>(uint8_t*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>hours,<sp/>uint8_t*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>minutes,<sp/>uint8_t*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>seconds);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jeong/git/04/Modules/RTC/RTC.h"/>
+  </compounddef>
+</doxygen>

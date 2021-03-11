@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="group___f_i_f_o__module" kind="group">
+    <compoundname>FIFO_module</compoundname>
+    <title>FIFO module documentation</title>
+    <innerclass refid="struct_t_f_i_f_o" prot="public">TFIFO</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___f_i_f_o__module_1ga78695bd259760403dac1e36bf8ccb234" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FIFO_Init</definition>
+        <argsstring>(TFIFO *const FIFO)</argsstring>
+        <name>FIFO_Init</name>
+        <param>
+          <type><ref refid="struct_t_f_i_f_o" kindref="compound">TFIFO</ref> *const</type>
+          <declname>FIFO</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the FIFO before first use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FIFO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the FIFO that needs initializing. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if the FIFO was successfully initialised </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FIFO/FIFO.c" line="21" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/FIFO/FIFO.c" bodystart="21" bodyend="32" declfile="C:/Users/Jeong/git/04/Modules/FIFO/FIFO.h" declline="41" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_i_f_o__module_1gace64ba4e6bd943f990a294693156cc3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FIFO_Put</definition>
+        <argsstring>(TFIFO *const FIFO, const uint8_t data)</argsstring>
+        <name>FIFO_Put</name>
+        <param>
+          <type><ref refid="struct_t_f_i_f_o" kindref="compound">TFIFO</ref> *const</type>
+          <declname>FIFO</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Put one character into the FIFO. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FIFO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a FIFO struct where data is to be stored. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A byte of data to store in the FIFO buffer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if data is successfully stored in the FIFO. </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes that FIFO_Init has been called. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FIFO/FIFO.c" line="34" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/FIFO/FIFO.c" bodystart="34" bodyend="48" declfile="C:/Users/Jeong/git/04/Modules/FIFO/FIFO.h" declline="50" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_i_f_o__module_1ga6407e3daf24a826a7f17d3e48865e89a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FIFO_Get</definition>
+        <argsstring>(TFIFO *const FIFO, uint8_t *const dataPtr)</argsstring>
+        <name>FIFO_Get</name>
+        <param>
+          <type><ref refid="struct_t_f_i_f_o" kindref="compound">TFIFO</ref> *const</type>
+          <declname>FIFO</declname>
+        </param>
+        <param>
+          <type>uint8_t *const</type>
+          <declname>dataPtr</declname>
+        </param>
+        <briefdescription>
+<para>Get one character from the FIFO. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FIFO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a FIFO struct with data to be retrieved. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dataPtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to a memory location to place the retrieved byte. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if data is successfully retrieved from the FIFO. </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes that FIFO_Init has been called. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FIFO/FIFO.c" line="50" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/FIFO/FIFO.c" bodystart="50" bodyend="64" declfile="C:/Users/Jeong/git/04/Modules/FIFO/FIFO.h" declline="60" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_i_f_o__module_1ga6092455278a1ac67204e0dbe08f9d13f" prot="public" static="no">
+        <name>FIFO_SIZE</name>
+        <initializer>256</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FIFO/FIFO.h" line="23" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/FIFO/FIFO.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

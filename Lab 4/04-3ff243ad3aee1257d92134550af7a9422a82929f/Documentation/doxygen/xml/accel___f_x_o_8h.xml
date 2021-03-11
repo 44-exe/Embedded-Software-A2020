@@ -1,0 +1,1532 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="accel___f_x_o_8h" kind="file" language="C++">
+    <compoundname>accel_FXO.h</compoundname>
+    <includedby refid="accel_8h" local="yes">C:/Users/Jeong/git/04/Modules/Accel/accel.h</includedby>
+    <includedby refid="accel_8c" local="yes">C:/Users/Jeong/git/04/Modules/Accel/accel.c</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h</label>
+        <link refid="accel___f_x_o_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/Jeong/git/04/Modules/Accel/accel.c</label>
+        <link refid="accel_8c"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/Jeong/git/04/Modules/Accel/accel.h</label>
+        <link refid="accel_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/Jeong/git/04/source/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="accel___f_x_o_8h_1a1bc789dd23d29046c0f3ca271c90de46" prot="public" static="no">
+        <name>ADDRESS_OUT_X_MSB</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="13" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1ac8e459a68b69415ef270a53cdcccf6e2" prot="public" static="no">
+        <name>ADDRESS_INT_SOURCE</name>
+        <initializer>0x0C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="15" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a06206757c9548bd8bfe8a318ba4fea62" prot="public" static="no">
+        <name>INT_SOURCE</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a96f44d20f1dbf1c8785a7bc99a46164c" kindref="member">INT_SOURCE_Union.byte</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="33" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a4aa8383d698a71fdde7a65d341a7fb22" prot="public" static="no">
+        <name>INT_SOURCE_SRC_DRDY</name>
+        <initializer><ref refid="accel___f_x_o_8h_1ac39436b463ef99cb345056424d3534ae" kindref="member">INT_SOURCE_Union.bits.SRC_DRDY</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="34" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1ac0f1575f51426d9f4688b9f8b5a55c28" prot="public" static="no">
+        <name>INT_SOURCE_SRC_A_VECM</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a56932001c517c2a713c22daa17d8be2c" kindref="member">INT_SOURCE_Union.bits.SRC_A_VECM</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="35" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a1712c6efcb6cef5c4ac52f92c9fe17c9" prot="public" static="no">
+        <name>INT_SOURCE_SRC_FF_MT</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a77f29426c05f9cb1462324f32c4ed4ae" kindref="member">INT_SOURCE_Union.bits.SRC_FF_MT</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="36" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a8068521ad5a318a5a8503345fdc3ec59" prot="public" static="no">
+        <name>INT_SOURCE_SRC_PULSE</name>
+        <initializer><ref refid="accel___f_x_o_8h_1aee3a9487c1e1ad2ec18019bb310966f5" kindref="member">INT_SOURCE_Union.bits.SRC_PULSE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="37" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1abaf7a35d9d86244bb5fe74b6e70acd42" prot="public" static="no">
+        <name>INT_SOURCE_SRC_LNDPRT</name>
+        <initializer><ref refid="accel___f_x_o_8h_1af8b052367f8eb2c4989475c07cbd75f1" kindref="member">INT_SOURCE_Union.bits.SRC_LNDPRT</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="38" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1ac19c5e885d22ca2501b860a12dd73d8a" prot="public" static="no">
+        <name>INT_SOURCE_SRC_TRANS</name>
+        <initializer><ref refid="accel___f_x_o_8h_1ae0b2f75a4b308f31740c4a1474249d74" kindref="member">INT_SOURCE_Union.bits.SRC_TRANS</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="39" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a41ab092f64a12bbfe3919936e495589d" prot="public" static="no">
+        <name>INT_SOURCE_SRC_FIFO</name>
+        <initializer><ref refid="accel___f_x_o_8h_1ac35eeae0162158b672b9b7475fe5405a" kindref="member">INT_SOURCE_Union.bits.SRC_FIFO</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="40" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a8351be89a7b633d5307a31a54880b3ef" prot="public" static="no">
+        <name>INT_SOURCE_SRC_ASLP</name>
+        <initializer><ref refid="accel___f_x_o_8h_1acfe1ff99f19cd50c2a089e5313e0db18" kindref="member">INT_SOURCE_Union.bits.SRC_ASLP</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="41" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1af03b4245408d0d4bee35819549cc11de" prot="public" static="no">
+        <name>ADDRESS_WHO_AM_I</name>
+        <initializer>0x0D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="43" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a596d558f36a2924d990dcae16117a5cc" prot="public" static="no">
+        <name>ADDRESS_CTRL_REG1</name>
+        <initializer>0x2A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="45" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1abd83ea49367ca7850ffc9091890aa46b" prot="public" static="no">
+        <name>CTRL_REG1</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a96f44d20f1dbf1c8785a7bc99a46164c" kindref="member">CTRL_REG1_Union.byte</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="80" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a58a35d4098c40f651108bad4f42606be" prot="public" static="no">
+        <name>CTRL_REG1_ACTIVE</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a9c114f16b9edcd397845a7fe847d2043" kindref="member">CTRL_REG1_Union.bits.ACTIVE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="81" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a90b65e7eecb07db7ee83987093c56a7f" prot="public" static="no">
+        <name>CTRL_REG1_F_READ</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a176e6b897e703d742c47a3fdf1b92eb2" kindref="member">CTRL_REG1_Union.bits.F_READ</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="82" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a8be6ba1f1fe4311a05d462f730b7dbdd" prot="public" static="no">
+        <name>CTRL_REG1_LNOISE</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a5e85ae95bebf0d48ee679b7b1cf20d5b" kindref="member">CTRL_REG1_Union.bits.LNOISE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="83" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1aed6eca0a6b7cb800d7de4400a52cf556" prot="public" static="no">
+        <name>CTRL_REG1_DR</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a2c3e455107759b4d70b168e43fea4219" kindref="member">CTRL_REG1_Union.bits.DR</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="84" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a7245fe0e235bbe17a78655e0344dfd37" prot="public" static="no">
+        <name>CTRL_REG1_ASLP_RATE</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a15d72faada7955cc863ee2454e499b1b" kindref="member">CTRL_REG1_Union.bits.ASLP_RATE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="85" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a5ac89f21caba0366745a91bca43d6243" prot="public" static="no">
+        <name>ADDRESS_CTRL_REG2</name>
+        <initializer>0x2B</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="87" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1aa4a445e2b5c3df9162cc6147c1572e17" prot="public" static="no">
+        <name>ADDRESS_CTRL_REG3</name>
+        <initializer>0x2C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="89" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1acdb673970b82f2380da68c9e8d1dc5c6" prot="public" static="no">
+        <name>CTRL_REG3</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a96f44d20f1dbf1c8785a7bc99a46164c" kindref="member">CTRL_REG3_Union.byte</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="107" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1aaf149de4e9994db16fc38f1c37a1b086" prot="public" static="no">
+        <name>CTRL_REG3_PP_OD</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a1a8bacd733e6410ea0fdbfea65be0682" kindref="member">CTRL_REG3_Union.bits.PP_OD</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="108" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a4387f4aa195e12686a1d899fc05e8122" prot="public" static="no">
+        <name>CTRL_REG3_IPOL</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a60eda525b85b5f80b3c09d4633165705" kindref="member">CTRL_REG3_Union.bits.IPOL</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="109" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a6ef0dd78cd3ea8ad58738c568c0d3c39" prot="public" static="no">
+        <name>CTRL_REG3_WAKE_A_VECM</name>
+        <initializer><ref refid="accel___f_x_o_8h_1ab155ecb2f32ca19f1cc7e463efa93955" kindref="member">CTRL_REG3_Union.bits.WAKE_A_VECM</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="110" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1ad59dac296c20eeb94373ce9c016fbf87" prot="public" static="no">
+        <name>CTRL_REG3_WAKE_FF_MT</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a5a9cd1fabb67e7b23131b09b74a3aef8" kindref="member">CTRL_REG3_Union.bits.WAKE_FF_MT</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="111" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a70780e1bb0a043940b319c7d0e809f16" prot="public" static="no">
+        <name>CTRL_REG3_WAKE_PULSE</name>
+        <initializer><ref refid="accel___f_x_o_8h_1ab6632b49510fcd5fc7311f878fcbbe14" kindref="member">CTRL_REG3_Union.bits.WAKE_PULSE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="112" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a4aa9823c93b607b9782b48b6237cfb9b" prot="public" static="no">
+        <name>CTRL_REG3_WAKE_LNDPRT</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a700b70ff2aabdb4141620f413d8bd1d1" kindref="member">CTRL_REG3_Union.bits.WAKE_LNDPRT</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="113" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1ae7d829220491dc28782fabd56ca80870" prot="public" static="no">
+        <name>CTRL_REG3_WAKE_TRANS</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a3ed14f173e1a48868fbda54e270c303d" kindref="member">CTRL_REG3_Union.bits.WAKE_TRANS</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="114" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a0cc835348915582c6f7a39d546d739d4" prot="public" static="no">
+        <name>CTRL_REG3_FIFO_GATE</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a22ea01efb74f287ca51a6d0b6552e920" kindref="member">CTRL_REG3_Union.bits.FIFO_GATE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="115" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1adc3d98ee18479004290f6cc9966b3509" prot="public" static="no">
+        <name>ADDRESS_CTRL_REG4</name>
+        <initializer>0x2D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="117" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a36c532b0a660c101907dcad7ee399fbd" prot="public" static="no">
+        <name>CTRL_REG4</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a96f44d20f1dbf1c8785a7bc99a46164c" kindref="member">CTRL_REG4_Union.byte</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="135" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a14be1d8bc870cb9eb6b40252a30db82c" prot="public" static="no">
+        <name>CTRL_REG4_INT_EN_DRDY</name>
+        <initializer><ref refid="accel___f_x_o_8h_1ae136349651ad32006a4ff81765056040" kindref="member">CTRL_REG4_Union.bits.INT_EN_DRDY</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="136" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a1e89d1810e7a7da8401f5810be0db1af" prot="public" static="no">
+        <name>CTRL_REG4_INT_EN_A_VECM</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a96f94495d4dd69c2451a7f5626b594b4" kindref="member">CTRL_REG4_Union.bits.INT_EN_A_VECM</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="137" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1afd165e78c0f3fd8ef68220f67ede39c5" prot="public" static="no">
+        <name>CTRL_REG4_INT_EN_FF_MT</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a3dc6e0a1e88d0554b76540c581dd4ca4" kindref="member">CTRL_REG4_Union.bits.INT_EN_FF_MT</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="138" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a13d90e1a77f7b00d514348002b1c01f2" prot="public" static="no">
+        <name>CTRL_REG4_INT_EN_PULSE</name>
+        <initializer><ref refid="accel___f_x_o_8h_1afc7709cbf42105c1f160c383bbec2023" kindref="member">CTRL_REG4_Union.bits.INT_EN_PULSE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="139" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a095b51ada61480f54d3fc86d6b82cd92" prot="public" static="no">
+        <name>CTRL_REG4_INT_EN_LNDPRT</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a27d25427dedad1ca7f49432d1845af73" kindref="member">CTRL_REG4_Union.bits.INT_EN_LNDPRT</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="140" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a7929a9c2e7d00122428e910087adfd80" prot="public" static="no">
+        <name>CTRL_REG4_INT_EN_TRANS</name>
+        <initializer><ref refid="accel___f_x_o_8h_1ab9da2cde5dd847313bc367bc233d05e9" kindref="member">CTRL_REG4_Union.bits.INT_EN_TRANS</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="141" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a2850b1c9df2623a1208e4e5902e2a963" prot="public" static="no">
+        <name>CTRL_REG4_INT_EN_FIFO</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a783d7438bd94accd165bba7abe1ec520" kindref="member">CTRL_REG4_Union.bits.INT_EN_FIFO</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="142" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1af585eae83a172887d6e4a09776201ece" prot="public" static="no">
+        <name>CTRL_REG4_INT_EN_ASLP</name>
+        <initializer><ref refid="accel___f_x_o_8h_1adbe32d0cc8c6d5c9ec9c09cee1a9794b" kindref="member">CTRL_REG4_Union.bits.INT_EN_ASLP</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="143" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a49ce134ea00f6ed183170893a6c3eb5c" prot="public" static="no">
+        <name>ADDRESS_CTRL_REG5</name>
+        <initializer>0x2E</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="145" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a97cbbf0a1e80e40544629e925e5a9026" prot="public" static="no">
+        <name>CTRL_REG5</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a96f44d20f1dbf1c8785a7bc99a46164c" kindref="member">CTRL_REG5_Union.byte</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="163" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1ad05d274f8ecae9855e046ba41ef1ed92" prot="public" static="no">
+        <name>CTRL_REG5_INT_CFG_DRDY</name>
+        <initializer><ref refid="accel___f_x_o_8h_1af62ca343abd81859a54fc347f38c0f76" kindref="member">CTRL_REG5_Union.bits.INT_CFG_DRDY</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="164" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a332987f3ae2cd09e99d2c00a87cde1e1" prot="public" static="no">
+        <name>CTRL_REG5_INT_CFG_A_VECM</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a7f4d0d127043d0792f10574a4580d70d" kindref="member">CTRL_REG5_Union.bits.INT_CFG_A_VECM</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="165" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1aa52dbce803d113ac4b2bbbf24856746a" prot="public" static="no">
+        <name>CTRL_REG5_INT_CFG_FF_MT</name>
+        <initializer><ref refid="accel___f_x_o_8h_1ab781df7ed3c96435ed9528b178fc433f" kindref="member">CTRL_REG5_Union.bits.INT_CFG_FF_MT</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="166" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a789767ffe8f1255faef94813f58e95c0" prot="public" static="no">
+        <name>CTRL_REG5_INT_CFG_PULSE</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a6090cd9b7d757fce5aedb4bd80679442" kindref="member">CTRL_REG5_Union.bits.INT_CFG_PULSE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="167" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a831ca72150d851701a255830448716aa" prot="public" static="no">
+        <name>CTRL_REG5_INT_CFG_LNDPRT</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a8f31e3b92ce5d814a88ed9984d94ffc9" kindref="member">CTRL_REG5_Union.bits.INT_CFG_LNDPRT</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="168" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a53e1a8584bc2519fd797d36dab795fa6" prot="public" static="no">
+        <name>CTRL_REG5_INT_CFG_TRANS</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a88f382fb04b4e4435e09aaf0c67f475e" kindref="member">CTRL_REG5_Union.bits.INT_CFG_TRANS</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="169" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1ac034dd24938c15394a78133d5d86d0e4" prot="public" static="no">
+        <name>CTRL_REG5_INT_CFG_FIFO</name>
+        <initializer><ref refid="accel___f_x_o_8h_1a8ca93fd5de2f4738cdd2bc91afb9642d" kindref="member">CTRL_REG5_Union.bits.INT_CFG_FIFO</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="170" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1ac3e62ab50f121e03ebd148322447bb5c" prot="public" static="no">
+        <name>CTRL_REG5_INT_CFG_ASLP</name>
+        <initializer><ref refid="accel___f_x_o_8h_1ab1b1c07d106d7e810c1069491579330a" kindref="member">CTRL_REG5_Union.bits.INT_CFG_ASLP</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="171" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a980f2323a6822341182e18e6d04a1ba6" prot="public" static="no">
+        <name>ACCEL_ADDRESS</name>
+        <initializer>0x1D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="174" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1a95e01310c0d3c7936cd28fd08fefb842" prot="public" static="no">
+        <name>ACCEL_BAUD_RATE</name>
+        <initializer>100000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="175" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="accel___f_x_o_8h_1ab55f45f4d411a356e8e284a0e18955e7" prot="public" static="no">
+        <name>ACCEL_WHO_AM_I</name>
+        <initializer>0xC7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="176" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="accel___f_x_o_8h_1a38caa5d9a167740576806a2d7325683e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TOutputDataRate</name>
+        <enumvalue id="accel___f_x_o_8h_1a38caa5d9a167740576806a2d7325683ea6768b519d4a3c288bfd1e1a2399d931a" prot="public">
+          <name>DATE_RATE_800_HZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="accel___f_x_o_8h_1a38caa5d9a167740576806a2d7325683ea8df4c752099026ef21789c9120db69f2" prot="public">
+          <name>DATE_RATE_400_HZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="accel___f_x_o_8h_1a38caa5d9a167740576806a2d7325683ea7d6804913878ea8f738517bf940d4e29" prot="public">
+          <name>DATE_RATE_200_HZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="accel___f_x_o_8h_1a38caa5d9a167740576806a2d7325683ea68769beaba634c06d220ad548fa4d5c8" prot="public">
+          <name>DATE_RATE_100_HZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="accel___f_x_o_8h_1a38caa5d9a167740576806a2d7325683eabc8b33f0c7a75816ddd5a3b267016738" prot="public">
+          <name>DATE_RATE_50_HZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="accel___f_x_o_8h_1a38caa5d9a167740576806a2d7325683eaf9a2b9c26eb0b8820d3f4b9322b08d1f" prot="public">
+          <name>DATE_RATE_12_5_HZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="accel___f_x_o_8h_1a38caa5d9a167740576806a2d7325683ea8ee983a349812bf3b9e310c23f73192c" prot="public">
+          <name>DATE_RATE_6_25_HZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="accel___f_x_o_8h_1a38caa5d9a167740576806a2d7325683eaf6356ca0d919533d9d5c3f9e306a7172" prot="public">
+          <name>DATE_RATE_1_56_HZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="48" column="1" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="47" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="enum" id="accel___f_x_o_8h_1a0fff739d8d806336d0af6bd1f0ec484d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TSLEEPModeRate</name>
+        <enumvalue id="accel___f_x_o_8h_1a0fff739d8d806336d0af6bd1f0ec484dae0c09655bf0db96cd3af654ffd8dc9d9" prot="public">
+          <name>SLEEP_MODE_RATE_50_HZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="accel___f_x_o_8h_1a0fff739d8d806336d0af6bd1f0ec484da50d3c52fc2667da42a2d9fd968f60f7f" prot="public">
+          <name>SLEEP_MODE_RATE_12_5_HZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="accel___f_x_o_8h_1a0fff739d8d806336d0af6bd1f0ec484da21d3630f543a7636b0abf674f55d8912" prot="public">
+          <name>SLEEP_MODE_RATE_6_25_HZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="accel___f_x_o_8h_1a0fff739d8d806336d0af6bd1f0ec484da020fd67ba2f413968c2cd19ccd80c244" prot="public">
+          <name>SLEEP_MODE_RATE_1_56_HZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="60" column="1" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="59" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a96f44d20f1dbf1c8785a7bc99a46164c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t byte</definition>
+        <argsstring></argsstring>
+        <name>byte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The INT_SOURCE bits accessed as a byte.</para>
+<para>The CTRL_REG1 bits accessed as a byte.</para>
+<para>The CTRL_REG3 bits accessed as a byte.</para>
+<para>The CTRL_REG4 bits accessed as a byte.</para>
+<para>The CTRL_REG5 bits accessed as a byte. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="19" column="11" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1ac39436b463ef99cb345056424d3534ae" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SRC_DRDY</definition>
+        <argsstring></argsstring>
+        <name>SRC_DRDY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data ready interrupt status. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="22" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a56932001c517c2a713c22daa17d8be2c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SRC_A_VECM</definition>
+        <argsstring></argsstring>
+        <name>SRC_A_VECM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Accelerometer vector-magnitude status. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="23" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a77f29426c05f9cb1462324f32c4ed4ae" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SRC_FF_MT</definition>
+        <argsstring></argsstring>
+        <name>SRC_FF_MT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Freefall/motion interrupt status. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="24" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1aee3a9487c1e1ad2ec18019bb310966f5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SRC_PULSE</definition>
+        <argsstring></argsstring>
+        <name>SRC_PULSE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pulse detection interrupt status. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="25" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1af8b052367f8eb2c4989475c07cbd75f1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SRC_LNDPRT</definition>
+        <argsstring></argsstring>
+        <name>SRC_LNDPRT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Orientation interrupt status. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="26" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1ae0b2f75a4b308f31740c4a1474249d74" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SRC_TRANS</definition>
+        <argsstring></argsstring>
+        <name>SRC_TRANS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transient interrupt status. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="27" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1ac35eeae0162158b672b9b7475fe5405a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SRC_FIFO</definition>
+        <argsstring></argsstring>
+        <name>SRC_FIFO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FIFO interrupt status. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="28" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1acfe1ff99f19cd50c2a089e5313e0db18" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t SRC_ASLP</definition>
+        <argsstring></argsstring>
+        <name>SRC_ASLP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Auto-SLEEP/WAKE interrupt status. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="29" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a4028b75dd846e5f397446a7c825faf75" prot="public" static="no" mutable="no">
+        <type>struct @1::@6</type>
+        <definition>struct @5::@10  bits</definition>
+        <argsstring></argsstring>
+        <name>bits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The INT_SOURCE bits accessed individually.</para>
+<para>The CTRL_REG1 bits accessed individually.</para>
+<para>The CTRL_REG3 bits accessed individually.</para>
+<para>The CTRL_REG4 bits accessed individually.</para>
+<para>The CTRL_REG5 bits accessed individually. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="30" column="13"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a47716da8d41e46ac806f3635b5eb3477" prot="public" static="yes" mutable="no">
+        <type>union @1</type>
+        <definition>union @1  INT_SOURCE_Union</definition>
+        <argsstring></argsstring>
+        <name>INT_SOURCE_Union</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="31" column="18"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a9c114f16b9edcd397845a7fe847d2043" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ACTIVE</definition>
+        <argsstring></argsstring>
+        <name>ACTIVE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mode selection. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="72" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a176e6b897e703d742c47a3fdf1b92eb2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t F_READ</definition>
+        <argsstring></argsstring>
+        <name>F_READ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fast read mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="73" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a5e85ae95bebf0d48ee679b7b1cf20d5b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LNOISE</definition>
+        <argsstring></argsstring>
+        <name>LNOISE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reduced noise mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="74" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a2c3e455107759b4d70b168e43fea4219" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DR</definition>
+        <argsstring></argsstring>
+        <name>DR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data rate selection. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="75" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a15d72faada7955cc863ee2454e499b1b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ASLP_RATE</definition>
+        <argsstring></argsstring>
+        <name>ASLP_RATE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Auto-WAKE sample frequency. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="76" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a185f5e9216374479defbc8a4d2798198" prot="public" static="yes" mutable="no">
+        <type>union @2</type>
+        <definition>union @2  CTRL_REG1_Union</definition>
+        <argsstring></argsstring>
+        <name>CTRL_REG1_Union</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="78" column="17"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a1a8bacd733e6410ea0fdbfea65be0682" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t PP_OD</definition>
+        <argsstring></argsstring>
+        <name>PP_OD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Push-pull/open drain selection. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="96" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a60eda525b85b5f80b3c09d4633165705" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t IPOL</definition>
+        <argsstring></argsstring>
+        <name>IPOL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Interrupt polarity. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="97" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1ab155ecb2f32ca19f1cc7e463efa93955" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t WAKE_A_VECM</definition>
+        <argsstring></argsstring>
+        <name>WAKE_A_VECM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Acceleration vector-magnitude function in SLEEP mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="98" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a5a9cd1fabb67e7b23131b09b74a3aef8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t WAKE_FF_MT</definition>
+        <argsstring></argsstring>
+        <name>WAKE_FF_MT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Freefall/motion function in SLEEP mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="99" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1ab6632b49510fcd5fc7311f878fcbbe14" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t WAKE_PULSE</definition>
+        <argsstring></argsstring>
+        <name>WAKE_PULSE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pulse function in SLEEP mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="100" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a700b70ff2aabdb4141620f413d8bd1d1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t WAKE_LNDPRT</definition>
+        <argsstring></argsstring>
+        <name>WAKE_LNDPRT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Orientation function in SLEEP mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="101" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a3ed14f173e1a48868fbda54e270c303d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t WAKE_TRANS</definition>
+        <argsstring></argsstring>
+        <name>WAKE_TRANS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transient function in SLEEP mode. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="102" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a22ea01efb74f287ca51a6d0b6552e920" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t FIFO_GATE</definition>
+        <argsstring></argsstring>
+        <name>FIFO_GATE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FIFO gate bypass. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="103" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a39ace4f0d72a4f9b6efb9b76383cd78a" prot="public" static="yes" mutable="no">
+        <type>union @3</type>
+        <definition>union @3  CTRL_REG3_Union</definition>
+        <argsstring></argsstring>
+        <name>CTRL_REG3_Union</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="105" column="17"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1ae136349651ad32006a4ff81765056040" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t INT_EN_DRDY</definition>
+        <argsstring></argsstring>
+        <name>INT_EN_DRDY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data ready interrupt enable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="124" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a96f94495d4dd69c2451a7f5626b594b4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t INT_EN_A_VECM</definition>
+        <argsstring></argsstring>
+        <name>INT_EN_A_VECM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Acceleration vector-magnitude interrupt enable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="125" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a3dc6e0a1e88d0554b76540c581dd4ca4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t INT_EN_FF_MT</definition>
+        <argsstring></argsstring>
+        <name>INT_EN_FF_MT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Freefall/motion interrupt enable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="126" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1afc7709cbf42105c1f160c383bbec2023" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t INT_EN_PULSE</definition>
+        <argsstring></argsstring>
+        <name>INT_EN_PULSE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pulse detection interrupt enable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="127" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a27d25427dedad1ca7f49432d1845af73" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t INT_EN_LNDPRT</definition>
+        <argsstring></argsstring>
+        <name>INT_EN_LNDPRT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Orientation interrupt enable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="128" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1ab9da2cde5dd847313bc367bc233d05e9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t INT_EN_TRANS</definition>
+        <argsstring></argsstring>
+        <name>INT_EN_TRANS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transient interrupt enable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="129" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a783d7438bd94accd165bba7abe1ec520" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t INT_EN_FIFO</definition>
+        <argsstring></argsstring>
+        <name>INT_EN_FIFO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FIFO interrupt enable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="130" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1adbe32d0cc8c6d5c9ec9c09cee1a9794b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t INT_EN_ASLP</definition>
+        <argsstring></argsstring>
+        <name>INT_EN_ASLP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Auto-SLEEP/WAKE interrupt enable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="131" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1ac982f2d940d0edbbee89b982b219ddd3" prot="public" static="yes" mutable="no">
+        <type>union @4</type>
+        <definition>union @4  CTRL_REG4_Union</definition>
+        <argsstring></argsstring>
+        <name>CTRL_REG4_Union</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="133" column="17"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1af62ca343abd81859a54fc347f38c0f76" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t INT_CFG_DRDY</definition>
+        <argsstring></argsstring>
+        <name>INT_CFG_DRDY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data ready interrupt enable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="152" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a7f4d0d127043d0792f10574a4580d70d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t INT_CFG_A_VECM</definition>
+        <argsstring></argsstring>
+        <name>INT_CFG_A_VECM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Acceleration vector-magnitude interrupt enable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="153" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1ab781df7ed3c96435ed9528b178fc433f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t INT_CFG_FF_MT</definition>
+        <argsstring></argsstring>
+        <name>INT_CFG_FF_MT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Freefall/motion interrupt enable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="154" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a6090cd9b7d757fce5aedb4bd80679442" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t INT_CFG_PULSE</definition>
+        <argsstring></argsstring>
+        <name>INT_CFG_PULSE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pulse detection interrupt enable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="155" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a8f31e3b92ce5d814a88ed9984d94ffc9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t INT_CFG_LNDPRT</definition>
+        <argsstring></argsstring>
+        <name>INT_CFG_LNDPRT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Orientation interrupt enable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="156" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a88f382fb04b4e4435e09aaf0c67f475e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t INT_CFG_TRANS</definition>
+        <argsstring></argsstring>
+        <name>INT_CFG_TRANS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Transient interrupt enable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="157" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1a8ca93fd5de2f4738cdd2bc91afb9642d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t INT_CFG_FIFO</definition>
+        <argsstring></argsstring>
+        <name>INT_CFG_FIFO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FIFO interrupt enable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="158" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1ab1b1c07d106d7e810c1069491579330a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t INT_CFG_ASLP</definition>
+        <argsstring></argsstring>
+        <name>INT_CFG_ASLP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Auto-SLEEP/WAKE interrupt enable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="159" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="accel___f_x_o_8h_1ae7be2f1a726f9480ec33868d34d42bf4" prot="public" static="yes" mutable="no">
+        <type>union @5</type>
+        <definition>union @5  CTRL_REG5_Union</definition>
+        <argsstring></argsstring>
+        <name>CTRL_REG5_Union</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h" line="161" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Accelerometer registers and addresses for the FXOS8700CQ accelerometer. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>PMcL </para>
+</simplesect>
+<simplesect kind="date"><para>2019-05-22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="9"><highlight class="preprocessor">#ifndef<sp/>ACCEL_FXO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACCEL_FXO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Accelerometer<sp/>registers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADDRESS_OUT_X_MSB<sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADDRESS_INT_SOURCE<sp/>0x0C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19" refid="accel___f_x_o_8h_1a96f44d20f1dbf1c8785a7bc99a46164c" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a96f44d20f1dbf1c8785a7bc99a46164c" kindref="member">byte</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22" refid="accel___f_x_o_8h_1ac39436b463ef99cb345056424d3534ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1ac39436b463ef99cb345056424d3534ae" kindref="member">SRC_DRDY</ref><sp/><sp/><sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23" refid="accel___f_x_o_8h_1a56932001c517c2a713c22daa17d8be2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a56932001c517c2a713c22daa17d8be2c" kindref="member">SRC_A_VECM</ref><sp/>:<sp/>1;<sp/></highlight></codeline>
+<codeline lineno="24" refid="accel___f_x_o_8h_1a77f29426c05f9cb1462324f32c4ed4ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a77f29426c05f9cb1462324f32c4ed4ae" kindref="member">SRC_FF_MT</ref><sp/><sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25" refid="accel___f_x_o_8h_1aee3a9487c1e1ad2ec18019bb310966f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1aee3a9487c1e1ad2ec18019bb310966f5" kindref="member">SRC_PULSE</ref><sp/><sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26" refid="accel___f_x_o_8h_1af8b052367f8eb2c4989475c07cbd75f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1af8b052367f8eb2c4989475c07cbd75f1" kindref="member">SRC_LNDPRT</ref><sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27" refid="accel___f_x_o_8h_1ae0b2f75a4b308f31740c4a1474249d74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1ae0b2f75a4b308f31740c4a1474249d74" kindref="member">SRC_TRANS</ref><sp/><sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28" refid="accel___f_x_o_8h_1ac35eeae0162158b672b9b7475fe5405a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1ac35eeae0162158b672b9b7475fe5405a" kindref="member">SRC_FIFO</ref><sp/><sp/><sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29" refid="accel___f_x_o_8h_1acfe1ff99f19cd50c2a089e5313e0db18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1acfe1ff99f19cd50c2a089e5313e0db18" kindref="member">SRC_ASLP</ref><sp/><sp/><sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>}<sp/><ref refid="accel___f_x_o_8h_1a4028b75dd846e5f397446a7c825faf75" kindref="member">bits</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}<sp/>INT_SOURCE_Union;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_SOURCE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>INT_SOURCE_Union.byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_SOURCE_SRC_DRDY<sp/><sp/><sp/>INT_SOURCE_Union.bits.SRC_DRDY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_SOURCE_SRC_A_VECM<sp/>INT_SOURCE_Union.bits.SRC_A_VECM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_SOURCE_SRC_FF_MT<sp/><sp/><sp/><sp/>INT_SOURCE_Union.bits.SRC_FF_MT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_SOURCE_SRC_PULSE<sp/><sp/><sp/><sp/>INT_SOURCE_Union.bits.SRC_PULSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_SOURCE_SRC_LNDPRT<sp/><sp/><sp/>INT_SOURCE_Union.bits.SRC_LNDPRT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_SOURCE_SRC_TRANS<sp/><sp/><sp/><sp/>INT_SOURCE_Union.bits.SRC_TRANS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_SOURCE_SRC_FIFO<sp/><sp/><sp/>INT_SOURCE_Union.bits.SRC_FIFO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_SOURCE_SRC_ASLP<sp/><sp/><sp/>INT_SOURCE_Union.bits.SRC_ASLP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADDRESS_WHO_AM_I<sp/>0x0D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADDRESS_CTRL_REG1<sp/>0x2A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>DATE_RATE_800_HZ,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>DATE_RATE_400_HZ,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>DATE_RATE_200_HZ,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>DATE_RATE_100_HZ,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>DATE_RATE_50_HZ,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>DATE_RATE_12_5_HZ,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>DATE_RATE_6_25_HZ,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>DATE_RATE_1_56_HZ</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}<sp/>TOutputDataRate;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>SLEEP_MODE_RATE_50_HZ,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>SLEEP_MODE_RATE_12_5_HZ,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>SLEEP_MODE_RATE_6_25_HZ,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>SLEEP_MODE_RATE_1_56_HZ</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}<sp/>TSLEEPModeRate;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a96f44d20f1dbf1c8785a7bc99a46164c" kindref="member">byte</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="72" refid="accel___f_x_o_8h_1a9c114f16b9edcd397845a7fe847d2043" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a9c114f16b9edcd397845a7fe847d2043" kindref="member">ACTIVE</ref><sp/><sp/><sp/><sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73" refid="accel___f_x_o_8h_1a176e6b897e703d742c47a3fdf1b92eb2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a176e6b897e703d742c47a3fdf1b92eb2" kindref="member">F_READ</ref><sp/><sp/><sp/><sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74" refid="accel___f_x_o_8h_1a5e85ae95bebf0d48ee679b7b1cf20d5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a5e85ae95bebf0d48ee679b7b1cf20d5b" kindref="member">LNOISE</ref><sp/><sp/><sp/><sp/>:<sp/>1;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75" refid="accel___f_x_o_8h_1a2c3e455107759b4d70b168e43fea4219" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a2c3e455107759b4d70b168e43fea4219" kindref="member">DR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>3;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76" refid="accel___f_x_o_8h_1a15d72faada7955cc863ee2454e499b1b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a15d72faada7955cc863ee2454e499b1b" kindref="member">ASLP_RATE</ref><sp/>:<sp/>2;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>}<sp/><ref refid="accel___f_x_o_8h_1a4028b75dd846e5f397446a7c825faf75" kindref="member">bits</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}<sp/>CTRL_REG1_Union;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CTRL_REG1_Union.byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG1_ACTIVE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CTRL_REG1_Union.bits.ACTIVE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG1_F_READ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CTRL_REG1_Union.bits.F_READ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG1_LNOISE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CTRL_REG1_Union.bits.LNOISE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG1_DR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CTRL_REG1_Union.bits.DR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG1_ASLP_RATE<sp/><sp/><sp/><sp/><sp/>CTRL_REG1_Union.bits.ASLP_RATE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADDRESS_CTRL_REG2<sp/>0x2B</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADDRESS_CTRL_REG3<sp/>0x2C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a96f44d20f1dbf1c8785a7bc99a46164c" kindref="member">byte</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="96" refid="accel___f_x_o_8h_1a1a8bacd733e6410ea0fdbfea65be0682" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a1a8bacd733e6410ea0fdbfea65be0682" kindref="member">PP_OD</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>1;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97" refid="accel___f_x_o_8h_1a60eda525b85b5f80b3c09d4633165705" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a60eda525b85b5f80b3c09d4633165705" kindref="member">IPOL</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>1;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98" refid="accel___f_x_o_8h_1ab155ecb2f32ca19f1cc7e463efa93955" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1ab155ecb2f32ca19f1cc7e463efa93955" kindref="member">WAKE_A_VECM</ref><sp/>:<sp/>1;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99" refid="accel___f_x_o_8h_1a5a9cd1fabb67e7b23131b09b74a3aef8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a5a9cd1fabb67e7b23131b09b74a3aef8" kindref="member">WAKE_FF_MT</ref><sp/><sp/>:<sp/>1;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100" refid="accel___f_x_o_8h_1ab6632b49510fcd5fc7311f878fcbbe14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1ab6632b49510fcd5fc7311f878fcbbe14" kindref="member">WAKE_PULSE</ref><sp/><sp/>:<sp/>1;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101" refid="accel___f_x_o_8h_1a700b70ff2aabdb4141620f413d8bd1d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a700b70ff2aabdb4141620f413d8bd1d1" kindref="member">WAKE_LNDPRT</ref><sp/>:<sp/>1;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102" refid="accel___f_x_o_8h_1a3ed14f173e1a48868fbda54e270c303d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a3ed14f173e1a48868fbda54e270c303d" kindref="member">WAKE_TRANS</ref><sp/><sp/>:<sp/>1;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103" refid="accel___f_x_o_8h_1a22ea01efb74f287ca51a6d0b6552e920" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a22ea01efb74f287ca51a6d0b6552e920" kindref="member">FIFO_GATE</ref><sp/><sp/><sp/>:<sp/>1;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>}<sp/><ref refid="accel___f_x_o_8h_1a4028b75dd846e5f397446a7c825faf75" kindref="member">bits</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}<sp/>CTRL_REG3_Union;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CTRL_REG3_Union.byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG3_PP_OD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CTRL_REG3_Union.bits.PP_OD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG3_IPOL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CTRL_REG3_Union.bits.IPOL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG3_WAKE_A_VECM<sp/>CTRL_REG3_Union.bits.WAKE_A_VECM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG3_WAKE_FF_MT<sp/><sp/><sp/><sp/>CTRL_REG3_Union.bits.WAKE_FF_MT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG3_WAKE_PULSE<sp/><sp/><sp/><sp/>CTRL_REG3_Union.bits.WAKE_PULSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG3_WAKE_LNDPRT<sp/><sp/><sp/>CTRL_REG3_Union.bits.WAKE_LNDPRT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG3_WAKE_TRANS<sp/><sp/><sp/><sp/>CTRL_REG3_Union.bits.WAKE_TRANS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG3_FIFO_GATE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>CTRL_REG3_Union.bits.FIFO_GATE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADDRESS_CTRL_REG4<sp/>0x2D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a96f44d20f1dbf1c8785a7bc99a46164c" kindref="member">byte</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="124" refid="accel___f_x_o_8h_1ae136349651ad32006a4ff81765056040" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1ae136349651ad32006a4ff81765056040" kindref="member">INT_EN_DRDY</ref><sp/><sp/><sp/>:<sp/>1;<sp/><sp/></highlight></codeline>
+<codeline lineno="125" refid="accel___f_x_o_8h_1a96f94495d4dd69c2451a7f5626b594b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a96f94495d4dd69c2451a7f5626b594b4" kindref="member">INT_EN_A_VECM</ref><sp/>:<sp/>1;<sp/><sp/></highlight></codeline>
+<codeline lineno="126" refid="accel___f_x_o_8h_1a3dc6e0a1e88d0554b76540c581dd4ca4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a3dc6e0a1e88d0554b76540c581dd4ca4" kindref="member">INT_EN_FF_MT</ref><sp/><sp/>:<sp/>1;<sp/><sp/></highlight></codeline>
+<codeline lineno="127" refid="accel___f_x_o_8h_1afc7709cbf42105c1f160c383bbec2023" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1afc7709cbf42105c1f160c383bbec2023" kindref="member">INT_EN_PULSE</ref><sp/><sp/>:<sp/>1;<sp/><sp/></highlight></codeline>
+<codeline lineno="128" refid="accel___f_x_o_8h_1a27d25427dedad1ca7f49432d1845af73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a27d25427dedad1ca7f49432d1845af73" kindref="member">INT_EN_LNDPRT</ref><sp/>:<sp/>1;<sp/><sp/></highlight></codeline>
+<codeline lineno="129" refid="accel___f_x_o_8h_1ab9da2cde5dd847313bc367bc233d05e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1ab9da2cde5dd847313bc367bc233d05e9" kindref="member">INT_EN_TRANS</ref><sp/><sp/>:<sp/>1;<sp/><sp/></highlight></codeline>
+<codeline lineno="130" refid="accel___f_x_o_8h_1a783d7438bd94accd165bba7abe1ec520" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a783d7438bd94accd165bba7abe1ec520" kindref="member">INT_EN_FIFO</ref><sp/><sp/><sp/>:<sp/>1;<sp/><sp/></highlight></codeline>
+<codeline lineno="131" refid="accel___f_x_o_8h_1adbe32d0cc8c6d5c9ec9c09cee1a9794b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1adbe32d0cc8c6d5c9ec9c09cee1a9794b" kindref="member">INT_EN_ASLP</ref><sp/><sp/><sp/>:<sp/>1;<sp/><sp/></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>}<sp/><ref refid="accel___f_x_o_8h_1a4028b75dd846e5f397446a7c825faf75" kindref="member">bits</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}<sp/>CTRL_REG4_Union;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CTRL_REG4_Union.byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG4_INT_EN_DRDY<sp/><sp/><sp/><sp/><sp/>CTRL_REG4_Union.bits.INT_EN_DRDY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG4_INT_EN_A_VECM<sp/>CTRL_REG4_Union.bits.INT_EN_A_VECM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG4_INT_EN_FF_MT<sp/><sp/>CTRL_REG4_Union.bits.INT_EN_FF_MT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG4_INT_EN_PULSE<sp/><sp/>CTRL_REG4_Union.bits.INT_EN_PULSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG4_INT_EN_LNDPRT<sp/>CTRL_REG4_Union.bits.INT_EN_LNDPRT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG4_INT_EN_TRANS<sp/><sp/>CTRL_REG4_Union.bits.INT_EN_TRANS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG4_INT_EN_FIFO<sp/><sp/><sp/><sp/><sp/>CTRL_REG4_Union.bits.INT_EN_FIFO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG4_INT_EN_ASLP<sp/><sp/><sp/><sp/><sp/>CTRL_REG4_Union.bits.INT_EN_ASLP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADDRESS_CTRL_REG5<sp/>0x2E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a96f44d20f1dbf1c8785a7bc99a46164c" kindref="member">byte</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="152" refid="accel___f_x_o_8h_1af62ca343abd81859a54fc347f38c0f76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1af62ca343abd81859a54fc347f38c0f76" kindref="member">INT_CFG_DRDY</ref><sp/><sp/><sp/>:<sp/>1;<sp/></highlight></codeline>
+<codeline lineno="153" refid="accel___f_x_o_8h_1a7f4d0d127043d0792f10574a4580d70d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a7f4d0d127043d0792f10574a4580d70d" kindref="member">INT_CFG_A_VECM</ref><sp/>:<sp/>1;<sp/></highlight></codeline>
+<codeline lineno="154" refid="accel___f_x_o_8h_1ab781df7ed3c96435ed9528b178fc433f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1ab781df7ed3c96435ed9528b178fc433f" kindref="member">INT_CFG_FF_MT</ref><sp/><sp/>:<sp/>1;<sp/></highlight></codeline>
+<codeline lineno="155" refid="accel___f_x_o_8h_1a6090cd9b7d757fce5aedb4bd80679442" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a6090cd9b7d757fce5aedb4bd80679442" kindref="member">INT_CFG_PULSE</ref><sp/><sp/>:<sp/>1;<sp/></highlight></codeline>
+<codeline lineno="156" refid="accel___f_x_o_8h_1a8f31e3b92ce5d814a88ed9984d94ffc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a8f31e3b92ce5d814a88ed9984d94ffc9" kindref="member">INT_CFG_LNDPRT</ref><sp/>:<sp/>1;<sp/></highlight></codeline>
+<codeline lineno="157" refid="accel___f_x_o_8h_1a88f382fb04b4e4435e09aaf0c67f475e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a88f382fb04b4e4435e09aaf0c67f475e" kindref="member">INT_CFG_TRANS</ref><sp/><sp/>:<sp/>1;<sp/></highlight></codeline>
+<codeline lineno="158" refid="accel___f_x_o_8h_1a8ca93fd5de2f4738cdd2bc91afb9642d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1a8ca93fd5de2f4738cdd2bc91afb9642d" kindref="member">INT_CFG_FIFO</ref><sp/><sp/><sp/>:<sp/>1;<sp/></highlight></codeline>
+<codeline lineno="159" refid="accel___f_x_o_8h_1ab1b1c07d106d7e810c1069491579330a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="accel___f_x_o_8h_1ab1b1c07d106d7e810c1069491579330a" kindref="member">INT_CFG_ASLP</ref><sp/><sp/><sp/>:<sp/>1;<sp/></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>}<sp/><ref refid="accel___f_x_o_8h_1a4028b75dd846e5f397446a7c825faf75" kindref="member">bits</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}<sp/>CTRL_REG5_Union;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CTRL_REG5_Union.byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG5_INT_CFG_DRDY<sp/><sp/><sp/>CTRL_REG5_Union.bits.INT_CFG_DRDY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG5_INT_CFG_A_VECM<sp/>CTRL_REG5_Union.bits.INT_CFG_A_VECM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG5_INT_CFG_FF_MT<sp/><sp/>CTRL_REG5_Union.bits.INT_CFG_FF_MT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG5_INT_CFG_PULSE<sp/><sp/>CTRL_REG5_Union.bits.INT_CFG_PULSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG5_INT_CFG_LNDPRT<sp/>CTRL_REG5_Union.bits.INT_CFG_LNDPRT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG5_INT_CFG_TRANS<sp/><sp/>CTRL_REG5_Union.bits.INT_CFG_TRANS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG5_INT_CFG_FIFO<sp/><sp/><sp/>CTRL_REG5_Union.bits.INT_CFG_FIFO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG5_INT_CFG_ASLP<sp/><sp/><sp/>CTRL_REG5_Union.bits.INT_CFG_ASLP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="comment">//<sp/>I2C<sp/>setup</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACCEL_ADDRESS<sp/>0x1D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACCEL_BAUD_RATE<sp/>100000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACCEL_WHO_AM_I<sp/>0xC7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jeong/git/04/Modules/Accel/accel_FXO.h"/>
+  </compounddef>
+</doxygen>

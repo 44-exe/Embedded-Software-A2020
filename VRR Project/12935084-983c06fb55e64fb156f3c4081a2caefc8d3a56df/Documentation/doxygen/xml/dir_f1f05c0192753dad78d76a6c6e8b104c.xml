@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="dir_f1f05c0192753dad78d76a6c6e8b104c" kind="dir">
+    <compoundname>C:/Users/Jeong/git/04/Modules/UART</compoundname>
+    <innerfile refid="_u_a_r_t_8c">UART.c</innerfile>
+    <innerfile refid="_u_a_r_t_8h">UART.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Jeong/git/04/Modules/UART/"/>
+  </compounddef>
+</doxygen>

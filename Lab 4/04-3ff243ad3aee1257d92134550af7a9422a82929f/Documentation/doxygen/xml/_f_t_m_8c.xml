@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_f_t_m_8c" kind="file" language="C++">
+    <compoundname>FTM.c</compoundname>
+    <includes refid="types_8h" local="yes">Types\types.h</includes>
+    <includes refid="_f_t_m_8h" local="yes">FTM.h</includes>
+    <includes local="yes">device\MK64F12.h</includes>
+    <includes local="yes">drivers\fsl_clock.h</includes>
+    <includes local="no">math.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/FTM/FTM.c</label>
+        <link refid="_f_t_m_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>FTM.h</label>
+        <link refid="_f_t_m_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>math.h</label>
+      </node>
+      <node id="2">
+        <label>Types\types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>drivers\fsl_clock.h</label>
+      </node>
+      <node id="6">
+        <label>device\MK64F12.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_t_m__module_1ga5f5acc3c60b57cf9d523176b3cf401c0" prot="public" static="no">
+        <name>FTM_CHANNEL_SIZE</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" line="23" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___f_t_m__module_1gab465baf96d81bdd7ea2c4ace21184f67" prot="public" static="yes" mutable="no">
+        <type>void(*</type>
+        <definition>void(* CallbackFunction[FTM_CHANNEL_SIZE])(void *)</definition>
+        <argsstring>[FTM_CHANNEL_SIZE])(void *)</argsstring>
+        <name>CallbackFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>user callback function as an array </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" line="25" column="8" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___f_t_m__module_1ga1bd0cc5a354cadf17ece5d4c134a39fa" prot="public" static="yes" mutable="no">
+        <type>void *</type>
+        <definition>void* CallbackArguments[FTM_CHANNEL_SIZE]</definition>
+        <argsstring>[FTM_CHANNEL_SIZE]</argsstring>
+        <name>CallbackArguments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>user callback arguments as an array </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" line="26" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___f_t_m__module_1ga5f31811e067b5690d5f73c8e77019a6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FTM_Init</definition>
+        <argsstring>()</argsstring>
+        <name>FTM_Init</name>
+        <briefdescription>
+<para>Sets up the FTM before first use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Enables the FTM as a free running 16-bit counter. <simplesect kind="return"><para>bool - TRUE if the FTM was successfully initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" line="29" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" bodystart="29" bodyend="53" declfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" declline="64" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_t_m__module_1gae4928af832114c8173e43d10e4144c1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FTM_Set</definition>
+        <argsstring>(const TFTMChannel *const aFTMChannel)</argsstring>
+        <name>FTM_Set</name>
+        <param>
+          <type>const <ref refid="struct_t_f_t_m_channel" kindref="compound">TFTMChannel</ref> *const</type>
+          <declname>aFTMChannel</declname>
+        </param>
+        <briefdescription>
+<para>Sets up a timer channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aFTMChannel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a structure containing the parameters to be used in setting up the timer channel. channelNb is the channel number of the FTM to use. delayCount is the delay count (in module clock periods) for an output compare event. timerFunction is used to set the timer up as either an input capture or an output compare. ioType is a union that depends on the setting of the channel as input capture or output compare: outputAction is the action to take on a successful output compare. inputDetection is the type of input capture detection. callbackFunction is a pointer to a user callback function. callbackArguments is a pointer to the user arguments to use with the user callback function. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if the timer was set up successfully. </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes the FTM has been initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" line="55" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" bodystart="55" bodyend="96" declfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" declline="80" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_t_m__module_1gabb34a0dd79d879502fd81c0efa9440ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FTM_StartTimer</definition>
+        <argsstring>(const TFTMChannel *const aFTMChannel)</argsstring>
+        <name>FTM_StartTimer</name>
+        <param>
+          <type>const <ref refid="struct_t_f_t_m_channel" kindref="compound">TFTMChannel</ref> *const</type>
+          <declname>aFTMChannel</declname>
+        </param>
+        <briefdescription>
+<para>Starts a timer if set up for output compare. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aFTMChannel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a structure containing the parameters to be used in setting up the timer channel. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if the timer was started successfully. </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes the FTM has been initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" line="98" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" bodystart="98" bodyend="119" declfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" declline="89" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_t_m__module_1ga413b257915ccf92e44262ba9a7a86b75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FTM0_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>FTM0_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>FTM interrupt request handler reads CnSC register, clears interrupt and calls user function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" line="125" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" bodystart="125" bodyend="137"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Routines for setting up the FlexTimer module (FTM). </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This contains the functions for operating the FlexTimer module (FTM).</para>
+<para><simplesect kind="author"><para>Jeong Bin Lee </para>
+</simplesect>
+<simplesect kind="date"><para>2020-05-10 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="16"><highlight class="comment">//<sp/>new<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="types_8h" kindref="compound">Types\types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_f_t_m_8h" kindref="compound">FTM.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;device\MK64F12.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;drivers\fsl_clock.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FTM_CHANNEL_SIZE<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>void<sp/>(*CallbackFunction[FTM_CHANNEL_SIZE])(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*);<sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*CallbackArguments[FTM_CHANNEL_SIZE];<sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___f_t_m__module_1ga5f31811e067b5690d5f73c8e77019a6b" kindref="member">FTM_Init</ref>()</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//enable<sp/>FTM<sp/>clock</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//CLOCK_GetFixedFreqClkFreq</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//uint32_t<sp/>freq<sp/>=<sp/>CLOCK_GetFreq(kCLOCK_McgFixedFreqClk);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//1562500</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>CLOCK_EnableClock(kCLOCK_Ftm0);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//write<sp/>to<sp/>CNTIN<sp/>(initial<sp/>value<sp/>of<sp/>CNT<sp/>register)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//if<sp/>15th<sp/>bit<sp/>is<sp/>set<sp/>two&apos;s<sp/>complement<sp/>is<sp/>written<sp/>(negative<sp/>numbers)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//FTM<sp/>period<sp/>when<sp/>using<sp/>up<sp/>counting<sp/>=<sp/>(MOD<sp/>–<sp/>CNTIN<sp/>+<sp/>0x0001)<sp/>×<sp/>period<sp/>of<sp/>counter<sp/>clock</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//FTM<sp/>period<sp/>when<sp/>using<sp/>up-down<sp/>counting<sp/>=<sp/>2<sp/>×<sp/>(MOD<sp/>–<sp/>CNTIN)<sp/>×<sp/>period<sp/>of<sp/>counter<sp/>clock</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>FTM0-&gt;CNTIN<sp/>=<sp/>~FTM_CNTIN_INIT_MASK;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//write<sp/>to<sp/>MOD<sp/>(modulo<sp/>value<sp/>defines<sp/>the<sp/>final<sp/>value<sp/>of<sp/>FTM<sp/>counting)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>FTM0-&gt;MOD<sp/>=<sp/>FTM_MOD_MOD_MASK;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//write<sp/>to<sp/>CNT<sp/>(counter<sp/>value<sp/>is<sp/>loaded<sp/>with<sp/>CNTIN<sp/>value)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>FTM0-&gt;CNT<sp/>=<sp/>~FTM_CNT_COUNT_MASK;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//write<sp/>to<sp/>CLKS[1:0]<sp/>(in<sp/>SC)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>FTM0-&gt;SC<sp/>|=<sp/>FTM_SC_CLKS(0b10)<sp/>|<sp/>FTM_SC_PS(0b101);<sp/></highlight><highlight class="comment">//set<sp/>prescale<sp/>factor<sp/>of<sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>__NVIC_ClearPendingIRQ(FTM0_IRQn);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>__NVIC_EnableIRQ(FTM0_IRQn);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___f_t_m__module_1gae4928af832114c8173e43d10e4144c1f" kindref="member">FTM_Set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_t_f_t_m_channel" kindref="compound">TFTMChannel</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>aFTMChannel)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>The<sp/>Output<sp/>Compare<sp/>mode<sp/>is<sp/>selected<sp/>when:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>•<sp/>DECAPEN<sp/>=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>•<sp/>COMBINE<sp/>=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>•<sp/>CPWMS<sp/>=<sp/>0,<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>•<sp/>MSnB:MSnA<sp/>=<sp/>0:1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//check<sp/>if<sp/>timerFunction<sp/>is<sp/>output<sp/>channel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(aFTMChannel-&gt;timerFunction)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>FTM0-&gt;CONTROLS[aFTMChannel-&gt;channelNb].CnSC<sp/>|=<sp/>FTM_CnSC_MSB(0);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>FTM0-&gt;CONTROLS[aFTMChannel-&gt;channelNb].CnSC<sp/>|=<sp/>FTM_CnSC_MSA(1);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(aFTMChannel-&gt;ioType.outputAction)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>TIMER_OUTPUT_DISCONNECT:</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//revert<sp/>to<sp/>GPIO<sp/>or<sp/>other<sp/>peripheral<sp/>control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FTM0-&gt;CONTROLS[aFTMChannel-&gt;channelNb].CnSC<sp/>|=<sp/>FTM_CnSC_ELSB(0);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FTM0-&gt;CONTROLS[aFTMChannel-&gt;channelNb].CnSC<sp/>|=<sp/>FTM_CnSC_ELSA(0);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>TIMER_OUTPUT_TOGGLE:</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FTM0-&gt;CONTROLS[aFTMChannel-&gt;channelNb].CnSC<sp/>|=<sp/>FTM_CnSC_ELSB(0);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FTM0-&gt;CONTROLS[aFTMChannel-&gt;channelNb].CnSC<sp/>|=<sp/>FTM_CnSC_ELSA(1);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>TIMER_OUTPUT_LOW:</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FTM0-&gt;CONTROLS[aFTMChannel-&gt;channelNb].CnSC<sp/>|=<sp/>FTM_CnSC_ELSB(1);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FTM0-&gt;CONTROLS[aFTMChannel-&gt;channelNb].CnSC<sp/>|=<sp/>FTM_CnSC_ELSA(0);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>TIMER_OUTPUT_HIGH:</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FTM0-&gt;CONTROLS[aFTMChannel-&gt;channelNb].CnSC<sp/>|=<sp/>FTM_CnSC_ELSB(1);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FTM0-&gt;CONTROLS[aFTMChannel-&gt;channelNb].CnSC<sp/>|=<sp/>FTM_CnSC_ELSA(1);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//return<sp/>false<sp/>if<sp/>channel<sp/>is<sp/>not<sp/>an<sp/>output<sp/>compare</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>CallbackFunction[aFTMChannel-&gt;channelNb]<sp/>=<sp/>aFTMChannel-&gt;callbackFunction;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>CallbackArguments[aFTMChannel-&gt;channelNb]<sp/>=<sp/>aFTMChannel-&gt;callbackArguments;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___f_t_m__module_1gabb34a0dd79d879502fd81c0efa9440ec" kindref="member">FTM_StartTimer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_t_f_t_m_channel" kindref="compound">TFTMChannel</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>aFTMChannel)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//check<sp/>for<sp/>output<sp/>compare</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(aFTMChannel-&gt;timerFunction)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(FTM0-&gt;CONTROLS[aFTMChannel-&gt;channelNb].CnSC<sp/>&amp;<sp/>FTM_CnSC_CHF_MASK)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>FTM0-&gt;CONTROLS[aFTMChannel-&gt;channelNb].CnSC<sp/>&amp;=<sp/>~FTM_CnSC_CHF_MASK;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//enable<sp/>channel<sp/>interrupt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>FTM0-&gt;CONTROLS[aFTMChannel-&gt;channelNb].CnSC<sp/>|=<sp/>FTM_CnSC_CHIE_MASK;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//the<sp/>match<sp/>value<sp/>for<sp/>the<sp/>output<sp/>modes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>FTM0-&gt;CONTROLS[aFTMChannel-&gt;channelNb].CnV<sp/>=<sp/>(aFTMChannel-&gt;delayNanoseconds<sp/>+<sp/>FTM0-&gt;CNT);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//channel<sp/>is<sp/>not<sp/>output<sp/>compare</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>When<sp/>the<sp/>FTM<sp/>counter<sp/>reaches<sp/>FTM_CnV,<sp/>the<sp/>CHF<sp/>bit<sp/>in<sp/>FTM_CnSC<sp/>register<sp/>is<sp/>set<sp/>and<sp/>an<sp/>interrupt<sp/>is<sp/>generated.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>No<sp/>matter<sp/>which<sp/>channel<sp/>is<sp/>used,<sp/>the<sp/>interrupt<sp/>cycle<sp/>time<sp/>is<sp/>FTM_MOD*(tick<sp/>cycle<sp/>time).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___f_t_m__module_1ga413b257915ccf92e44262ba9a7a86b75" kindref="member">FTM0_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>uint8_t<sp/>channel<sp/>=<sp/>log2(FTM0-&gt;STATUS);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(FTM0-&gt;CONTROLS[channel].CnSC<sp/>&amp;<sp/>FTM_CnSC_CHF_MASK<sp/>&amp;&amp;<sp/>FTM0-&gt;CONTROLS[channel].CnSC<sp/>&amp;<sp/>FTM_CnSC_CHIE_MASK)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>FTM0-&gt;CONTROLS[channel].CnSC<sp/>&amp;=<sp/>~FTM_CnSC_CHF_MASK;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//reading<sp/>the<sp/>CnSC<sp/>register<sp/>while<sp/>CHnF<sp/>is<sp/>set<sp/>and<sp/>then<sp/>writing<sp/>a<sp/>0<sp/>clears<sp/>interrupt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>FTM0-&gt;CONTROLS[channel].CnSC<sp/>&amp;=<sp/>~FTM_CnSC_CHIE_MASK;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(CallbackFunction[channel])</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>(CallbackFunction[channel])(CallbackArguments[channel]);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.c"/>
+  </compounddef>
+</doxygen>

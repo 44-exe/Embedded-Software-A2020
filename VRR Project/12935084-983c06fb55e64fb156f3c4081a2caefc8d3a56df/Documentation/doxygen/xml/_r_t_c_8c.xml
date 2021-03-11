@@ -1,0 +1,361 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_r_t_c_8c" kind="file" language="C++">
+    <compoundname>RTC.c</compoundname>
+    <includes refid="types_8h" local="yes">Types\types.h</includes>
+    <includes refid="_r_t_c_8h" local="yes">RTC.h</includes>
+    <includes local="yes">device\MK64F12.h</includes>
+    <includes local="yes">drivers\fsl_clock.h</includes>
+    <includes refid="critical_8h" local="yes">Critical\critical.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="8">
+        <label>Critical\critical.h</label>
+        <link refid="critical_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/RTC/RTC.c</label>
+        <link refid="_r_t_c_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>RTC.h</label>
+        <link refid="_r_t_c_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Types\types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>drivers\fsl_clock.h</label>
+      </node>
+      <node id="6">
+        <label>device\MK64F12.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___r_t_c__module_1gafd63fe7865342da1c27094aadf6d9da1" prot="public" static="yes" mutable="no">
+        <type>void(*</type>
+        <definition>void(* UserFunction) (void *)</definition>
+        <argsstring>)(void *)</argsstring>
+        <name>UserFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>user callback function </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/RTC/RTC.c" line="23" column="8" bodyfile="C:/Users/Jeong/git/04/Modules/RTC/RTC.c" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___r_t_c__module_1gab6f06365f378a3ca11134fda825fdc12" prot="public" static="yes" mutable="no">
+        <type>void *</type>
+        <definition>void* UserArguments</definition>
+        <argsstring></argsstring>
+        <name>UserArguments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>user callback arguments </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/RTC/RTC.c" line="24" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/RTC/RTC.c" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___r_t_c__module_1ga1eff20f412d72f94182b7fca0b3b0925" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RTC_Init</definition>
+        <argsstring>(void(*userFunction)(void *), void *userArguments)</argsstring>
+        <name>RTC_Init</name>
+        <param>
+          <type>void(*)(void *)</type>
+          <declname>userFunction</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>userArguments</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the RTC before first use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets up the control register for the RTC and locks it. Enables the RTC and sets an interrupt every second. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>userFunction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a pointer to a user callback function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userArguments</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a pointer to the user arguments to use with the user callback function. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if the RTC was successfully initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/RTC/RTC.c" line="27" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/RTC/RTC.c" bodystart="27" bodyend="66" declfile="C:/Users/Jeong/git/04/Modules/RTC/RTC.h" declline="30" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_t_c__module_1gacbe916e4fad6bfc2ffcde604fa6afb52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_Set</definition>
+        <argsstring>(const uint8_t hours, const uint8_t minutes, const uint8_t seconds)</argsstring>
+        <name>RTC_Set</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>hours</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>minutes</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>seconds</declname>
+        </param>
+        <briefdescription>
+<para>Sets the value of the real time clock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hours</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired value of the real time clock hours (0-23). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minutes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired value of the real time clock minutes (0-59). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired value of the real time clock seconds (0-59). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Assumes that the RTC module has been initialized and all input parameters are in range. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/RTC/RTC.c" line="69" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/RTC/RTC.c" bodystart="69" bodyend="76" declfile="C:/Users/Jeong/git/04/Modules/RTC/RTC.h" declline="39" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_t_c__module_1ga46e1f15e3b27e2de58d7f213a3bc865d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_Get</definition>
+        <argsstring>(uint8_t *const hours, uint8_t *const minutes, uint8_t *const seconds)</argsstring>
+        <name>RTC_Get</name>
+        <param>
+          <type>uint8_t *const</type>
+          <declname>hours</declname>
+        </param>
+        <param>
+          <type>uint8_t *const</type>
+          <declname>minutes</declname>
+        </param>
+        <param>
+          <type>uint8_t *const</type>
+          <declname>seconds</declname>
+        </param>
+        <briefdescription>
+<para>Gets the value of the real time clock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hours</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address of a variable to store the real time clock hours. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minutes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address of a variable to store the real time clock minutes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address of a variable to store the real time clock seconds. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Assumes that the RTC module has been initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/RTC/RTC.c" line="79" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/RTC/RTC.c" bodystart="79" bodyend="97" declfile="C:/Users/Jeong/git/04/Modules/RTC/RTC.h" declline="48" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___r_t_c__module_1ga05f92d67e351e8ac72ebafc8e5737494" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_Seconds_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>RTC_Seconds_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>RTC interrupt request handler calls user function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/RTC/RTC.c" line="103" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/RTC/RTC.c" bodystart="103" bodyend="107"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Routines for controlling the Real Time Clock (RTC). </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This contains the functions for operating the real time clock (RTC).</para>
+<para><simplesect kind="author"><para>Jeong Bin Lee </para>
+</simplesect>
+<simplesect kind="date"><para>2020-05-04 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="16"><highlight class="comment">//<sp/>new<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="types_8h" kindref="compound">Types\types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_r_t_c_8h" kindref="compound">RTC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;device\MK64F12.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;drivers\fsl_clock.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="critical_8h" kindref="compound">Critical\critical.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>void<sp/>(*UserFunction)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*);<sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>UserArguments;<sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___r_t_c__module_1ga1eff20f412d72f94182b7fca0b3b0925" kindref="member">RTC_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*userFunction)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*),<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>userArguments)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>UserFunction<sp/>=<sp/>userFunction;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>UserArguments<sp/>=<sp/>userArguments;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//enable<sp/>RTC<sp/>clock<sp/>gate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>CLOCK_EnableClock(kCLOCK_Rtc0);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//SIM-&gt;SCGC6<sp/>|=<sp/>SIM_SCGC6_RTC_MASK;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//interrupt<sp/>occurs<sp/>every<sp/>second</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//set<sp/>capacitor<sp/>using<sp/>equation:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Cload<sp/>=<sp/>(C1<sp/>*<sp/>C2)/(C1<sp/>+<sp/>C2)<sp/>+<sp/>Cstray</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Cload<sp/>=<sp/>6pF<sp/>where<sp/>C1<sp/>=<sp/>C2<sp/>=<sp/>12pF<sp/>according<sp/>to<sp/>schematics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//assuming<sp/>Cstray<sp/>=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>RTC-&gt;CR<sp/>|=<sp/>RTC_CR_SC2P_MASK<sp/>|<sp/>RTC_CR_SC4P_MASK;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Enable<sp/>the<sp/>oscilator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>RTC-&gt;CR<sp/>|=<sp/>RTC_CR_OSCE_MASK;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//oscillator<sp/>startup<sp/>time<sp/>=<sp/>1000ms<sp/>=<sp/>1sec</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i=0;<sp/>i&lt;1000000;<sp/>i++);<sp/></highlight><highlight class="comment">//waste<sp/>1sec<sp/>for<sp/>crystal<sp/>to<sp/>startup</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//enable<sp/>interrupt<sp/>for<sp/>RTC<sp/>time<sp/>second<sp/>interrupt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>RTC-&gt;IER<sp/>|=<sp/>RTC_IER_TSIE_MASK;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//disable<sp/>other<sp/>interrupts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>RTC-&gt;IER<sp/>&amp;=<sp/>~(RTC_IER_TAIE_MASK<sp/>|<sp/>RTC_IER_TOIE_MASK<sp/>|<sp/>RTC_IER_TIIE_MASK);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//enable<sp/>time<sp/>counter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>RTC-&gt;SR<sp/>|=<sp/>RTC_SR_TCE_MASK;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//at<sp/>the<sp/>end<sp/>lock<sp/>the<sp/>control<sp/>register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>RTC-&gt;LR<sp/>&amp;=<sp/>~RTC_LR_CRL_MASK;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//set<sp/>nexted<sp/>vectored<sp/>interrupt<sp/>controllers<sp/>for<sp/>RTC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//see<sp/>p.75<sp/>in<sp/>K64<sp/>manual</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//RTC,<sp/>Vector<sp/>=<sp/>63,<sp/>IRQ<sp/>=<sp/>47,<sp/>non-IPR<sp/>=<sp/>1,<sp/>IPR<sp/>=<sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>__NVIC_ClearPendingIRQ(RTC_Seconds_IRQn);<sp/></highlight><highlight class="comment">//first<sp/>clear<sp/>any<sp/>interrupts<sp/>for<sp/>RTC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>__NVIC_EnableIRQ(RTC_Seconds_IRQn);<sp/></highlight><highlight class="comment">//then<sp/>enable<sp/>nested<sp/>vectored<sp/>interrupt<sp/>control<sp/>for<sp/>RTC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___r_t_c__module_1gacbe916e4fad6bfc2ffcde604fa6afb52" kindref="member">RTC_Set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>hours,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>minutes,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>seconds)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>EnterCritical();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>RTC-&gt;SR<sp/>&amp;=<sp/>~RTC_SR_TCE_MASK;<sp/></highlight><highlight class="comment">//disable<sp/>timer<sp/>to<sp/>set<sp/>timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>RTC-&gt;TSR<sp/>=<sp/>hours<sp/>*<sp/>3600<sp/>+<sp/>minutes<sp/>*<sp/>60<sp/>+<sp/>seconds;<sp/></highlight><highlight class="comment">//set<sp/>timer<sp/>register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>RTC-&gt;SR<sp/>|=<sp/>RTC_SR_TCE_MASK;<sp/></highlight><highlight class="comment">//enable<sp/>timer<sp/>register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>ExitCritical();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___r_t_c__module_1ga46e1f15e3b27e2de58d7f213a3bc865d" kindref="member">RTC_Get</ref>(uint8_t*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>hours,<sp/>uint8_t*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>minutes,<sp/>uint8_t*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>seconds)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>uint32_t<sp/>totalSec,<sp/>checkTotal;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//see<sp/>page<sp/>1173<sp/>in<sp/>manual</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//check<sp/>if<sp/>the<sp/>time<sp/>is<sp/>in<sp/>sync</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>totalSec<sp/>=<sp/>RTC-&gt;TSR;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>checkTotal<sp/>=<sp/>RTC-&gt;TSR;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(totalSec<sp/>!=<sp/>checkTotal);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//convert<sp/>total<sp/>seconds<sp/>to<sp/>hours,<sp/>minutes,<sp/>seconds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>*hours<sp/>=<sp/>totalSec<sp/>/<sp/>3600;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*hours<sp/>==<sp/>24)<sp/></highlight><highlight class="comment">//<sp/>reset<sp/>hours<sp/>as<sp/>24hrs<sp/>system</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>*hours<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>*minutes<sp/>=<sp/>(totalSec<sp/>%<sp/>3600)<sp/>/<sp/>60;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>*seconds<sp/>=<sp/>(totalSec<sp/>%<sp/>3600)<sp/>%<sp/>60;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___r_t_c__module_1ga05f92d67e351e8ac72ebafc8e5737494" kindref="member">RTC_Seconds_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(UserFunction)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>(*UserFunction)(UserArguments);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jeong/git/04/Modules/RTC/RTC.c"/>
+  </compounddef>
+</doxygen>

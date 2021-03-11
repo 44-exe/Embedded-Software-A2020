@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="dir_b850049826f2752dab11b84fd49d2872" kind="dir">
+    <compoundname>C:/Users/Jeong/git/04/Modules/FTM</compoundname>
+    <innerfile refid="_f_t_m_8c">FTM.c</innerfile>
+    <innerfile refid="_f_t_m_8h">FTM.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Jeong/git/04/Modules/FTM/"/>
+  </compounddef>
+</doxygen>

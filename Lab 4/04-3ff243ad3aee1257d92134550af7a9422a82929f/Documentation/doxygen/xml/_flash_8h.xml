@@ -1,0 +1,418 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_flash_8h" kind="file" language="C++">
+    <compoundname>Flash.h</compoundname>
+    <includes refid="types_8h" local="yes">Types\types.h</includes>
+    <includedby refid="main_8c" local="yes">C:/Users/Jeong/git/04/source/main.c</includedby>
+    <includedby refid="_flash_8c" local="yes">C:/Users/Jeong/git/04/Modules/Flash/Flash.c</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/Flash/Flash.h</label>
+        <link refid="_flash_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Types\types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>C:/Users/Jeong/git/04/Modules/Flash/Flash.c</label>
+        <link refid="_flash_8c"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/Flash/Flash.h</label>
+        <link refid="_flash_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/Jeong/git/04/source/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_f_c_c_o_b__t" prot="public">FCCOB_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___flash__module_1gac450fb89f016956f685a1e541644b2a8" prot="public" static="no">
+        <name>_FB</name>
+        <param><defname>flashAddress</defname></param>
+        <initializer>*(uint8_t  volatile *)(flashAddress)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" line="23" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___flash__module_1ga28550847e9609b9b396a4230f36884e9" prot="public" static="no">
+        <name>_FH</name>
+        <param><defname>flashAddress</defname></param>
+        <initializer>*(uint16_t volatile *)(flashAddress)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" line="24" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___flash__module_1gad4fb772b3db9c8eecdbf9df472351a28" prot="public" static="no">
+        <name>_FW</name>
+        <param><defname>flashAddress</defname></param>
+        <initializer>*(uint32_t volatile *)(flashAddress)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" line="25" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___flash__module_1ga4c1198da68f5da4f6ffd5abc1d1c052a" prot="public" static="no">
+        <name>_FP</name>
+        <param><defname>flashAddress</defname></param>
+        <initializer>*(uint64_t volatile *)(flashAddress)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" line="26" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___flash__module_1ga5c70db9dac9dbc146f98a1e27c731dec" prot="public" static="no">
+        <name>FLASH_DATA_START</name>
+        <initializer>0x00080000LU</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" line="29" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___flash__module_1ga4d7e8c8d5e35c4743dbdcbe09e9d0797" prot="public" static="no">
+        <name>FLASH_DATA_END</name>
+        <initializer>0x00080007LU</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" line="31" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___flash__module_1gaa5782279b5e558cafc2f135c0a1177d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Flash_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>Flash_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enables the Flash module. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool - TRUE if the Flash was setup successfully. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Flash/Flash.c" line="32" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.c" bodystart="32" bodyend="43" declfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" declline="64" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___flash__module_1ga50871aff0f5af1e092aea3ed2545cf72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Flash_AllocateVar</definition>
+        <argsstring>(volatile void **variable, const uint8_t size)</argsstring>
+        <name>Flash_AllocateVar</name>
+        <param>
+          <type>volatile void **</type>
+          <declname>variable</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Allocates space for a non-volatile variable in the Flash memory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>variable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the address of a pointer to a variable that is to be allocated space in Flash memory. The pointer will be allocated to a relevant address: If the variable is a byte, then any address. If the variable is a half-word, then an even address. If the variable is a word, then an address divisible by 4. This allows the resulting variable to be used with the relevant Flash_Write function which assumes a certain memory address. e.g. a 16-bit variable will be on an even address </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size, in bytes, of the variable that is to be allocated space in the Flash memory. Valid values are 1, 2 and 4. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if the variable was allocated space in the Flash memory. </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes Flash has been initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Flash/Flash.c" line="46" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.c" bodystart="46" bodyend="110" declfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" declline="79" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___flash__module_1ga5da7dcc0c6ef765546c79bbe25b48479" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Flash_Write32</definition>
+        <argsstring>(volatile uint32_t *const address, const uint32_t data)</argsstring>
+        <name>Flash_Write32</name>
+        <param>
+          <type>volatile uint32_t *const</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Writes a 32-bit number to Flash. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address of the data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 32-bit data to write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if Flash was written successfully, FALSE if address is not aligned to a 4-byte boundary or if there is a programming error. </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes Flash has been initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Carries high and low phrase components</para>
+<para>&lt; Start address</para>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Flash/Flash.c" line="195" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.c" bodystart="195" bodyend="212" declfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" declline="88" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___flash__module_1ga1458f5e4ac15e1848ae0bde32fe5b5f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Flash_Write16</definition>
+        <argsstring>(volatile uint16_t *const address, const uint16_t data)</argsstring>
+        <name>Flash_Write16</name>
+        <param>
+          <type>volatile uint16_t *const</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>const uint16_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Writes a 16-bit number to Flash. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address of the data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 16-bit data to write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if Flash was written successfully, FALSE if address is not aligned to a 2-byte boundary or if there is a programming error. </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes Flash has been initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Carries high and low word components</para>
+<para>&lt; Start address</para>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Flash/Flash.c" line="215" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.c" bodystart="215" bodyend="232" declfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" declline="97" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___flash__module_1ga1e6f34b272d8ed7b0f897b43e65f2cc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Flash_Write8</definition>
+        <argsstring>(volatile uint8_t *const address, const uint8_t data)</argsstring>
+        <name>Flash_Write8</name>
+        <param>
+          <type>volatile uint8_t *const</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Writes an 8-bit number to Flash. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address of the data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 8-bit data to write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if Flash was written successfully, FALSE if there is a programming error. </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes Flash has been initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Carries high and low half-word components</para>
+<para>&lt; Start address</para>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Flash/Flash.c" line="235" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.c" bodystart="235" bodyend="253" declfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" declline="106" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___flash__module_1ga06868787ccef73e69bd236d3b93b68f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Flash_Erase</definition>
+        <argsstring>(void)</argsstring>
+        <name>Flash_Erase</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Erases the entire Flash sector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool - TRUE if the Flash &quot;data&quot; sector was erased successfully. </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes Flash has been initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Flash/Flash.c" line="272" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.c" bodystart="272" bodyend="275" declfile="C:/Users/Jeong/git/04/Modules/Flash/Flash.h" declline="113" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Routines for erasing and writing to the Flash. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This contains the functions needed for accessing the internal Flash.</para>
+<para><simplesect kind="author"><para>PMcL </para>
+</simplesect>
+<simplesect kind="date"><para>2015-08-07 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="16"><highlight class="preprocessor">#ifndef<sp/>FLASH_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>new<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="types_8h" kindref="compound">Types\types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FLASH<sp/>data<sp/>access</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_FB(flashAddress)<sp/><sp/>*(uint8_t<sp/><sp/>volatile<sp/>*)(flashAddress)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_FH(flashAddress)<sp/><sp/>*(uint16_t<sp/>volatile<sp/>*)(flashAddress)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_FW(flashAddress)<sp/><sp/>*(uint32_t<sp/>volatile<sp/>*)(flashAddress)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_FP(flashAddress)<sp/><sp/>*(uint64_t<sp/>volatile<sp/>*)(flashAddress)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Address<sp/>of<sp/>the<sp/>start<sp/>of<sp/>the<sp/>Flash<sp/>block<sp/>we<sp/>are<sp/>using<sp/>for<sp/>data<sp/>storage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_DATA_START<sp/>0x00080000LU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Address<sp/>of<sp/>the<sp/>end<sp/>of<sp/>the<sp/>Flash<sp/>block<sp/>we<sp/>are<sp/>using<sp/>for<sp/>data<sp/>storage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_DATA_END<sp/><sp/><sp/>0x00080007LU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="struct_f_c_c_o_b__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>uint8_t<sp/>Flash_Command;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>Flash_AllAddress;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>Flash_Address[3];</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}s;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>}Address;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>Flash_AllByte;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>Flash_DataByte[8];</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}s;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>}Data;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}<ref refid="struct_f_c_c_o_b__t" kindref="compound">FCCOB_t</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___flash__module_1gaa5782279b5e558cafc2f135c0a1177d3" kindref="member">Flash_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___flash__module_1ga50871aff0f5af1e092aea3ed2545cf72" kindref="member">Flash_AllocateVar</ref>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">**<sp/>variable,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>size);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___flash__module_1ga5da7dcc0c6ef765546c79bbe25b48479" kindref="member">Flash_Write32</ref>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>address,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>data);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___flash__module_1ga1458f5e4ac15e1848ae0bde32fe5b5f3" kindref="member">Flash_Write16</ref>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>address,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/>data);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___flash__module_1ga1e6f34b272d8ed7b0f897b43e65f2cc0" kindref="member">Flash_Write8</ref>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint8_t*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>address,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>data);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___flash__module_1ga06868787ccef73e69bd236d3b93b68f3" kindref="member">Flash_Erase</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jeong/git/04/Modules/Flash/Flash.h"/>
+  </compounddef>
+</doxygen>

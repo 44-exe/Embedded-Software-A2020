@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="union_t_float" kind="union" language="C++" prot="public">
+    <compoundname>TFloat</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union_t_float_1ac64a1b1a3fa390b17e94fa6063eeadea" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TFloat::f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/types/types.h" line="63" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/types/types.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_t_float_1a15ad14e02e03e6e121aa19049b368374" prot="public" static="no" mutable="no">
+        <type><ref refid="unionuint16union__t" kindref="compound">uint16union_t</ref></type>
+        <definition>uint16union_t TFloat::fLo</definition>
+        <argsstring></argsstring>
+        <name>fLo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/types/types.h" line="66" column="19" bodyfile="C:/Users/Jeong/git/04/Modules/types/types.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_t_float_1a5e7444c31f026b85ef979cabf70300f4" prot="public" static="no" mutable="no">
+        <type><ref refid="unionuint16union__t" kindref="compound">uint16union_t</ref></type>
+        <definition>uint16union_t TFloat::fHi</definition>
+        <argsstring></argsstring>
+        <name>fHi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/types/types.h" line="67" column="19" bodyfile="C:/Users/Jeong/git/04/Modules/types/types.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union_t_float_1a74ac55e0807cfdec5672a551663a727d" prot="public" static="no" mutable="no">
+        <type>struct TFloat::@13</type>
+        <definition>struct TFloat::@13  TFloat::fParts</definition>
+        <argsstring></argsstring>
+        <name>fParts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/types/types.h" line="68" column="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>uint16union_t</label>
+        <link refid="unionuint16union__t"/>
+      </node>
+      <node id="1">
+        <label>TFloat</label>
+        <link refid="union_t_float"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>fLo</edgelabel>
+          <edgelabel>fHi</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Jeong/git/04/Modules/types/types.h" line="62" column="1" bodyfile="C:/Users/Jeong/git/04/Modules/types/types.h" bodystart="61" bodyend="69"/>
+    <listofallmembers>
+      <member refid="union_t_float_1ac64a1b1a3fa390b17e94fa6063eeadea" prot="public" virt="non-virtual"><scope>TFloat</scope><name>f</name></member>
+      <member refid="union_t_float_1a5e7444c31f026b85ef979cabf70300f4" prot="public" virt="non-virtual"><scope>TFloat</scope><name>fHi</name></member>
+      <member refid="union_t_float_1a15ad14e02e03e6e121aa19049b368374" prot="public" virt="non-virtual"><scope>TFloat</scope><name>fLo</name></member>
+      <member refid="union_t_float_1a74ac55e0807cfdec5672a551663a727d" prot="public" virt="non-virtual"><scope>TFloat</scope><name>fParts</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

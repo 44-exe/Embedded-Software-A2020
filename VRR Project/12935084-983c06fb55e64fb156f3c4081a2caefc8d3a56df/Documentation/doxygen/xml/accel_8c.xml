@@ -1,0 +1,562 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="accel_8c" kind="file" language="C++">
+    <compoundname>accel.c</compoundname>
+    <includes refid="accel_8h" local="yes">accel.h</includes>
+    <includes refid="accel___f_x_o_8h" local="yes">accel_FXO.h</includes>
+    <includes refid="_i2_c_8h" local="yes">I2C\I2C.h</includes>
+    <includes refid="median_8h" local="yes">Median\median.h</includes>
+    <includes refid="critical_8h" local="yes">Critical\critical.h</includes>
+    <includes local="yes">MK64F12.h</includes>
+    <includes local="yes">drivers\fsl_port.h</includes>
+    <includes local="yes">drivers\fsl_clock.h</includes>
+    <includes local="yes">drivers\fsl_common.h</includes>
+    <includes local="yes">drivers\fsl_gpio.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>stdbool.h</label>
+      </node>
+      <node id="9">
+        <label>Critical\critical.h</label>
+        <link refid="critical_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+      <node id="6">
+        <label>Accel\accel_FXO.h</label>
+        <link refid="accel___f_x_o_8h"/>
+      </node>
+      <node id="10">
+        <label>MK64F12.h</label>
+      </node>
+      <node id="13">
+        <label>drivers\fsl_common.h</label>
+      </node>
+      <node id="8">
+        <label>Median\median.h</label>
+        <link refid="median_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/Accel/accel.c</label>
+        <link refid="accel_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>accel.h</label>
+        <link refid="accel_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>drivers\fsl_gpio.h</label>
+      </node>
+      <node id="11">
+        <label>drivers\fsl_port.h</label>
+      </node>
+      <node id="3">
+        <label>Types\types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>drivers\fsl_clock.h</label>
+      </node>
+      <node id="7">
+        <label>I2C\I2C.h</label>
+        <link refid="_i2_c_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__accel__module_1ga66554c667936238ffe45c91e60545998" prot="public" static="no" mutable="no">
+        <type>AccelMode_t</type>
+        <definition>AccelMode_t AccelMode</definition>
+        <argsstring></argsstring>
+        <name>AccelMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mode for the accelerometer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.c" line="28" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__accel__module_1gad741befccec501382f5226a3146861e2" prot="public" static="no" mutable="no">
+        <type><ref refid="union_accel_data__t" kindref="compound">AccelData_t</ref></type>
+        <definition>AccelData_t AccelData</definition>
+        <argsstring></argsstring>
+        <name>AccelData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data for accelerometer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.c" line="30" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__accel__module_1gaa920b152f9edd5264c246995c007bc3f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_accel_setup__t" kindref="compound">AccelSetup_t</ref></type>
+        <definition>AccelSetup_t Accel_Setup</definition>
+        <argsstring></argsstring>
+        <name>Accel_Setup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>stores Accel structure data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.c" line="32" column="14" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__accel__module_1gabd7d912d1e16e00d9ef7355439e5e259" prot="public" static="no" mutable="no">
+        <type>const port_pin_config_t</type>
+        <definition>const port_pin_config_t PORTC_CONFIG</definition>
+        <argsstring></argsstring>
+        <name>PORTC_CONFIG</name>
+        <initializer>=
+{
+    .pullSelect          = kPORT_PullDisable,
+    .slewRate            = kPORT_SlowSlewRate,
+    .passiveFilterEnable = kPORT_PassiveFilterDisable,
+    .openDrainEnable     = kPORT_OpenDrainDisable,
+    .driveStrength       = kPORT_LowDriveStrength,
+    .mux                 = kPORT_MuxAsGpio,
+    .lockRegister        = kPORT_UnlockRegister
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.c" line="34" column="25" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__accel__module_1gab28ee3c2d6f86187bcffa811a68cab30" prot="public" static="no" mutable="no">
+        <type>const gpio_pin_config_t</type>
+        <definition>const gpio_pin_config_t PORTCIN</definition>
+        <argsstring></argsstring>
+        <name>PORTCIN</name>
+        <initializer>=
+{
+  kGPIO_DigitalInput,
+  0
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.c" line="45" column="25" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__accel__module_1ga1acdcf7eef003e0db618fdb0c784eb3a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void StandByMode</definition>
+        <argsstring>(bool standby)</argsstring>
+        <name>StandByMode</name>
+        <param>
+          <type>bool</type>
+          <declname>standby</declname>
+        </param>
+        <briefdescription>
+<para>Median filters 3 bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.c" line="54" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="54" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="group__accel__module_1ga23d298c5c59e0867f73a0560fe28bb16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Accel_Init</definition>
+        <argsstring>(const uint32_t moduleClk, const AccelSetup_t *const accelSetup)</argsstring>
+        <name>Accel_Init</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>moduleClk</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_accel_setup__t" kindref="compound">AccelSetup_t</ref> *const</type>
+          <declname>accelSetup</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the accelerometer by calling the initialization routines of the supporting software modules. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>moduleClk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the module clock rate in Hz. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>accelSetup</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a pointer to an accelerometer setup structure. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - true if the accelerometer module was successfully initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.c" line="71" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="71" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="group__accel__module_1ga8cc8e053f2474e24cb761f1de0f769d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Accel_ReadXYZ</definition>
+        <argsstring>(uint8_t data[3])</argsstring>
+        <name>Accel_ReadXYZ</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+          <array>[3]</array>
+        </param>
+        <briefdescription>
+<para>Reads X, Y and Z accelerations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is an array of 3 bytes where the X, Y and Z data are stored. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.c" line="139" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="139" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="group__accel__module_1gabdb9bb9ab0f994735b1f6adcd12a39a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Accel_SetMode</definition>
+        <argsstring>(const AccelMode_t mode)</argsstring>
+        <name>Accel_SetMode</name>
+        <param>
+          <type>const AccelMode_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Set the mode of the accelerometer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies either polled or interrupt driven operation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.c" line="149" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="149" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="group__accel__module_1ga79b5e2b7e358d5b2e581b3942dfd216f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Accel_SlidingWindow</definition>
+        <argsstring>(uint8_t *accelOldData, uint8_t accelNewData)</argsstring>
+        <name>Accel_SlidingWindow</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>accelOldData</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>accelNewData</declname>
+        </param>
+        <briefdescription>
+<para>Shift the old values and include the new values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>accelOldData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of old data stored. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>accelNewData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new data received by the accelerometer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - true if the accelerometer module was successfully initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.c" line="184" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="184" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="group__accel__module_1ga2a7f89fa7db08f2a1df1f1b80111ee6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PORTC_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>PORTC_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>PORTC interrupt request handler clears interrupt and calls user function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.c" line="201" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="201" bodyend="212"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>HAL for the accelerometer. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This contains the functions for interfacing to the FXOS8700CQ accelerometer.</para>
+<para><simplesect kind="author"><para>Jeong Bin Lee </para>
+</simplesect>
+<simplesect kind="date"><para>2020-05-13 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="16"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="accel_8h" kindref="compound">accel.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="accel___f_x_o_8h" kindref="compound">accel_FXO.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_i2_c_8h" kindref="compound">I2C\I2C.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="median_8h" kindref="compound">Median\median.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="critical_8h" kindref="compound">Critical\critical.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;MK64F12.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;drivers\fsl_port.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;drivers\fsl_clock.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;drivers\fsl_common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;drivers\fsl_gpio.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">AccelMode_t<sp/><ref refid="group__accel__module_1ga66554c667936238ffe45c91e60545998" kindref="member">AccelMode</ref>;<sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><ref refid="union_accel_data__t" kindref="compound">AccelData_t</ref><sp/><ref refid="group__accel__module_1gad741befccec501382f5226a3146861e2" kindref="member">AccelData</ref>;<sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="struct_accel_setup__t" kindref="compound">AccelSetup_t</ref><sp/><ref refid="group__accel__module_1gaa920b152f9edd5264c246995c007bc3f" kindref="member">Accel_Setup</ref>;<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="keyword">const</highlight><highlight class="normal"><sp/>port_pin_config_t<sp/>PORTC_CONFIG<sp/>=</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>.pullSelect<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>kPORT_PullDisable,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>.slewRate<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>kPORT_SlowSlewRate,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>.passiveFilterEnable<sp/>=<sp/>kPORT_PassiveFilterDisable,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>.openDrainEnable<sp/><sp/><sp/><sp/><sp/>=<sp/>kPORT_OpenDrainDisable,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>.driveStrength<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>kPORT_LowDriveStrength,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>.mux<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>kPORT_MuxAsGpio,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>.lockRegister<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>kPORT_UnlockRegister</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gpio_pin_config_t<sp/>PORTCIN<sp/>=</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>kGPIO_DigitalInput,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>0</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>StandByMode(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>standby)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(standby)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//put<sp/>it<sp/>in<sp/>standby<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>CTRL_REG1_ACTIVE<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___i2_c__module_1gacaac94d86a7213791fb691d57c6f278b" kindref="member">I2C_Write</ref>(ADDRESS_CTRL_REG1,<sp/>CTRL_REG1);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//put<sp/>it<sp/>in<sp/>active<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>CTRL_REG1_ACTIVE<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___i2_c__module_1gacaac94d86a7213791fb691d57c6f278b" kindref="member">I2C_Write</ref>(ADDRESS_CTRL_REG1,<sp/>CTRL_REG1);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__accel__module_1ga23d298c5c59e0867f73a0560fe28bb16" kindref="member">Accel_Init</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>moduleClk,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_accel_setup__t" kindref="compound">AccelSetup_t</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>accelSetup)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(moduleClk<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//initialise<sp/>call<sp/>back<sp/>functions<sp/>as<sp/>global<sp/>variable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><ref refid="group__accel__module_1gaa920b152f9edd5264c246995c007bc3f" kindref="member">Accel_Setup</ref>.<ref refid="struct_accel_setup__t_1aa3890a82b78961d08e1d299ec40cd580" kindref="member">dataReadyCallbackArguments</ref><sp/>=<sp/>accelSetup-&gt;<ref refid="struct_accel_setup__t_1aa3890a82b78961d08e1d299ec40cd580" kindref="member">dataReadyCallbackArguments</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><ref refid="group__accel__module_1gaa920b152f9edd5264c246995c007bc3f" kindref="member">Accel_Setup</ref>.<ref refid="struct_accel_setup__t_1a32de9ceba4dc8a0c785f25797b7dbd46" kindref="member">dataReadyCallbackFunction</ref><sp/>=<sp/>accelSetup-&gt;<ref refid="struct_accel_setup__t_1a32de9ceba4dc8a0c785f25797b7dbd46" kindref="member">dataReadyCallbackFunction</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//initialise<sp/>I2C<sp/>module<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><ref refid="struct_t_i2_c_module" kindref="compound">TI2CModule</ref><sp/>aI2CModule;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>aI2CModule.baudRate<sp/>=<sp/>ACCEL_BAUD_RATE;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>aI2CModule.primarySlaveAddress<sp/>=<sp/>ACCEL_ADDRESS;<sp/></highlight><highlight class="comment">//Default<sp/>I2C<sp/>Slave<sp/>Address<sp/>0x1D<sp/>(see<sp/>p5<sp/>of<sp/>schematics)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>aI2CModule.<ref refid="struct_t_i2_c_module_1a27d054d3b463998978dbb6237e6ce105" kindref="member">readCompleteCallbackArguments</ref><sp/>=<sp/>accelSetup-&gt;<ref refid="struct_accel_setup__t_1ab92d1dfa467b00fa4d6f782d4a7e755e" kindref="member">readCompleteCallbackArguments</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>aI2CModule.<ref refid="struct_t_i2_c_module_1aa6056c02fd35c8a10351230551e8f7ea" kindref="member">readCompleteCallbackFunction</ref><sp/>=<sp/>accelSetup-&gt;<ref refid="struct_accel_setup__t_1a4413fafc42cfb2c64c8bd23684ebcf80" kindref="member">readCompleteCallbackFunction</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//initialise<sp/>I2C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><ref refid="group___i2_c__module_1ga9d0e9da6860d17a91aa55eeeddebb5cd" kindref="member">I2C_Init</ref>(moduleClk,<sp/>&amp;aI2CModule);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//select<sp/>accelerometer<sp/>as<sp/>primary<sp/>slave<sp/>address</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><ref refid="group___i2_c__module_1ga0d6844ce590bbf5cc557fdf0747ad551" kindref="member">I2C_SelectSlaveDevice</ref>(aI2CModule.primarySlaveAddress);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>uint8_t<sp/>tmpData;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Check<sp/>WHO_AM_I<sp/>register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><ref refid="group___i2_c__module_1ga3692682bb1cb84e1a3d0c31195451bd9" kindref="member">I2C_PollRead</ref>(ADDRESS_WHO_AM_I,<sp/>&amp;tmpData,<sp/>1);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tmpData<sp/>!=<sp/>ACCEL_WHO_AM_I)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//put<sp/>it<sp/>in<sp/>standby<sp/>mode<sp/>when<sp/>initialising<sp/>registers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>StandByMode(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//CTRL_REG1_ACTIVE<sp/>=<sp/>1;<sp/>//active<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>CTRL_REG1_F_READ<sp/>=<sp/>1;<sp/></highlight><highlight class="comment">//data<sp/>format<sp/>is<sp/>limited<sp/>to<sp/>8-bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>CTRL_REG1_DR<sp/>=<sp/>DATE_RATE_6_25_HZ;<sp/></highlight><highlight class="comment">//set<sp/>output<sp/>data<sp/>rate<sp/>to<sp/>6.25Hz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><ref refid="group___i2_c__module_1gacaac94d86a7213791fb691d57c6f278b" kindref="member">I2C_Write</ref>(ADDRESS_CTRL_REG1,<sp/>CTRL_REG1);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>CTRL_REG3_PP_OD<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//push-pull<sp/>for<sp/>INT2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>CTRL_REG3_IPOL<sp/>=<sp/>1;<sp/><sp/></highlight><highlight class="comment">//use<sp/>0<sp/>for<sp/>INT2<sp/>active<sp/>low</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><ref refid="group___i2_c__module_1gacaac94d86a7213791fb691d57c6f278b" kindref="member">I2C_Write</ref>(ADDRESS_CTRL_REG3,<sp/>CTRL_REG3);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//interrupt<sp/>flag<sp/>bits<sp/>are<sp/>reset<sp/>by<sp/>reading<sp/>the<sp/>appropriate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//source<sp/>register<sp/>for<sp/>the<sp/>function<sp/>that<sp/>generated<sp/>the<sp/>interrupt.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>CTRL_REG4<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><ref refid="group___i2_c__module_1gacaac94d86a7213791fb691d57c6f278b" kindref="member">I2C_Write</ref>(ADDRESS_CTRL_REG4,<sp/>CTRL_REG4);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//INT2<sp/>=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>CTRL_REG5<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><ref refid="group___i2_c__module_1gacaac94d86a7213791fb691d57c6f278b" kindref="member">I2C_Write</ref>(ADDRESS_CTRL_REG5,<sp/>CTRL_REG5);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//put<sp/>it<sp/>in<sp/>active<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>StandByMode(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//initialise<sp/>PORTC<sp/>for<sp/>interrupt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>CLOCK_EnableClock(kCLOCK_PortC);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//INT2<sp/>interrupt2<sp/>see<sp/>hint<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>PORTC-&gt;PCR[13]<sp/>=<sp/>PORT_PCR_MUX(1)<sp/>|<sp/>PORT_PCR_ISF_MASK<sp/>|<sp/>PORT_PCR_IRQC(0b1001);<sp/></highlight><highlight class="comment">//0b1010</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><ref refid="group__accel__module_1gabdb9bb9ab0f994735b1f6adcd12a39a3" kindref="member">Accel_SetMode</ref>(ACCEL_MODE_POLL);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//set<sp/>nested<sp/>vectored<sp/>interrupt<sp/>control<sp/>for<sp/>PORTC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>__NVIC_ClearPendingIRQ(PORTC_IRQn);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>__NVIC_EnableIRQ(PORTC_IRQn);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__accel__module_1ga8cc8e053f2474e24cb761f1de0f769d8" kindref="member">Accel_ReadXYZ</ref>(uint8_t<sp/>data[3])</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//read<sp/>data<sp/>depending<sp/>on<sp/>the<sp/>accel<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__accel__module_1ga66554c667936238ffe45c91e60545998" kindref="member">AccelMode</ref>)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___i2_c__module_1ga3685b2f03da2fa00b0cb671a0cce4f3f" kindref="member">I2C_IntRead</ref>(ADDRESS_OUT_X_MSB,<sp/>data,<sp/>3);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___i2_c__module_1ga3692682bb1cb84e1a3d0c31195451bd9" kindref="member">I2C_PollRead</ref>(ADDRESS_OUT_X_MSB,<sp/>data,<sp/>3);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__accel__module_1gabdb9bb9ab0f994735b1f6adcd12a39a3" kindref="member">Accel_SetMode</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>AccelMode_t<sp/>mode)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/>EnterCritical();</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//put<sp/>it<sp/>in<sp/>standby<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/>StandByMode(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//sync<sp/>mode<sp/>=<sp/>interrupt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//or<sp/>Async<sp/>mode<sp/>=<sp/>polling</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mode)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//enable<sp/>accel<sp/>data<sp/>interrupt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__accel__module_1ga66554c667936238ffe45c91e60545998" kindref="member">AccelMode</ref><sp/>=<sp/>ACCEL_MODE_INT;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>CTRL_REG4<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___i2_c__module_1gacaac94d86a7213791fb691d57c6f278b" kindref="member">I2C_Write</ref>(ADDRESS_CTRL_REG4,<sp/>CTRL_REG4);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//disable<sp/>accel<sp/>data<sp/>interrupt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__accel__module_1ga66554c667936238ffe45c91e60545998" kindref="member">AccelMode</ref><sp/>=<sp/>ACCEL_MODE_POLL;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>CTRL_REG4<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___i2_c__module_1gacaac94d86a7213791fb691d57c6f278b" kindref="member">I2C_Write</ref>(ADDRESS_CTRL_REG4,<sp/>CTRL_REG4);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//put<sp/>it<sp/>back<sp/>in<sp/>active<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>StandByMode(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>ExitCritical();</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__accel__module_1ga79b5e2b7e358d5b2e581b3942dfd216f" kindref="member">Accel_SlidingWindow</ref>(uint8_t<sp/>*accelOldData,<sp/>uint8_t<sp/>accelNewData)</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/>EnterCritical();</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/>uint8_t<sp/>i;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//shift<sp/>all<sp/>old<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i=(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(accelOldData)<sp/>-<sp/>1);<sp/>i&gt;0;<sp/>i--)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>accelOldData[i]<sp/>=<sp/>accelOldData[i-1];</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//include<sp/>new<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/>accelOldData[0]<sp/>=<sp/>accelNewData;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/>ExitCritical();</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__accel__module_1ga2a7f89fa7db08f2a1df1f1b80111ee6a" kindref="member">PORTC_IRQHandler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="202"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//clear<sp/>interrupt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(PORTC-&gt;PCR[13]<sp/>&amp;<sp/>PORT_PCR_ISF_MASK)</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>PORTC-&gt;PCR[13]<sp/>=<sp/>PORT_PCR_ISF_MASK;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//user<sp/>callback<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="group__accel__module_1gaa920b152f9edd5264c246995c007bc3f" kindref="member">Accel_Setup</ref>.<ref refid="struct_accel_setup__t_1a32de9ceba4dc8a0c785f25797b7dbd46" kindref="member">dataReadyCallbackFunction</ref>)</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__accel__module_1gaa920b152f9edd5264c246995c007bc3f" kindref="member">Accel_Setup</ref>.<ref refid="struct_accel_setup__t_1a32de9ceba4dc8a0c785f25797b7dbd46" kindref="member">dataReadyCallbackFunction</ref>(<ref refid="group__accel__module_1gaa920b152f9edd5264c246995c007bc3f" kindref="member">Accel_Setup</ref>.<ref refid="struct_accel_setup__t_1aa3890a82b78961d08e1d299ec40cd580" kindref="member">dataReadyCallbackArguments</ref>);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.c"/>
+  </compounddef>
+</doxygen>

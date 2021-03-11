@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="group___l_e_ds__module" kind="group">
+    <compoundname>LEDs_module</compoundname>
+    <title>LEDs module documentation</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___l_e_ds__module_1gadd06cf8aa4e6538b7411fe9976dbf4d5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>LED_t</name>
+        <enumvalue id="group___l_e_ds__module_1ggadd06cf8aa4e6538b7411fe9976dbf4d5ad80f13022b6d309268fadc7b1da89cb9" prot="public">
+          <name>LED_RED</name>
+          <initializer>= 22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___l_e_ds__module_1ggadd06cf8aa4e6538b7411fe9976dbf4d5a0ad916c7f80666dc88f6b5b22a72e742" prot="public">
+          <name>LED_GREEN</name>
+          <initializer>= 26</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___l_e_ds__module_1ggadd06cf8aa4e6538b7411fe9976dbf4d5aa67c57c0ff22a2772cb6a5751a3327bf" prot="public">
+          <name>LED_BLUE</name>
+          <initializer>= 21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>LED to pin mapping on the TWR-K70F120M. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.h" line="26" column="1" bodyfile="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.h" bodystart="25" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___l_e_ds__module_1ga8c562295defbb7c742a43e2c186391e1" prot="public" static="no" mutable="no">
+        <type>const gpio_pin_config_t</type>
+        <definition>const gpio_pin_config_t PORTOUT</definition>
+        <argsstring></argsstring>
+        <name>PORTOUT</name>
+        <initializer>=
+{
+  kGPIO_DigitalOutput,
+  1
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" line="23" column="25" bodyfile="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___l_e_ds__module_1ga971ce808151ce8c8efbeab5fd3217060" prot="public" static="no" mutable="no">
+        <type>const port_pin_config_t</type>
+        <definition>const port_pin_config_t SETPORT</definition>
+        <argsstring></argsstring>
+        <name>SETPORT</name>
+        <initializer>=
+{
+    .pullSelect = kPORT_PullDisable,
+    .slewRate = kPORT_SlowSlewRate,
+    .passiveFilterEnable = kPORT_PassiveFilterDisable,
+    .openDrainEnable = kPORT_OpenDrainDisable,
+    .driveStrength = kPORT_LowDriveStrength,
+    .mux = kPORT_MuxAsGpio,
+    .lockRegister = kPORT_UnlockRegister
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" line="29" column="25" bodyfile="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___l_e_ds__module_1gaea5d2a9d1aacacc05e4d772a555b2d9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool LEDs_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>LEDs_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Sets up the LEDs before first use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool - TRUE if the LEDs were successfully initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" line="41" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" bodystart="41" bodyend="54" declfile="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.h" declline="36" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___l_e_ds__module_1gab83ce0564d78725d23783caa491a293a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LEDs_On</definition>
+        <argsstring>(const LED_t color)</argsstring>
+        <name>LEDs_On</name>
+        <param>
+          <type>const <ref refid="group___l_e_ds__module_1gadd06cf8aa4e6538b7411fe9976dbf4d5" kindref="member">LED_t</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Turns an LED on. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color of the LED to turn on. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Assumes that LEDs_Init has been called. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" line="57" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" bodystart="57" bodyend="64" declfile="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.h" declline="43" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___l_e_ds__module_1gab96427411f19150a344e5f238bfa15b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LEDs_Off</definition>
+        <argsstring>(const LED_t color)</argsstring>
+        <name>LEDs_Off</name>
+        <param>
+          <type>const <ref refid="group___l_e_ds__module_1gadd06cf8aa4e6538b7411fe9976dbf4d5" kindref="member">LED_t</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Turns off an LED. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color of the LED to turn off. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Assumes that LEDs_Init has been called. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" line="67" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" bodystart="67" bodyend="73" declfile="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.h" declline="50" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___l_e_ds__module_1ga73f961351cfc02fcf8306b14e16d4429" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LEDs_Toggle</definition>
+        <argsstring>(const LED_t color)</argsstring>
+        <name>LEDs_Toggle</name>
+        <param>
+          <type>const <ref refid="group___l_e_ds__module_1gadd06cf8aa4e6538b7411fe9976dbf4d5" kindref="member">LED_t</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Toggles an LED. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>THe color of the LED to toggle. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Assumes that LEDs_Init has been called. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" line="76" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" bodystart="76" bodyend="82" declfile="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.h" declline="57" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

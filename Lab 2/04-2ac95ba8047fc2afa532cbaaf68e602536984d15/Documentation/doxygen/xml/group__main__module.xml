@@ -1,0 +1,388 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="group__main__module" kind="group">
+    <compoundname>main_module</compoundname>
+    <title>main module documentation</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__main__module_1ga2afce0a47a93eee73a314d53e4890153" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Command</name>
+        <enumvalue id="group__main__module_1gga2afce0a47a93eee73a314d53e4890153a702303e5a73fa27b2169bf076dbacc01" prot="public">
+          <name>MCU_STARTUP</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__main__module_1gga2afce0a47a93eee73a314d53e4890153a3fe3c7f760499af331f615375fec91e2" prot="public">
+          <name>MCU_FLASH_PROGRAM</name>
+          <initializer>= 0x07</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__main__module_1gga2afce0a47a93eee73a314d53e4890153aa9c122b9c625056eb1642f67988fd3e6" prot="public">
+          <name>MCU_FLASH_READ</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__main__module_1gga2afce0a47a93eee73a314d53e4890153a8c5f7c4d1adb07fb8bae756433b09acc" prot="public">
+          <name>MCU_VERSION</name>
+          <initializer>= 0x09</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__main__module_1gga2afce0a47a93eee73a314d53e4890153ac749637bf30798dc5bb165d6525774bc" prot="public">
+          <name>MCU_NUMBER</name>
+          <initializer>= 0x0B</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__main__module_1gga2afce0a47a93eee73a314d53e4890153a7bc6a2351bbeaeab85ab8ce957f83d09" prot="public">
+          <name>MCU_MODE</name>
+          <initializer>= 0x0D</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>packet enumerated </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/source/main.c" line="55" column="1" bodyfile="C:/Users/Jeong/git/04/source/main.c" bodystart="54" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__main__module_1ga4f6628df3189e988b65658a725188fd4" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t MAJOR</definition>
+        <argsstring></argsstring>
+        <name>MAJOR</name>
+        <initializer>= 0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version number High </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/source/main.c" line="40" column="15" bodyfile="C:/Users/Jeong/git/04/source/main.c" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__main__module_1ga25fcd7302027275a87f9461635744e0e" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t MINOR</definition>
+        <argsstring></argsstring>
+        <name>MINOR</name>
+        <initializer>= 0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Version number Low </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/source/main.c" line="41" column="15" bodyfile="C:/Users/Jeong/git/04/source/main.c" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__main__module_1gab4e7c863c9b1387f029360b3bc965194" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int STU_NUM</definition>
+        <argsstring></argsstring>
+        <name>STU_NUM</name>
+        <initializer>= 5084</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/source/main.c" line="43" column="11" bodyfile="C:/Users/Jeong/git/04/source/main.c" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__main__module_1gaad3c46d89d0030281432298983b6c29b" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int MODE_NUM</definition>
+        <argsstring></argsstring>
+        <name>MODE_NUM</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/source/main.c" line="44" column="11" bodyfile="C:/Users/Jeong/git/04/source/main.c" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__main__module_1ga3948594ac93f0c5008fee3efcb07de77" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t BAUDRATE</definition>
+        <argsstring></argsstring>
+        <name>BAUDRATE</name>
+        <initializer>= 115200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>baudrate </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/source/main.c" line="47" column="16" bodyfile="C:/Users/Jeong/git/04/source/main.c" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__main__module_1ga7ce0dded27916b9e803c5066b904a796" prot="public" static="yes" mutable="no">
+        <type><ref refid="unionuint16union__t" kindref="compound">uint16union_t</ref> *</type>
+        <definition>volatile uint16union_t* NvMcuNb</definition>
+        <argsstring></argsstring>
+        <name>NvMcuNb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>non volatile MCU Number </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/source/main.c" line="74" column="31" bodyfile="C:/Users/Jeong/git/04/source/main.c" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__main__module_1gadbc23f21b44496bd040ead8ec1524d30" prot="public" static="yes" mutable="no">
+        <type><ref refid="unionuint16union__t" kindref="compound">uint16union_t</ref> *</type>
+        <definition>volatile uint16union_t* NvMcuMd</definition>
+        <argsstring></argsstring>
+        <name>NvMcuMd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>non volatile MCU Mode </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/source/main.c" line="75" column="31" bodyfile="C:/Users/Jeong/git/04/source/main.c" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__main__module_1gaa5092307bb5f36161fd4239f21ae8eed" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool SendStartupPackets</definition>
+        <argsstring>(void)</argsstring>
+        <name>SendStartupPackets</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Sends startup packets to the PC. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool - TRUE if sending the startup packets was successful. </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes that MCUInit has been called successfully. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/source/main.c" line="82" column="13" bodyfile="C:/Users/Jeong/git/04/source/main.c" bodystart="82" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="group__main__module_1ga05d6cff2c4cf03e26c5c05f4038f9dca" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool MCUInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>MCUInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initializes the MCU by initializing all variables and then sending startup packets to the PC. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool - TRUE if sending the startup packets was successful. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/source/main.c" line="102" column="13" bodyfile="C:/Users/Jeong/git/04/source/main.c" bodystart="102" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="group__main__module_1ga955bec09a746ef3069f87646261721c6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool HandleStartupPacket</definition>
+        <argsstring>(void)</argsstring>
+        <name>HandleStartupPacket</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Respond to a Startup packet sent from the PC. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool - TRUE if the packet was handled successfully. </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes that MCUInit has been called successfully. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/source/main.c" line="140" column="13" bodyfile="C:/Users/Jeong/git/04/source/main.c" bodystart="140" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="group__main__module_1gafac380800173ae24316efc2a1b60c4cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool HandleFlashProgram</definition>
+        <argsstring>(void)</argsstring>
+        <name>HandleFlashProgram</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Programs one byte from Flash. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool - TRUE if the packet was programmed successfully. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/source/main.c" line="153" column="13" bodyfile="C:/Users/Jeong/git/04/source/main.c" bodystart="153" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="group__main__module_1gac3114d818fed650ed82ded231333d1e5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool HandleFlashRead</definition>
+        <argsstring>(void)</argsstring>
+        <name>HandleFlashRead</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Reads one byte from Flash. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool - TRUE if the packet was read successfully. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/source/main.c" line="171" column="13" bodyfile="C:/Users/Jeong/git/04/source/main.c" bodystart="171" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="group__main__module_1ga57cecf001ee7a59329d9ddb803961fe3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool HandleGetVersion</definition>
+        <argsstring>(void)</argsstring>
+        <name>HandleGetVersion</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Respond to packets sent from the PC. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool - TRUE if the packet was handled successfully. </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes that MCUInit has been called successfully. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/source/main.c" line="189" column="13" bodyfile="C:/Users/Jeong/git/04/source/main.c" bodystart="189" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="group__main__module_1gacdeac81ad327da00a61070a8868e7d3b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool HandleMCUNumber</definition>
+        <argsstring>(void)</argsstring>
+        <name>HandleMCUNumber</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Respond to packets sent from the PC. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool - TRUE if the packet was handled successfully. </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes that MCUInit has been called successfully. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/source/main.c" line="206" column="13" bodyfile="C:/Users/Jeong/git/04/source/main.c" bodystart="206" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="group__main__module_1gadf223f06f4ccbee3310e252971fcb0fe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool HandleMCUMode</definition>
+        <argsstring>(void)</argsstring>
+        <name>HandleMCUMode</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Respond to packets sent from the PC. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool - TRUE if the packet was handled successfully. </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes that MCUInit has been called successfully. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/source/main.c" line="228" column="13" bodyfile="C:/Users/Jeong/git/04/source/main.c" bodystart="228" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="group__main__module_1ga0fdafa1dbb51cd815f0f99df7d1c2582" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void HandlePackets</definition>
+        <argsstring>(void)</argsstring>
+        <name>HandlePackets</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Respond to packets sent from the PC. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Assumes that MCUInit has been called successfully. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/source/main.c" line="252" column="13" bodyfile="C:/Users/Jeong/git/04/source/main.c" bodystart="252" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="group__main__module_1ga840291bc02cba5474a4cb46a9b9566fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(void)</argsstring>
+        <name>main</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Main function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>contains main loop </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/source/main.c" line="307" column="5" bodyfile="C:/Users/Jeong/git/04/source/main.c" bodystart="307" bodyend="320"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

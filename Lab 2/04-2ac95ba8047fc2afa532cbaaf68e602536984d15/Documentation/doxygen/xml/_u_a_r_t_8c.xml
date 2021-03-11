@@ -1,0 +1,363 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_u_a_r_t_8c" kind="file" language="C++">
+    <compoundname>UART.c</compoundname>
+    <includes refid="_u_a_r_t_8h" local="yes">UART.h</includes>
+    <includes refid="_f_i_f_o_8h" local="yes">FIFO\FIFO.h</includes>
+    <includes local="yes">MK64F12.h</includes>
+    <includes local="yes">drivers\fsl_port.h</includes>
+    <includes local="yes">drivers\fsl_clock.h</includes>
+    <includes local="yes">drivers\fsl_common.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>stdbool.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/UART/UART.c</label>
+        <link refid="_u_a_r_t_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UART.h</label>
+        <link refid="_u_a_r_t_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+      <node id="7">
+        <label>MK64F12.h</label>
+      </node>
+      <node id="6">
+        <label>FIFO\FIFO.h</label>
+        <link refid="_f_i_f_o_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>drivers\fsl_common.h</label>
+      </node>
+      <node id="8">
+        <label>drivers\fsl_port.h</label>
+      </node>
+      <node id="3">
+        <label>Types\types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>drivers\fsl_clock.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___u_a_r_t__module_1ga57a6bee2e32f83a4a1b52c99299794b8" prot="public" static="yes" mutable="no">
+        <type><ref refid="struct_t_f_i_f_o" kindref="compound">TFIFO</ref></type>
+        <definition>TFIFO RxFIFO</definition>
+        <argsstring></argsstring>
+        <name>RxFIFO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>receive FIFO struct variable </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/UART/UART.c" line="25" column="14" bodyfile="C:/Users/Jeong/git/04/Modules/UART/UART.c" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_a_r_t__module_1gabfc40789d380623f1ba598e006927b5e" prot="public" static="yes" mutable="no">
+        <type><ref refid="struct_t_f_i_f_o" kindref="compound">TFIFO</ref></type>
+        <definition>TFIFO TxFIFO</definition>
+        <argsstring></argsstring>
+        <name>TxFIFO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>transmit FIFO struct variable </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/UART/UART.c" line="26" column="14" bodyfile="C:/Users/Jeong/git/04/Modules/UART/UART.c" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_a_r_t__module_1gac8834e6b9381788dfdcb9d4e23da2059" prot="public" static="no" mutable="no">
+        <type>const port_pin_config_t</type>
+        <definition>const port_pin_config_t UART0_CONFIG</definition>
+        <argsstring></argsstring>
+        <name>UART0_CONFIG</name>
+        <initializer>=
+{
+    .pullSelect          = kPORT_PullDisable,
+    .slewRate            = kPORT_SlowSlewRate,
+    .passiveFilterEnable = kPORT_PassiveFilterDisable,
+    .openDrainEnable     = kPORT_OpenDrainDisable,
+    .driveStrength       = kPORT_LowDriveStrength,
+    .mux                 = kPORT_MuxAlt3,
+    .lockRegister        = kPORT_UnlockRegister
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/UART/UART.c" line="28" column="25" bodyfile="C:/Users/Jeong/git/04/Modules/UART/UART.c" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___u_a_r_t__module_1gac43bbaf247d278867fde8cd412a4f1c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UART_Init</definition>
+        <argsstring>(const uint32_t moduleClk, const uint32_t baudRate)</argsstring>
+        <name>UART_Init</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>moduleClk</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>baudRate</declname>
+        </param>
+        <briefdescription>
+<para>Sets up the UART interface before first use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>moduleClk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The module clock rate in Hz. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>baudRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired baud rate in bits/sec. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if the UART was successfully initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/UART/UART.c" line="40" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/UART/UART.c" bodystart="40" bodyend="87" declfile="C:/Users/Jeong/git/04/Modules/UART/UART.h" declline="28" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_a_r_t__module_1ga03049bcc3bf9af2a75ee77016d3b0d60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UART_InChar</definition>
+        <argsstring>(uint8_t *const dataPtr)</argsstring>
+        <name>UART_InChar</name>
+        <param>
+          <type>uint8_t *const</type>
+          <declname>dataPtr</declname>
+        </param>
+        <briefdescription>
+<para>Get a character from the receive FIFO if it is not empty. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataPtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to memory to store the retrieved byte. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if the receive FIFO returned a character. </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes that UART_Init has been called. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/UART/UART.c" line="90" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/UART/UART.c" bodystart="90" bodyend="94" declfile="C:/Users/Jeong/git/04/Modules/UART/UART.h" declline="36" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_a_r_t__module_1gab20ebaeefd1f29d31e098ade31189dda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UART_OutChar</definition>
+        <argsstring>(const uint8_t data)</argsstring>
+        <name>UART_OutChar</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Put a byte in the transmit FIFO if it is not full. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The byte to be placed in the transmit FIFO. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if the data was placed in the transmit FIFO. </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes that UART_Init has been called. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/UART/UART.c" line="97" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/UART/UART.c" bodystart="97" bodyend="101" declfile="C:/Users/Jeong/git/04/Modules/UART/UART.h" declline="44" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_a_r_t__module_1ga799b375101827a18f652a3f28ecefcd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UART_Poll</definition>
+        <argsstring>(void)</argsstring>
+        <name>UART_Poll</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Poll the UART status register to try and receive and/or transmit one character. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes that UART_Init has been called. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/UART/UART.c" line="104" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/UART/UART.c" bodystart="104" bodyend="113" declfile="C:/Users/Jeong/git/04/Modules/UART/UART.h" declline="51" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>I/O routines for UART communications on the TWR-K70F120M. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This contains the functions for operating the UART (serial port).</para>
+<para><simplesect kind="author"><para>Jeong Bin Lee </para>
+</simplesect>
+<simplesect kind="date"><para>2020-03-16 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="17"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_u_a_r_t_8h" kindref="compound">UART.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_f_i_f_o_8h" kindref="compound">FIFO\FIFO.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;MK64F12.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;drivers\fsl_port.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;drivers\fsl_clock.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;drivers\fsl_common.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//create<sp/>FIFO<sp/>as<sp/>global<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="struct_t_f_i_f_o" kindref="compound">TFIFO</ref><sp/>RxFIFO;<sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="struct_t_f_i_f_o" kindref="compound">TFIFO</ref><sp/>TxFIFO;<sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="keyword">const</highlight><highlight class="normal"><sp/>port_pin_config_t<sp/>UART0_CONFIG<sp/>=</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>.pullSelect<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>kPORT_PullDisable,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>.slewRate<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>kPORT_SlowSlewRate,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>.passiveFilterEnable<sp/>=<sp/>kPORT_PassiveFilterDisable,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>.openDrainEnable<sp/><sp/><sp/><sp/><sp/>=<sp/>kPORT_OpenDrainDisable,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>.driveStrength<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>kPORT_LowDriveStrength,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>.mux<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>kPORT_MuxAlt3,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>.lockRegister<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>kPORT_UnlockRegister</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___u_a_r_t__module_1gac43bbaf247d278867fde8cd412a4f1c3" kindref="member">UART_Init</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>moduleClk,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>baudRate)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><ref refid="unionuint16union__t" kindref="compound">uint16union_t</ref><sp/>sbr;<sp/><sp/></highlight><highlight class="comment">//store<sp/>slave<sp/>baudrate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>uint8_t<sp/>brfa;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//store<sp/>baudrate<sp/>fine<sp/>adjust</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(baudRate<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>//enable<sp/>UART0<sp/>from<sp/>System<sp/>Clock<sp/>Gating<sp/>Control<sp/>Register<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>SIM-&gt;SCGC4<sp/>|=<sp/>SIM_SCGC4_UART0_MASK;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>//enable<sp/>Port<sp/>B<sp/>from<sp/>System<sp/>Clock<sp/>Gating<sp/>Control<sp/>Register<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>SIM-&gt;SCGC5<sp/>|=<sp/>SIM_SCGC5_PORTB_MASK;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>CLOCK_EnableClock(kCLOCK_Uart0);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>CLOCK_EnableClock(kCLOCK_PortB);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>PORT_SetPinConfig(PORTB,<sp/>16,<sp/>&amp;UART0_CONFIG);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>PORT_SetPinConfig(PORTB,<sp/>17,<sp/>&amp;UART0_CONFIG);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//set<sp/>baud<sp/>rate<sp/>and<sp/>baud<sp/>rate<sp/>divider</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//UART<sp/>baud<sp/>rate<sp/>target<sp/>=<sp/>38400</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//SystemCoreClock<sp/>=<sp/>UART0<sp/>Module<sp/>Clock<sp/>(120MHz)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//SBR[12:0]<sp/>=<sp/><sp/>195</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//BRFD<sp/>=<sp/>0.3125</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//BRFA<sp/>=<sp/>1<sp/>0<sp/>0<sp/>1<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//additionally<sp/>set<sp/>BDH<sp/>&amp;<sp/>BDL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>UART<sp/>BR<sp/>=<sp/>UART<sp/>MOD<sp/>CLK<sp/>/<sp/>(16<sp/>*<sp/>(SBR[12:0]<sp/>+<sp/>BRFD))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//38400<sp/>=<sp/>SystemCoreClock<sp/>/<sp/>(16<sp/>*<sp/>(195<sp/>+<sp/>10));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//this<sp/>is<sp/>how<sp/>to<sp/>set<sp/>BDH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//UART0-&gt;BDH<sp/>|=<sp/>UART_BDH_SBR(0x00);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>sbr.l<sp/>=<sp/>moduleClk<sp/>/<sp/>(baudRate<sp/>*<sp/>16);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>brfa<sp/><sp/>=<sp/>(((double)moduleClk<sp/>/<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)(baudRate<sp/>*<sp/>16))<sp/>-<sp/>sbr.l)<sp/>*<sp/>32;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//not<sp/>enabled<sp/>until<sp/>RE<sp/>and<sp/>TE<sp/>are<sp/>set<sp/>in<sp/>C2<sp/>register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>UART0-&gt;BDH<sp/>=<sp/>(sbr.s.Hi<sp/>&amp;<sp/>0b00011111);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>UART0-&gt;BDL<sp/>=<sp/>sbr.s.Lo;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>UART0-&gt;C4<sp/>|=<sp/>brfa;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//UART0<sp/>Receiver<sp/>on<sp/>&amp;<sp/>Transmitter<sp/>on</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>UART0-&gt;C2<sp/>|=<sp/>UART_C2_RE_MASK<sp/>|<sp/>UART_C2_TE_MASK;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//initialise<sp/>the<sp/>receive<sp/>and<sp/>transmit<sp/>FIFO<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group___f_i_f_o__module_1ga78695bd259760403dac1e36bf8ccb234" kindref="member">FIFO_Init</ref>(&amp;TxFIFO)<sp/>&amp;<sp/><ref refid="group___f_i_f_o__module_1ga78695bd259760403dac1e36bf8ccb234" kindref="member">FIFO_Init</ref>(&amp;RxFIFO);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___u_a_r_t__module_1ga03049bcc3bf9af2a75ee77016d3b0d60" kindref="member">UART_InChar</ref>(uint8_t*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>dataPtr)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//try<sp/>to<sp/>read<sp/>data<sp/>from<sp/>rxfifo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group___f_i_f_o__module_1ga6407e3daf24a826a7f17d3e48865e89a" kindref="member">FIFO_Get</ref>(&amp;RxFIFO,<sp/>dataPtr);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___u_a_r_t__module_1gab20ebaeefd1f29d31e098ade31189dda" kindref="member">UART_OutChar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>data)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//read<sp/>data<sp/>has<sp/>been<sp/>received<sp/>in<sp/>UART_D,<sp/>so<sp/>put<sp/>it<sp/>in<sp/>FIFO_Put(txFIFO,<sp/>data)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group___f_i_f_o__module_1gace64ba4e6bd943f990a294693156cc3b" kindref="member">FIFO_Put</ref>(&amp;TxFIFO,<sp/>data);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___u_a_r_t__module_1ga799b375101827a18f652a3f28ecefcd0" kindref="member">UART_Poll</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//check<sp/>S1<sp/>register<sp/>for<sp/>TDRE<sp/>flag<sp/>and<sp/>RDRF<sp/>flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//if<sp/>RDRF<sp/>is<sp/>set<sp/>RxFIFO_Put(RxFIFO)<sp/>&amp;<sp/>clear<sp/>flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//if<sp/>TDRE<sp/>is<sp/>set<sp/>TxFIFO_Get(TxFIFO)<sp/>&amp;<sp/>clear<sp/>flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(UART0-&gt;S1<sp/>&amp;<sp/>UART_S1_RDRF_MASK)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___f_i_f_o__module_1gace64ba4e6bd943f990a294693156cc3b" kindref="member">FIFO_Put</ref>(&amp;RxFIFO,<sp/>UART0-&gt;D);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(UART0-&gt;S1<sp/>&amp;<sp/>UART_S1_TDRE_MASK)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___f_i_f_o__module_1ga6407e3daf24a826a7f17d3e48865e89a" kindref="member">FIFO_Get</ref>(&amp;TxFIFO,<sp/>(uint8_t*)&amp;UART0-&gt;D);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jeong/git/04/Modules/UART/UART.c"/>
+  </compounddef>
+</doxygen>

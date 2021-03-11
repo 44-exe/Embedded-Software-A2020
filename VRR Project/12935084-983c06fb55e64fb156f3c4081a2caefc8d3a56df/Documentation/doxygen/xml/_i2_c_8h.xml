@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_i2_c_8h" kind="file" language="C++">
+    <compoundname>I2C.h</compoundname>
+    <includes refid="types_8h" local="yes">Types\types.h</includes>
+    <includedby refid="accel_8c" local="yes">C:/Users/Jeong/git/04/Modules/Accel/accel.c</includedby>
+    <includedby refid="_i2_c_8c" local="yes">C:/Users/Jeong/git/04/Modules/I2C/I2C.c</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>Types\types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/I2C/I2C.h</label>
+        <link refid="_i2_c_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/Users/Jeong/git/04/Modules/Accel/accel.c</label>
+        <link refid="accel_8c"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/Jeong/git/04/Modules/I2C/I2C.c</label>
+        <link refid="_i2_c_8c"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/I2C/I2C.h</label>
+        <link refid="_i2_c_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_t_i2_c_module" prot="public">TI2CModule</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___i2_c__module_1ga9d0e9da6860d17a91aa55eeeddebb5cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool I2C_Init</definition>
+        <argsstring>(const uint32_t moduleClk, const TI2CModule *const aI2CModule)</argsstring>
+        <name>I2C_Init</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>moduleClk</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_t_i2_c_module" kindref="compound">TI2CModule</ref> *const</type>
+          <declname>aI2CModule</declname>
+        </param>
+        <briefdescription>
+<para>Sets up the I2C before first use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>moduleClk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The module clock in Hz. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aI2CModule</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a structure containing the operating conditions for the module. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BOOL - TRUE if the I2C module was successfully initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/I2C/I2C.h" line="31" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/I2C/I2C.c" bodystart="60" bodyend="119" declfile="C:/Users/Jeong/git/04/Modules/I2C/I2C.h" declline="31" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c__module_1ga0d6844ce590bbf5cc557fdf0747ad551" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_SelectSlaveDevice</definition>
+        <argsstring>(const uint8_t slaveAddress)</argsstring>
+        <name>I2C_SelectSlaveDevice</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>slaveAddress</declname>
+        </param>
+        <briefdescription>
+<para>Selects the current slave device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slaveAddress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The slave device address. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/I2C/I2C.h" line="37" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/I2C/I2C.c" bodystart="126" bodyend="129" declfile="C:/Users/Jeong/git/04/Modules/I2C/I2C.h" declline="37" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c__module_1gacaac94d86a7213791fb691d57c6f278b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_Write</definition>
+        <argsstring>(const uint8_t registerAddress, const uint8_t data)</argsstring>
+        <name>I2C_Write</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>registerAddress</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Write a byte of data to a specified register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>registerAddress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The register address. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 8-bit data to write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/I2C/I2C.h" line="44" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/I2C/I2C.c" bodystart="183" bodyend="207" declfile="C:/Users/Jeong/git/04/Modules/I2C/I2C.h" declline="44" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c__module_1ga3692682bb1cb84e1a3d0c31195451bd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_PollRead</definition>
+        <argsstring>(const uint8_t registerAddress, uint8_t *const data, const uint8_t nbBytes)</argsstring>
+        <name>I2C_PollRead</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>registerAddress</declname>
+        </param>
+        <param>
+          <type>uint8_t *const</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>nbBytes</declname>
+        </param>
+        <briefdescription>
+<para>Reads data of a specified length starting from a specified register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Uses polling as the method of data reception. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>registerAddress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The register address. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to store the bytes that are read. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbBytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of bytes to read. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/I2C/I2C.h" line="53" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/I2C/I2C.c" bodystart="209" bodyend="255" declfile="C:/Users/Jeong/git/04/Modules/I2C/I2C.h" declline="53" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___i2_c__module_1ga3685b2f03da2fa00b0cb671a0cce4f3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void I2C_IntRead</definition>
+        <argsstring>(const uint8_t registerAddress, uint8_t *const data, const uint8_t nbBytes)</argsstring>
+        <name>I2C_IntRead</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>registerAddress</declname>
+        </param>
+        <param>
+          <type>uint8_t *const</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>nbBytes</declname>
+        </param>
+        <briefdescription>
+<para>Reads data of a specified length starting from a specified register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Uses interrupts as the method of data reception. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>registerAddress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The register address. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to store the bytes that are read. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbBytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of bytes to read. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/I2C/I2C.h" line="62" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/I2C/I2C.c" bodystart="257" bodyend="306" declfile="C:/Users/Jeong/git/04/Modules/I2C/I2C.h" declline="62" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>I/O routines for the K70 I2C interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This contains the functions for operating the I2C (inter-integrated circuit) module.</para>
+<para><simplesect kind="author"><para>PMcL </para>
+</simplesect>
+<simplesect kind="date"><para>2015-09-17 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>I2C_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>new<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="types_8h" kindref="compound">Types\types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="struct_t_i2_c_module" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>uint8_t<sp/>primarySlaveAddress;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>uint32_t<sp/>baudRate;</highlight></codeline>
+<codeline lineno="21" refid="struct_t_i2_c_module_1aa6056c02fd35c8a10351230551e8f7ea" refkind="member"><highlight class="normal"><sp/><sp/>void<sp/>(*readCompleteCallbackFunction)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*);<sp/><sp/></highlight></codeline>
+<codeline lineno="22" refid="struct_t_i2_c_module_1a27d054d3b463998978dbb6237e6ce105" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="struct_t_i2_c_module_1a27d054d3b463998978dbb6237e6ce105" kindref="member">readCompleteCallbackArguments</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}<sp/><ref refid="struct_t_i2_c_module" kindref="compound">TI2CModule</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___i2_c__module_1ga9d0e9da6860d17a91aa55eeeddebb5cd" kindref="member">I2C_Init</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>moduleClk,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_t_i2_c_module" kindref="compound">TI2CModule</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>aI2CModule);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___i2_c__module_1ga0d6844ce590bbf5cc557fdf0747ad551" kindref="member">I2C_SelectSlaveDevice</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>slaveAddress);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___i2_c__module_1gacaac94d86a7213791fb691d57c6f278b" kindref="member">I2C_Write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>registerAddress,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>data);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___i2_c__module_1ga3692682bb1cb84e1a3d0c31195451bd9" kindref="member">I2C_PollRead</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>registerAddress,<sp/>uint8_t*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>nbBytes);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___i2_c__module_1ga3685b2f03da2fa00b0cb671a0cce4f3f" kindref="member">I2C_IntRead</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>registerAddress,<sp/>uint8_t*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>nbBytes);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jeong/git/04/Modules/I2C/I2C.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_l_e_ds_8c" kind="file" language="C++">
+    <compoundname>LEDs.c</compoundname>
+    <includes refid="types_8h" local="yes">Types\types.h</includes>
+    <includes refid="_l_e_ds_8h" local="yes">LEDs.h</includes>
+    <includes local="yes">device\MK64F12.h</includes>
+    <includes local="yes">drivers\fsl_port.h</includes>
+    <includes local="yes">drivers\fsl_gpio.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="8">
+        <label>drivers\fsl_gpio.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c</label>
+        <link refid="_l_e_ds_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>LEDs.h</label>
+        <link refid="_l_e_ds_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>drivers\fsl_port.h</label>
+      </node>
+      <node id="2">
+        <label>Types\types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>device\MK64F12.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___l_e_ds__module_1ga8c562295defbb7c742a43e2c186391e1" prot="public" static="no" mutable="no">
+        <type>const gpio_pin_config_t</type>
+        <definition>const gpio_pin_config_t PORTOUT</definition>
+        <argsstring></argsstring>
+        <name>PORTOUT</name>
+        <initializer>=
+{
+  kGPIO_DigitalOutput,
+  1
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" line="23" column="25" bodyfile="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___l_e_ds__module_1ga971ce808151ce8c8efbeab5fd3217060" prot="public" static="no" mutable="no">
+        <type>const port_pin_config_t</type>
+        <definition>const port_pin_config_t SETPORT</definition>
+        <argsstring></argsstring>
+        <name>SETPORT</name>
+        <initializer>=
+{
+    .pullSelect = kPORT_PullDisable,
+    .slewRate = kPORT_SlowSlewRate,
+    .passiveFilterEnable = kPORT_PassiveFilterDisable,
+    .openDrainEnable = kPORT_OpenDrainDisable,
+    .driveStrength = kPORT_LowDriveStrength,
+    .mux = kPORT_MuxAsGpio,
+    .lockRegister = kPORT_UnlockRegister
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" line="29" column="25" bodyfile="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___l_e_ds__module_1gaea5d2a9d1aacacc05e4d772a555b2d9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool LEDs_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>LEDs_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Sets up the LEDs before first use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool - TRUE if the LEDs were successfully initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" line="41" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" bodystart="41" bodyend="54" declfile="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.h" declline="36" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___l_e_ds__module_1gab83ce0564d78725d23783caa491a293a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LEDs_On</definition>
+        <argsstring>(const LED_t color)</argsstring>
+        <name>LEDs_On</name>
+        <param>
+          <type>const <ref refid="group___l_e_ds__module_1gadd06cf8aa4e6538b7411fe9976dbf4d5" kindref="member">LED_t</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Turns an LED on. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color of the LED to turn on. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Assumes that LEDs_Init has been called. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" line="57" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" bodystart="57" bodyend="64" declfile="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.h" declline="43" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___l_e_ds__module_1gab96427411f19150a344e5f238bfa15b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LEDs_Off</definition>
+        <argsstring>(const LED_t color)</argsstring>
+        <name>LEDs_Off</name>
+        <param>
+          <type>const <ref refid="group___l_e_ds__module_1gadd06cf8aa4e6538b7411fe9976dbf4d5" kindref="member">LED_t</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Turns off an LED. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The color of the LED to turn off. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Assumes that LEDs_Init has been called. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" line="67" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" bodystart="67" bodyend="73" declfile="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.h" declline="50" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___l_e_ds__module_1ga73f961351cfc02fcf8306b14e16d4429" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LEDs_Toggle</definition>
+        <argsstring>(const LED_t color)</argsstring>
+        <name>LEDs_Toggle</name>
+        <param>
+          <type>const <ref refid="group___l_e_ds__module_1gadd06cf8aa4e6538b7411fe9976dbf4d5" kindref="member">LED_t</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Toggles an LED. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>THe color of the LED to toggle. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Assumes that LEDs_Init has been called. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" line="76" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c" bodystart="76" bodyend="82" declfile="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.h" declline="57" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Routines to access the LEDs on the FRDM-K64F. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This contains the functions for operating the LEDs.</para>
+<para><simplesect kind="author"><para>Jeong Bin Lee </para>
+</simplesect>
+<simplesect kind="date"><para>2020-04-14 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="16"><highlight class="comment">//<sp/>new<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="types_8h" kindref="compound">Types\types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_l_e_ds_8h" kindref="compound">LEDs.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;device\MK64F12.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;drivers\fsl_port.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;drivers\fsl_gpio.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gpio_pin_config_t<sp/>PORTOUT<sp/>=</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>kGPIO_DigitalOutput,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>1</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>port_pin_config_t<sp/>SETPORT<sp/>=</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>.pullSelect<sp/>=<sp/>kPORT_PullDisable,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>.slewRate<sp/>=<sp/>kPORT_SlowSlewRate,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>.passiveFilterEnable<sp/>=<sp/>kPORT_PassiveFilterDisable,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>.openDrainEnable<sp/>=<sp/>kPORT_OpenDrainDisable,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>.driveStrength<sp/>=<sp/>kPORT_LowDriveStrength,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>.mux<sp/>=<sp/>kPORT_MuxAsGpio,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>.lockRegister<sp/>=<sp/>kPORT_UnlockRegister</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___l_e_ds__module_1gaea5d2a9d1aacacc05e4d772a555b2d9d" kindref="member">LEDs_Init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>CLOCK_EnableClock(kCLOCK_PortE);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>PORT_SetPinConfig(PORTB,<sp/>21,<sp/>&amp;SETPORT);<sp/></highlight><highlight class="comment">//blue</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>PORT_SetPinConfig(PORTB,<sp/>22,<sp/>&amp;SETPORT);<sp/></highlight><highlight class="comment">//red</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>PORT_SetPinConfig(PORTE,<sp/>26,<sp/>&amp;SETPORT);<sp/></highlight><highlight class="comment">//green</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>GPIO_PinInit(GPIOB,<sp/>21,<sp/>&amp;PORTOUT);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>GPIO_PinInit(GPIOB,<sp/>22,<sp/>&amp;PORTOUT);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>GPIO_PinInit(GPIOE,<sp/>26,<sp/>&amp;PORTOUT);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___l_e_ds__module_1gab83ce0564d78725d23783caa491a293a" kindref="member">LEDs_On</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group___l_e_ds__module_1gadd06cf8aa4e6538b7411fe9976dbf4d5" kindref="member">LED_t</ref><sp/>color)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//0<sp/>=<sp/>red,<sp/><sp/>1<sp/>=<sp/>green,<sp/>2<sp/>=<sp/>blue</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(color<sp/>==<sp/>21<sp/>||<sp/>color<sp/>==<sp/>22)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIOB-&gt;PCOR<sp/>|=<sp/>(1&lt;&lt;color);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(color<sp/>==<sp/>26)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIOE-&gt;PCOR<sp/>|=<sp/>(1&lt;&lt;color);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___l_e_ds__module_1gab96427411f19150a344e5f238bfa15b9" kindref="member">LEDs_Off</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group___l_e_ds__module_1gadd06cf8aa4e6538b7411fe9976dbf4d5" kindref="member">LED_t</ref><sp/>color)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(color<sp/>==<sp/>21<sp/>||<sp/>color<sp/>==<sp/>22)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIOB-&gt;PSOR<sp/>|=<sp/>(1&lt;&lt;color);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(color<sp/>==<sp/>26)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIOE-&gt;PSOR<sp/>|=<sp/>(1&lt;&lt;color);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___l_e_ds__module_1ga73f961351cfc02fcf8306b14e16d4429" kindref="member">LEDs_Toggle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group___l_e_ds__module_1gadd06cf8aa4e6538b7411fe9976dbf4d5" kindref="member">LED_t</ref><sp/>color)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(color<sp/>==<sp/>21<sp/>||<sp/>color<sp/>==<sp/>22)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIOB-&gt;PTOR<sp/>|=<sp/>(1&lt;&lt;color);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(color<sp/>==<sp/>26)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIOE-&gt;PTOR<sp/>|=<sp/>(1&lt;&lt;color);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c"/>
+  </compounddef>
+</doxygen>

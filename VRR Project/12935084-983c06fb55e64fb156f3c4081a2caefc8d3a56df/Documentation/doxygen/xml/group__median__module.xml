@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="group__median__module" kind="group">
+    <compoundname>median_module</compoundname>
+    <title>median module documentation</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__median__module_1gae9c8190fd02fa896acd9dd269b6cb817" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Median_Filter3</definition>
+        <argsstring>(const uint8_t n1, const uint8_t n2, const uint8_t n3)</argsstring>
+        <name>Median_Filter3</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>n1</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>n2</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>n3</declname>
+        </param>
+        <briefdescription>
+<para>Median filters 3 bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the first of 3 bytes for which the median is sought. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the second of 3 bytes for which the median is sought. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the third of 3 bytes for which the median is sought. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/g_elb/git/04/Modules/Median/median.c" line="21" column="9" bodyfile="C:/Users/g_elb/git/04/Modules/Median/median.c" bodystart="21" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

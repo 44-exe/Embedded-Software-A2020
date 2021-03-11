@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="group__accel__module" kind="group">
+    <compoundname>accel_module</compoundname>
+    <title>accel module documentation</title>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__accel__module_1ga66554c667936238ffe45c91e60545998" prot="public" static="no" mutable="no">
+        <type>AccelMode_t</type>
+        <definition>AccelMode_t AccelMode</definition>
+        <argsstring></argsstring>
+        <name>AccelMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mode for the accelerometer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.c" line="28" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__accel__module_1gad741befccec501382f5226a3146861e2" prot="public" static="no" mutable="no">
+        <type><ref refid="union_accel_data__t" kindref="compound">AccelData_t</ref></type>
+        <definition>AccelData_t AccelData</definition>
+        <argsstring></argsstring>
+        <name>AccelData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Data for accelerometer </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.c" line="30" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__accel__module_1gaa920b152f9edd5264c246995c007bc3f" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_accel_setup__t" kindref="compound">AccelSetup_t</ref></type>
+        <definition>AccelSetup_t Accel_Setup</definition>
+        <argsstring></argsstring>
+        <name>Accel_Setup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>stores Accel structure data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.c" line="32" column="14" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__accel__module_1gabd7d912d1e16e00d9ef7355439e5e259" prot="public" static="no" mutable="no">
+        <type>const port_pin_config_t</type>
+        <definition>const port_pin_config_t PORTC_CONFIG</definition>
+        <argsstring></argsstring>
+        <name>PORTC_CONFIG</name>
+        <initializer>=
+{
+    .pullSelect          = kPORT_PullDisable,
+    .slewRate            = kPORT_SlowSlewRate,
+    .passiveFilterEnable = kPORT_PassiveFilterDisable,
+    .openDrainEnable     = kPORT_OpenDrainDisable,
+    .driveStrength       = kPORT_LowDriveStrength,
+    .mux                 = kPORT_MuxAsGpio,
+    .lockRegister        = kPORT_UnlockRegister
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.c" line="34" column="25" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__accel__module_1gab28ee3c2d6f86187bcffa811a68cab30" prot="public" static="no" mutable="no">
+        <type>const gpio_pin_config_t</type>
+        <definition>const gpio_pin_config_t PORTCIN</definition>
+        <argsstring></argsstring>
+        <name>PORTCIN</name>
+        <initializer>=
+{
+  kGPIO_DigitalInput,
+  0
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.c" line="45" column="25" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__accel__module_1ga1acdcf7eef003e0db618fdb0c784eb3a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void StandByMode</definition>
+        <argsstring>(bool standby)</argsstring>
+        <name>StandByMode</name>
+        <param>
+          <type>bool</type>
+          <declname>standby</declname>
+        </param>
+        <briefdescription>
+<para>Median filters 3 bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.c" line="54" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="54" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="group__accel__module_1ga23d298c5c59e0867f73a0560fe28bb16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Accel_Init</definition>
+        <argsstring>(const uint32_t moduleClk, const AccelSetup_t *const accelSetup)</argsstring>
+        <name>Accel_Init</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>moduleClk</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_accel_setup__t" kindref="compound">AccelSetup_t</ref> *const</type>
+          <declname>accelSetup</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the accelerometer by calling the initialization routines of the supporting software modules. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>moduleClk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the module clock rate in Hz. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>accelSetup</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a pointer to an accelerometer setup structure. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - true if the accelerometer module was successfully initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.c" line="71" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="71" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="group__accel__module_1ga8cc8e053f2474e24cb761f1de0f769d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Accel_ReadXYZ</definition>
+        <argsstring>(uint8_t data[3])</argsstring>
+        <name>Accel_ReadXYZ</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+          <array>[3]</array>
+        </param>
+        <briefdescription>
+<para>Reads X, Y and Z accelerations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is an array of 3 bytes where the X, Y and Z data are stored. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.c" line="139" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="139" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="group__accel__module_1gabdb9bb9ab0f994735b1f6adcd12a39a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Accel_SetMode</definition>
+        <argsstring>(const AccelMode_t mode)</argsstring>
+        <name>Accel_SetMode</name>
+        <param>
+          <type>const AccelMode_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Set the mode of the accelerometer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>specifies either polled or interrupt driven operation. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.c" line="149" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="149" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="group__accel__module_1ga79b5e2b7e358d5b2e581b3942dfd216f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Accel_SlidingWindow</definition>
+        <argsstring>(uint8_t *accelOldData, uint8_t accelNewData)</argsstring>
+        <name>Accel_SlidingWindow</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>accelOldData</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>accelNewData</declname>
+        </param>
+        <briefdescription>
+<para>Shift the old values and include the new values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>accelOldData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of old data stored. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>accelNewData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new data received by the accelerometer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - true if the accelerometer module was successfully initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.c" line="184" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="184" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="group__accel__module_1ga2a7f89fa7db08f2a1df1f1b80111ee6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PORTC_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>PORTC_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>PORTC interrupt request handler clears interrupt and calls user function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Accel/accel.c" line="201" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/Accel/accel.c" bodystart="201" bodyend="212"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

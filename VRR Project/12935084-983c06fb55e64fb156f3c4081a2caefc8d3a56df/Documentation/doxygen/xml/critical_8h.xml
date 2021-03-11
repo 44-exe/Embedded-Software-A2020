@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="critical_8h" kind="file" language="C++">
+    <compoundname>critical.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="main_8c" local="yes">C:/Users/Jeong/git/04/source/main.c</includedby>
+    <includedby refid="accel_8c" local="yes">C:/Users/Jeong/git/04/Modules/Accel/accel.c</includedby>
+    <includedby refid="critical_8c" local="yes">C:/Users/Jeong/git/04/Modules/Critical/critical.c</includedby>
+    <includedby refid="_f_i_f_o_8c" local="yes">C:/Users/Jeong/git/04/Modules/FIFO/FIFO.c</includedby>
+    <includedby refid="_i2_c_8c" local="yes">C:/Users/Jeong/git/04/Modules/I2C/I2C.c</includedby>
+    <includedby refid="_packet_8c" local="yes">C:/Users/Jeong/git/04/Modules/Packet/Packet.c</includedby>
+    <includedby refid="_r_t_c_8c" local="yes">C:/Users/Jeong/git/04/Modules/RTC/RTC.c</includedby>
+    <includedby refid="_u_a_r_t_8c" local="yes">C:/Users/Jeong/git/04/Modules/UART/UART.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/Critical/critical.h</label>
+        <link refid="critical_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="9">
+        <label>C:/Users/Jeong/git/04/Modules/UART/UART.c</label>
+        <link refid="_u_a_r_t_8c"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/Jeong/git/04/Modules/Critical/critical.c</label>
+        <link refid="critical_8c"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/Critical/critical.h</label>
+        <link refid="critical_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/Jeong/git/04/Modules/FIFO/FIFO.c</label>
+        <link refid="_f_i_f_o_8c"/>
+      </node>
+      <node id="8">
+        <label>C:/Users/Jeong/git/04/Modules/RTC/RTC.c</label>
+        <link refid="_r_t_c_8c"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/Jeong/git/04/Modules/Accel/accel.c</label>
+        <link refid="accel_8c"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/Jeong/git/04/Modules/Packet/Packet.c</label>
+        <link refid="_packet_8c"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/Jeong/git/04/source/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/Jeong/git/04/Modules/I2C/I2C.c</label>
+        <link refid="_i2_c_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___critical__module_1gaa9e431dfeb614cd9ed02873ae7ab3811" prot="public" static="no">
+        <name>EnterCritical</name>
+        <param></param>
+        <initializer>do {\
+  uint8_t SR_reg_local;\
+   __asm ( \
+     &quot;MRS R0, FAULTMASK\n\t&quot; \
+     &quot;CPSID f\n\t&quot;            \
+     &quot;STRB R0, %[output]&quot;  \
+     : [output] &quot;=m&quot; (SR_reg_local)\
+     :: &quot;r0&quot;);\
+   if (++SR_lock == 1u) {\
+     SR_reg = SR_reg_local;\
+   }\
+ } while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Critical/critical.h" line="25" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Critical/critical.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___critical__module_1gae8fae71710d5ae72f8839a947cb1f468" prot="public" static="no">
+        <name>ExitCritical</name>
+        <param></param>
+        <initializer>do {\
+   if (--SR_lock == 0u) { \
+     __asm (                 \
+       &quot;LDRB R0, %[input]\n\t&quot;\
+       &quot;MSR FAULTMASK, R0;\n\t&quot; \
+       ::[input] &quot;m&quot; (SR_reg)  \
+       : &quot;r0&quot;);                \
+   }\
+ } while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Critical/critical.h" line="41" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/Critical/critical.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___critical__module_1ga326c16dd0db38f80ec48c7727d764481" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>volatile uint8_t SR_reg</definition>
+        <argsstring></argsstring>
+        <name>SR_reg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Critical/critical.h" line="21" column="25" bodyfile="C:/Users/Jeong/git/04/Modules/Critical/critical.c" bodystart="21" bodyend="-1" declfile="C:/Users/Jeong/git/04/Modules/Critical/critical.h" declline="21" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___critical__module_1ga08ee8b0f642aeef5bbbce3bb4ec1bb28" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>volatile uint8_t SR_lock</definition>
+        <argsstring></argsstring>
+        <name>SR_lock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Critical/critical.h" line="22" column="25" bodyfile="C:/Users/Jeong/git/04/Modules/Critical/critical.c" bodystart="22" bodyend="-1" declfile="C:/Users/Jeong/git/04/Modules/Critical/critical.h" declline="22" declcolumn="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Routines to implement protection of critical sections. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This contains the functions for entering and exiting critical sections.</para>
+<para><simplesect kind="author"><para>PMcL </para>
+</simplesect>
+<simplesect kind="date"><para>2020-03-03 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="16"><highlight class="preprocessor">#ifndef<sp/>CRITICAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRITICAL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint8_t<sp/>SR_reg;<sp/><sp/></highlight><highlight class="comment">//<sp/>Current<sp/>value<sp/>of<sp/>the<sp/>FAULTMASK<sp/>register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint8_t<sp/>SR_lock;<sp/></highlight><highlight class="comment">//<sp/>Lock</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Save<sp/>status<sp/>register<sp/>and<sp/>disable<sp/>interrupts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EnterCritical()<sp/>\</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"><sp/>do<sp/>{\</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"><sp/><sp/>uint8_t<sp/>SR_reg_local;\</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"><sp/><sp/><sp/>__asm<sp/>(<sp/>\</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>&quot;MRS<sp/>R0,<sp/>FAULTMASK\n\t&quot;<sp/>\</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>&quot;CPSID<sp/>f\n\t&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>&quot;STRB<sp/>R0,<sp/>%[output]&quot;<sp/><sp/>\</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>:<sp/>[output]<sp/>&quot;=m&quot;<sp/>(SR_reg_local)\</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>::<sp/>&quot;r0&quot;);\</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"><sp/><sp/><sp/>if<sp/>(++SR_lock<sp/>==<sp/>1u)<sp/>{\</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>SR_reg<sp/>=<sp/>SR_reg_local;\</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"><sp/><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"><sp/>}<sp/>while(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Restore<sp/>status<sp/>register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ExitCritical()<sp/>\</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"><sp/>do<sp/>{\</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"><sp/><sp/><sp/>if<sp/>(--SR_lock<sp/>==<sp/>0u)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>__asm<sp/>(<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;LDRB<sp/>R0,<sp/>%[input]\n\t&quot;\</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;MSR<sp/>FAULTMASK,<sp/>R0;\n\t&quot;<sp/>\</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::[input]<sp/>&quot;m&quot;<sp/>(SR_reg)<sp/><sp/>\</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>&quot;r0&quot;);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"><sp/><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"><sp/>}<sp/>while(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jeong/git/04/Modules/Critical/critical.h"/>
+  </compounddef>
+</doxygen>

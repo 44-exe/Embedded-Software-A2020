@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="group___f_t_m__module" kind="group">
+    <compoundname>FTM_module</compoundname>
+    <title>FTM module documentation</title>
+    <innerclass refid="struct_t_f_t_m_channel" prot="public">TFTMChannel</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___f_t_m__module_1ga830315c3626b559a4ec857bef198cf7b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TTimerFunction</name>
+        <enumvalue id="group___f_t_m__module_1gga830315c3626b559a4ec857bef198cf7bacd39a068bcbbb1c56c56097cd04aed14" prot="public">
+          <name>TIMER_FUNCTION_INPUT_CAPTURE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___f_t_m__module_1gga830315c3626b559a4ec857bef198cf7ba4f02c6bf4ba334adb3911ffb59f21265" prot="public">
+          <name>TIMER_FUNCTION_OUTPUT_COMPARE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" line="23" column="1" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" bodystart="22" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___f_t_m__module_1gad5f2367d930015e42d1b0db18249ac44" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TTimerOutputAction</name>
+        <enumvalue id="group___f_t_m__module_1ggad5f2367d930015e42d1b0db18249ac44a256de8e3014a3e20f26c283b9a8ec73c" prot="public">
+          <name>TIMER_OUTPUT_DISCONNECT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___f_t_m__module_1ggad5f2367d930015e42d1b0db18249ac44aa7803dfea664e01b0ef2dadbc0c16000" prot="public">
+          <name>TIMER_OUTPUT_TOGGLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___f_t_m__module_1ggad5f2367d930015e42d1b0db18249ac44a87c191c13faff5c88cf2ce25392eadf7" prot="public">
+          <name>TIMER_OUTPUT_LOW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___f_t_m__module_1ggad5f2367d930015e42d1b0db18249ac44a4d9dddf39ebaa0d153792ef3b97b61c4" prot="public">
+          <name>TIMER_OUTPUT_HIGH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" line="29" column="1" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" bodystart="28" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___f_t_m__module_1ga94108be49a2464d06bf383b3dc1a218e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TTimerInputDetection</name>
+        <enumvalue id="group___f_t_m__module_1gga94108be49a2464d06bf383b3dc1a218ead2de7a920acc78d64016ecc1808020ae" prot="public">
+          <name>TIMER_INPUT_OFF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___f_t_m__module_1gga94108be49a2464d06bf383b3dc1a218eae63dbaff41e32ecec4fc3c73892d727f" prot="public">
+          <name>TIMER_INPUT_RISING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___f_t_m__module_1gga94108be49a2464d06bf383b3dc1a218eabb925337aa448aab1a5912de487715cb" prot="public">
+          <name>TIMER_INPUT_FALLING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___f_t_m__module_1gga94108be49a2464d06bf383b3dc1a218ea28560fff866737910cad27acec699fea" prot="public">
+          <name>TIMER_INPUT_ANY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" line="37" column="1" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" bodystart="36" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___f_t_m__module_1gab465baf96d81bdd7ea2c4ace21184f67" prot="public" static="yes" mutable="no">
+        <type>void(*</type>
+        <definition>void(* CallbackFunction[FTM_CHANNEL_SIZE])(void *)</definition>
+        <argsstring>[FTM_CHANNEL_SIZE])(void *)</argsstring>
+        <name>CallbackFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>user callback function as an array </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" line="25" column="8" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___f_t_m__module_1ga1bd0cc5a354cadf17ece5d4c134a39fa" prot="public" static="yes" mutable="no">
+        <type>void *</type>
+        <definition>void* CallbackArguments[FTM_CHANNEL_SIZE]</definition>
+        <argsstring>[FTM_CHANNEL_SIZE]</argsstring>
+        <name>CallbackArguments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>user callback arguments as an array </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" line="26" column="13" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___f_t_m__module_1ga5f31811e067b5690d5f73c8e77019a6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FTM_Init</definition>
+        <argsstring>()</argsstring>
+        <name>FTM_Init</name>
+        <briefdescription>
+<para>Sets up the FTM before first use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Enables the FTM as a free running 16-bit counter. <simplesect kind="return"><para>bool - TRUE if the FTM was successfully initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" line="29" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" bodystart="29" bodyend="53" declfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" declline="64" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_t_m__module_1gae4928af832114c8173e43d10e4144c1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FTM_Set</definition>
+        <argsstring>(const TFTMChannel *const aFTMChannel)</argsstring>
+        <name>FTM_Set</name>
+        <param>
+          <type>const <ref refid="struct_t_f_t_m_channel" kindref="compound">TFTMChannel</ref> *const</type>
+          <declname>aFTMChannel</declname>
+        </param>
+        <briefdescription>
+<para>Sets up a timer channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aFTMChannel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a structure containing the parameters to be used in setting up the timer channel. channelNb is the channel number of the FTM to use. delayCount is the delay count (in module clock periods) for an output compare event. timerFunction is used to set the timer up as either an input capture or an output compare. ioType is a union that depends on the setting of the channel as input capture or output compare: outputAction is the action to take on a successful output compare. inputDetection is the type of input capture detection. callbackFunction is a pointer to a user callback function. callbackArguments is a pointer to the user arguments to use with the user callback function. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if the timer was set up successfully. </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes the FTM has been initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" line="55" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" bodystart="55" bodyend="96" declfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" declline="80" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_t_m__module_1gabb34a0dd79d879502fd81c0efa9440ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool FTM_StartTimer</definition>
+        <argsstring>(const TFTMChannel *const aFTMChannel)</argsstring>
+        <name>FTM_StartTimer</name>
+        <param>
+          <type>const <ref refid="struct_t_f_t_m_channel" kindref="compound">TFTMChannel</ref> *const</type>
+          <declname>aFTMChannel</declname>
+        </param>
+        <briefdescription>
+<para>Starts a timer if set up for output compare. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aFTMChannel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a structure containing the parameters to be used in setting up the timer channel. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if the timer was started successfully. </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes the FTM has been initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" line="98" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" bodystart="98" bodyend="119" declfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.h" declline="89" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___f_t_m__module_1ga413b257915ccf92e44262ba9a7a86b75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FTM0_IRQHandler</definition>
+        <argsstring>(void)</argsstring>
+        <name>FTM0_IRQHandler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>FTM interrupt request handler reads CnSC register, clears interrupt and calls user function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" line="125" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" bodystart="125" bodyend="137"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___f_t_m__module_1ga5f5acc3c60b57cf9d523176b3cf401c0" prot="public" static="no">
+        <name>FTM_CHANNEL_SIZE</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" line="23" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/FTM/FTM.c" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

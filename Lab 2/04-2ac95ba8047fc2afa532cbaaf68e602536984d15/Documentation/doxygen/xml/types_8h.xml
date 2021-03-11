@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="types_8h" kind="file" language="C++">
+    <compoundname>types.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includedby refid="main_8c" local="yes">C:/Users/Jeong/git/04/source/main.c</includedby>
+    <includedby refid="_f_i_f_o_8h" local="yes">C:/Users/Jeong/git/04/Modules/FIFO/FIFO.h</includedby>
+    <includedby refid="_flash_8h" local="yes">C:/Users/Jeong/git/04/Modules/Flash/Flash.h</includedby>
+    <includedby refid="_l_e_ds_8c" local="yes">C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c</includedby>
+    <includedby refid="_l_e_ds_8h" local="yes">C:/Users/Jeong/git/04/Modules/LEDs/LEDs.h</includedby>
+    <includedby refid="_packet_8c" local="yes">C:/Users/Jeong/git/04/Modules/Packet/Packet.c</includedby>
+    <includedby refid="packet_8h" local="yes">C:/Users/Jeong/git/04/Modules/Packet/packet.h</includedby>
+    <includedby refid="_u_a_r_t_8h" local="yes">C:/Users/Jeong/git/04/Modules/UART/UART.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>stdbool.h</label>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/types/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>C:/Users/Jeong/git/04/Modules/UART/UART.c</label>
+        <link refid="_u_a_r_t_8c"/>
+      </node>
+      <node id="12">
+        <label>C:/Users/Jeong/git/04/Modules/UART/UART.h</label>
+        <link refid="_u_a_r_t_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/Jeong/git/04/Modules/FIFO/FIFO.c</label>
+        <link refid="_f_i_f_o_8c"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/Jeong/git/04/Modules/FIFO/FIFO.h</label>
+        <link refid="_f_i_f_o_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>C:/Users/Jeong/git/04/Modules/Packet/packet.h</label>
+        <link refid="packet_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>C:/Users/Jeong/git/04/Modules/LEDs/LEDs.c</label>
+        <link refid="_l_e_ds_8c"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/Jeong/git/04/Modules/LEDs/LEDs.h</label>
+        <link refid="_l_e_ds_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>C:/Users/Jeong/git/04/Modules/Flash/Flash.c</label>
+        <link refid="_flash_8c"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/Jeong/git/04/Modules/Flash/Flash.h</label>
+        <link refid="_flash_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>C:/Users/Jeong/git/04/Modules/Packet/Packet.c</label>
+        <link refid="_packet_8c"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/types/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/Jeong/git/04/source/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="unionint16union__t" prot="public">int16union_t</innerclass>
+    <innerclass refid="unionuint16union__t" prot="public">uint16union_t</innerclass>
+    <innerclass refid="unionuint32union__t" prot="public">uint32union_t</innerclass>
+    <innerclass refid="unionuint64union__t" prot="public">uint64union_t</innerclass>
+    <innerclass refid="union_t_float" prot="public">TFloat</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="types_8h_1a26cd1b41ab1c8f261271f67271ddc33e" prot="public" static="no">
+        <name>DEBUG_HALT</name>
+        <param></param>
+        <initializer>__asm( &quot;BKPT 255&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/types/types.h" line="71" column="9" bodyfile="C:/Users/Jeong/git/04/Modules/types/types.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Declares new types. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This contains types that are especially useful for the Tower to PC Protocol.</para>
+<para><simplesect kind="author"><para>PMcL </para>
+</simplesect>
+<simplesect kind="date"><para>2016-06-06 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>TYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Unions<sp/>to<sp/>efficiently<sp/>access<sp/>hi<sp/>and<sp/>lo<sp/>parts<sp/>of<sp/>integers<sp/>and<sp/>words</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="unionint16union__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>int16_t<sp/>l;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/>Lo;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/>Hi;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>}<sp/>s;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}<sp/><ref refid="unionint16union__t" kindref="compound">int16union_t</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="unionuint16union__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>uint16_t<sp/>l;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>Lo;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>Hi;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>}<sp/>s;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}<sp/><ref refid="unionuint16union__t" kindref="compound">uint16union_t</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Union<sp/>to<sp/>efficiently<sp/>access<sp/>hi<sp/>and<sp/>lo<sp/>parts<sp/>of<sp/>a<sp/>long<sp/>integer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="unionuint32union__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>uint32_t<sp/>l;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>Lo;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>Hi;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>}<sp/>s;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}<sp/><ref refid="unionuint32union__t" kindref="compound">uint32union_t</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Union<sp/>to<sp/>efficiently<sp/>access<sp/>hi<sp/>and<sp/>lo<sp/>parts<sp/>of<sp/>a<sp/>&quot;phrase&quot;<sp/>(8<sp/>bytes)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="unionuint64union__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>uint64_t<sp/>l;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>Lo;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>Hi;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>}<sp/>s;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}<sp/><ref refid="unionuint64union__t" kindref="compound">uint64union_t</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Union<sp/>to<sp/>efficiently<sp/>access<sp/>individual<sp/>bytes<sp/>of<sp/>a<sp/>float</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="union_t_float" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>f;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionuint16union__t" kindref="compound">uint16union_t</ref><sp/>fLo;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionuint16union__t" kindref="compound">uint16union_t</ref><sp/>fHi;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>}<sp/>fParts;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}<sp/><ref refid="union_t_float" kindref="compound">TFloat</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEBUG_HALT()<sp/>__asm(<sp/>&quot;BKPT<sp/>255&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jeong/git/04/Modules/types/types.h"/>
+  </compounddef>
+</doxygen>

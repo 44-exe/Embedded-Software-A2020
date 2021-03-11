@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="critical_8c" kind="file" language="C++">
+    <compoundname>critical.c</compoundname>
+    <includes refid="critical_8h" local="yes">Critical\critical.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/Critical/critical.c</label>
+        <link refid="critical_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Critical\critical.h</label>
+        <link refid="critical_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___critical__module_1ga326c16dd0db38f80ec48c7727d764481" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>volatile uint8_t SR_reg</definition>
+        <argsstring></argsstring>
+        <name>SR_reg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Critical/critical.c" line="21" column="18" bodyfile="C:/Users/Jeong/git/04/Modules/Critical/critical.c" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___critical__module_1ga08ee8b0f642aeef5bbbce3bb4ec1bb28" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>volatile uint8_t SR_lock</definition>
+        <argsstring></argsstring>
+        <name>SR_lock</name>
+        <initializer>= 0x00U</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/Critical/critical.c" line="22" column="18" bodyfile="C:/Users/Jeong/git/04/Modules/Critical/critical.c" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Routines to implement protection of critical sections. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This contains the functions for entering and exiting critical sections.</para>
+<para><simplesect kind="author"><para>PMcL </para>
+</simplesect>
+<simplesect kind="date"><para>2020-03-03 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="16"><highlight class="comment">//<sp/>Critical<sp/>sections</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="critical_8h" kindref="compound">Critical\critical.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Globals</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint8_t<sp/>SR_reg;<sp/><sp/></highlight><highlight class="comment">//<sp/>Current<sp/>value<sp/>of<sp/>the<sp/>FAULTMASK<sp/>register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint8_t<sp/>SR_lock<sp/>=<sp/>0x00U;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Lock</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jeong/git/04/Modules/Critical/critical.c"/>
+  </compounddef>
+</doxygen>

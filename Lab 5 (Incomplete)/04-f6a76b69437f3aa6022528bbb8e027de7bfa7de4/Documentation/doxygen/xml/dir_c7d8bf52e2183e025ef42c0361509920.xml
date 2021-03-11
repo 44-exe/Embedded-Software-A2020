@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="dir_c7d8bf52e2183e025ef42c0361509920" kind="dir">
+    <compoundname>C:/Users/Jeong/git/04/Modules/Critical</compoundname>
+    <innerfile refid="critical_8c">critical.c</innerfile>
+    <innerfile refid="critical_8h">critical.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Jeong/git/04/Modules/Critical/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="struct_t_f_i_f_o" kind="struct" language="C++" prot="public">
+    <compoundname>TFIFO</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_t_f_i_f_o_1a092a7559431a12616672354641908167" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TFIFO::Start</definition>
+        <argsstring></argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The index of the position of the oldest data in the FIFO </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FIFO/FIFO.h" line="30" column="12" bodyfile="C:/Users/Jeong/git/04/Modules/FIFO/FIFO.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_f_i_f_o_1a5063b875898a6f23a97aa3ca17f0544b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t TFIFO::End</definition>
+        <argsstring></argsstring>
+        <name>End</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The index of the next available empty position in the FIFO </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FIFO/FIFO.h" line="31" column="12" bodyfile="C:/Users/Jeong/git/04/Modules/FIFO/FIFO.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_f_i_f_o_1ace00017651a266a66a93aa5220967611" prot="public" static="no" mutable="no">
+        <type>uint16_t volatile</type>
+        <definition>uint16_t volatile TFIFO::NbBytes</definition>
+        <argsstring></argsstring>
+        <name>NbBytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of bytes currently stored in the FIFO </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FIFO/FIFO.h" line="32" column="21" bodyfile="C:/Users/Jeong/git/04/Modules/FIFO/FIFO.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_t_f_i_f_o_1a5a9d712880dc4f1d5571b96452cd85f8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t TFIFO::Buffer[FIFO_SIZE]</definition>
+        <argsstring>[FIFO_SIZE]</argsstring>
+        <name>Buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The actual array of bytes to store the data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/FIFO/FIFO.h" line="33" column="11" bodyfile="C:/Users/Jeong/git/04/Modules/FIFO/FIFO.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Jeong/git/04/Modules/FIFO/FIFO.h" line="29" column="1" bodyfile="C:/Users/Jeong/git/04/Modules/FIFO/FIFO.h" bodystart="28" bodyend="34"/>
+    <listofallmembers>
+      <member refid="struct_t_f_i_f_o_1a5a9d712880dc4f1d5571b96452cd85f8" prot="public" virt="non-virtual"><scope>TFIFO</scope><name>Buffer</name></member>
+      <member refid="struct_t_f_i_f_o_1a5063b875898a6f23a97aa3ca17f0544b" prot="public" virt="non-virtual"><scope>TFIFO</scope><name>End</name></member>
+      <member refid="struct_t_f_i_f_o_1ace00017651a266a66a93aa5220967611" prot="public" virt="non-virtual"><scope>TFIFO</scope><name>NbBytes</name></member>
+      <member refid="struct_t_f_i_f_o_1a092a7559431a12616672354641908167" prot="public" virt="non-virtual"><scope>TFIFO</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

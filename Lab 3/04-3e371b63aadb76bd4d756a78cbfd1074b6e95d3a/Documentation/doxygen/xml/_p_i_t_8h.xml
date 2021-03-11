@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_p_i_t_8h" kind="file" language="C++">
+    <compoundname>PIT.h</compoundname>
+    <includes refid="types_8h" local="yes">Types\types.h</includes>
+    <includedby refid="main_8c" local="yes">C:/Users/Jeong/git/04/source/main.c</includedby>
+    <includedby refid="_p_i_t_8c" local="yes">C:/Users/Jeong/git/04/Modules/PIT/PIT.c</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/PIT/PIT.h</label>
+        <link refid="_p_i_t_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Types\types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>C:/Users/Jeong/git/04/Modules/PIT/PIT.c</label>
+        <link refid="_p_i_t_8c"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/PIT/PIT.h</label>
+        <link refid="_p_i_t_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/Jeong/git/04/source/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___p_i_t__module_1gae69097a83912a25b357df1046aea9b52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PIT_Init</definition>
+        <argsstring>(const uint32_t moduleClk, void(*userFunction)(void *), void *userArguments)</argsstring>
+        <name>PIT_Init</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>moduleClk</declname>
+        </param>
+        <param>
+          <type>void(*)(void *)</type>
+          <declname>userFunction</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>userArguments</declname>
+        </param>
+        <briefdescription>
+<para>Sets up the PIT before first use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Enables the PIT and freezes the timer when debugging. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>moduleClk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The module clock rate in Hz. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userFunction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a pointer to a user callback function. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userArguments</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a pointer to the user arguments to use with the user callback function. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if the PIT was successfully initialized. </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes that moduleClk has a period which can be expressed as an integral number of nanoseconds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" line="27" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" bodystart="27" bodyend="59" declfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.h" declline="30" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_i_t__module_1gae012c6f6b7396828c558c92ad0a27ed5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PIT_Set</definition>
+        <argsstring>(const uint32_t period, const bool restart)</argsstring>
+        <name>PIT_Set</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>period</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>restart</declname>
+        </param>
+        <briefdescription>
+<para>Sets the value of the desired period of the PIT. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>period</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired value of the timer period in nanoseconds. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>restart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TRUE if the PIT is disabled, a new value set, and then enabled. FALSE if the PIT will use the new value after a trigger event. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The function will enable the timer and interrupts for the PIT. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" line="62" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" bodystart="62" bodyend="75" declfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.h" declline="39" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_i_t__module_1gaed902f6158d6681e4b05d078575e4b09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PIT_Enable</definition>
+        <argsstring>(const bool enable)</argsstring>
+        <name>PIT_Enable</name>
+        <param>
+          <type>const bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Enables or disables the PIT. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- TRUE if the PIT is to be enabled, FALSE if the PIT is to be disabled. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" line="78" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.c" bodystart="78" bodyend="84" declfile="C:/Users/Jeong/git/04/Modules/PIT/PIT.h" declline="45" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Routines for controlling Periodic Interrupt Timer (PIT). </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This contains the functions for operating the periodic interrupt timer (PIT).</para>
+<para><simplesect kind="author"><para>PMcL </para>
+</simplesect>
+<simplesect kind="date"><para>2015-08-22 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="15"><highlight class="preprocessor">#ifndef<sp/>PIT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>new<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="types_8h" kindref="compound">Types\types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___p_i_t__module_1gae69097a83912a25b357df1046aea9b52" kindref="member">PIT_Init</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>moduleClk,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*userFunction)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*),<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>userArguments);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___p_i_t__module_1gae012c6f6b7396828c558c92ad0a27ed5" kindref="member">PIT_Set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>period,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>restart);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___p_i_t__module_1gaed902f6158d6681e4b05d078575e4b09" kindref="member">PIT_Enable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jeong/git/04/Modules/PIT/PIT.h"/>
+  </compounddef>
+</doxygen>

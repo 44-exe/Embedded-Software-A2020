@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_u_a_r_t_8h" kind="file" language="C++">
+    <compoundname>UART.h</compoundname>
+    <includes refid="types_8h" local="yes">Types\types.h</includes>
+    <includedby refid="main_8c" local="yes">C:/Users/Jeong/git/04/source/main.c</includedby>
+    <includedby refid="_packet_8c" local="yes">C:/Users/Jeong/git/04/Modules/Packet/Packet.c</includedby>
+    <includedby refid="_u_a_r_t_8c" local="yes">C:/Users/Jeong/git/04/Modules/UART/UART.c</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/UART/UART.h</label>
+        <link refid="_u_a_r_t_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>Types\types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>C:/Users/Jeong/git/04/Modules/UART/UART.c</label>
+        <link refid="_u_a_r_t_8c"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/Jeong/git/04/Modules/UART/UART.h</label>
+        <link refid="_u_a_r_t_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/Jeong/git/04/Modules/Packet/Packet.c</label>
+        <link refid="_packet_8c"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/Jeong/git/04/source/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___u_a_r_t__module_1gac43bbaf247d278867fde8cd412a4f1c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UART_Init</definition>
+        <argsstring>(const uint32_t moduleClk, const uint32_t baudRate)</argsstring>
+        <name>UART_Init</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>moduleClk</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>baudRate</declname>
+        </param>
+        <briefdescription>
+<para>Sets up the UART interface before first use. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>moduleClk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The module clock rate in Hz. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>baudRate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired baud rate in bits/sec. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if the UART was successfully initialized. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/UART/UART.c" line="41" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/UART/UART.c" bodystart="41" bodyend="96" declfile="C:/Users/Jeong/git/04/Modules/UART/UART.h" declline="28" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_a_r_t__module_1ga03049bcc3bf9af2a75ee77016d3b0d60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UART_InChar</definition>
+        <argsstring>(uint8_t *const dataPtr)</argsstring>
+        <name>UART_InChar</name>
+        <param>
+          <type>uint8_t *const</type>
+          <declname>dataPtr</declname>
+        </param>
+        <briefdescription>
+<para>Get a character from the receive FIFO if it is not empty. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataPtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to memory to store the retrieved byte. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if the receive FIFO returned a character. </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes that UART_Init has been called. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/UART/UART.c" line="99" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/UART/UART.c" bodystart="99" bodyend="103" declfile="C:/Users/Jeong/git/04/Modules/UART/UART.h" declline="36" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_a_r_t__module_1gab20ebaeefd1f29d31e098ade31189dda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UART_OutChar</definition>
+        <argsstring>(const uint8_t data)</argsstring>
+        <name>UART_OutChar</name>
+        <param>
+          <type>const uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Put a byte in the transmit FIFO if it is not full. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The byte to be placed in the transmit FIFO. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool - TRUE if the data was placed in the transmit FIFO. </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes that UART_Init has been called. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/UART/UART.c" line="106" column="6" bodyfile="C:/Users/Jeong/git/04/Modules/UART/UART.c" bodystart="106" bodyend="113" declfile="C:/Users/Jeong/git/04/Modules/UART/UART.h" declline="44" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_a_r_t__module_1ga799b375101827a18f652a3f28ecefcd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UART_Poll</definition>
+        <argsstring>(void)</argsstring>
+        <name>UART_Poll</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Poll the UART status register to try and receive and/or transmit one character. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+<simplesect kind="note"><para>Assumes that UART_Init has been called. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jeong/git/04/Modules/UART/UART.h" line="51" column="6" declfile="C:/Users/Jeong/git/04/Modules/UART/UART.h" declline="51" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>I/O routines for UART communications on the TWR-K70F120M. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This contains the functions for operating the UART (serial port).</para>
+<para><simplesect kind="author"><para>PMcL </para>
+</simplesect>
+<simplesect kind="date"><para>2020-03-16 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="16"><highlight class="preprocessor">#ifndef<sp/>UART_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UART_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>new<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="types_8h" kindref="compound">Types\types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___u_a_r_t__module_1gac43bbaf247d278867fde8cd412a4f1c3" kindref="member">UART_Init</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>moduleClk,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>baudRate);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___u_a_r_t__module_1ga03049bcc3bf9af2a75ee77016d3b0d60" kindref="member">UART_InChar</ref>(uint8_t*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>dataPtr);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group___u_a_r_t__module_1gab20ebaeefd1f29d31e098ade31189dda" kindref="member">UART_OutChar</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>data);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group___u_a_r_t__module_1ga799b375101827a18f652a3f28ecefcd0" kindref="member">UART_Poll</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jeong/git/04/Modules/UART/UART.h"/>
+  </compounddef>
+</doxygen>
